@@ -1,5 +1,5 @@
 import argparse
-
+from tools import get_target_summary
 
 def main():
 
@@ -27,12 +27,18 @@ def main():
 
     args = parser.parse_args()
 
+    summary = get_target_summary(args.target)
+
     print("OpenRepurpose")
     print("---------------------")
     print("Target:", args.target)
     print("Drug:", args.drug)
     print("Disease:", args.disease)
 
+    print("\nTarget Summary")
+    print(f"Target: {summary['target']}")
+    print(f"Status: {summary['status']}")
+    print(f"Message: {summary['message']}")
 
 if __name__ == "__main__":
     main()
