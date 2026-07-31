@@ -1,0 +1,1077 @@
+{
+    "target": "PCSK9",
+    "drug": "evolocumab",
+    "disease": "hypercholesterolemia",
+    "faers": {
+        "status": "success",
+        "drug": "evolocumab",
+        "num_reports": 3,
+        "raw_results": [
+            {
+                "safetyreportversion": "2",
+                "safetyreportid": "10220336",
+                "primarysourcecountry": "ZA",
+                "occurcountry": "US",
+                "transmissiondateformat": "102",
+                "transmissiondate": "20141212",
+                "reporttype": "2",
+                "serious": "1",
+                "seriousnessother": "1",
+                "receivedateformat": "102",
+                "receivedate": "20140606",
+                "receiptdateformat": "102",
+                "receiptdate": "20140619",
+                "fulfillexpeditecriteria": "1",
+                "companynumb": "ZA-009507513-1406USA002857",
+                "duplicate": "1",
+                "reportduplicate": {
+                    "duplicatesource": "MERCK",
+                    "duplicatenumb": "ZA-009507513-1406USA002857"
+                },
+                "primarysource": {
+                    "reportercountry": "US",
+                    "qualification": "1"
+                },
+                "sender": {
+                    "sendertype": "2",
+                    "senderorganization": "FDA-Public Use"
+                },
+                "receiver": {
+                    "receivertype": "6",
+                    "receiverorganization": "FDA"
+                },
+                "patient": {
+                    "patientsex": "0",
+                    "reaction": [
+                        {
+                            "reactionmeddraversionpt": "17.0",
+                            "reactionmeddrapt": "Angina pectoris",
+                            "reactionoutcome": "6"
+                        }
+                    ],
+                    "drug": [
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "EZETIMIBE",
+                            "drugauthorizationnumb": "021445",
+                            "drugstructuredosagenumb": "10",
+                            "drugstructuredosageunit": "003",
+                            "drugseparatedosagenumb": "1",
+                            "drugintervaldosageunitnumb": "1",
+                            "drugintervaldosagedefinition": "804",
+                            "drugdosagetext": "10 MG, QD",
+                            "drugdosageform": "TABLET",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5",
+                            "openfda": {
+                                "application_number": [
+                                    "ANDA078560",
+                                    "ANDA215693",
+                                    "ANDA210859",
+                                    "ANDA207311",
+                                    "NDA021445",
+                                    "ANDA204331",
+                                    "ANDA210673",
+                                    "ANDA211159",
+                                    "ANDA211550",
+                                    "ANDA200831",
+                                    "ANDA209838",
+                                    "ANDA203931",
+                                    "ANDA209234",
+                                    "ANDA208803"
+                                ],
+                                "brand_name": [
+                                    "EZETIMIBE",
+                                    "ZETIA"
+                                ],
+                                "generic_name": [
+                                    "EZETIMIBE"
+                                ],
+                                "manufacturer_name": [
+                                    "Glenmark Pharmaceuticals Inc., USA",
+                                    "Marlex Pharmaceuticals, Inc.",
+                                    "Camber Pharmaceuticals, Inc.",
+                                    "Orient Pharma Co., Ltd.",
+                                    "Ohm Laboratories Inc.",
+                                    "Organon LLC",
+                                    "Quallent Pharmaceuticals Health LLC",
+                                    "ScieGen Pharmaceuticals Inc",
+                                    "Zydus Pharmaceuticals USA Inc.",
+                                    "Macleods Pharmaceuticals Limited",
+                                    "Accord Healthcare Inc.",
+                                    "Actavis Pharma, Inc.",
+                                    "Aurobindo Pharma Limited",
+                                    "Sandoz Inc",
+                                    "Zydus Lifesciences Limited",
+                                    "Ascend Laboratories, LLC",
+                                    "NorthStar Rx LLC",
+                                    "Amneal Pharmaceuticals NY LLC"
+                                ],
+                                "product_ndc": [
+                                    "68462-226",
+                                    "10135-787",
+                                    "31722-628",
+                                    "76333-170",
+                                    "51660-200",
+                                    "78206-178",
+                                    "82009-024",
+                                    "50228-379",
+                                    "68382-773",
+                                    "33342-373",
+                                    "16729-433",
+                                    "0591-3713",
+                                    "59651-052",
+                                    "0781-5690",
+                                    "70771-1109",
+                                    "67877-490",
+                                    "16714-813",
+                                    "69238-1154"
+                                ],
+                                "product_type": [
+                                    "HUMAN PRESCRIPTION DRUG"
+                                ],
+                                "route": [
+                                    "ORAL"
+                                ],
+                                "substance_name": [
+                                    "EZETIMIBE"
+                                ],
+                                "rxcui": [
+                                    "349556",
+                                    "352304"
+                                ],
+                                "spl_id": [
+                                    "5009c162-91bb-425a-a688-6237c259d33e",
+                                    "43046023-125e-85f6-e063-6294a90ab8c7",
+                                    "1d93c66e-c5ea-de6f-e063-6294a90acfb8",
+                                    "161b88d8-6679-e793-e063-6394a90a481b",
+                                    "12e7e79e-85d0-0c5d-e063-6394a90a8b78",
+                                    "8e5eed2a-7b64-4350-9b87-500f1b04225d",
+                                    "98acb755-ad5c-414a-b9e9-6cd30c10a2e7",
+                                    "1ab4be5f-4926-88ad-e063-6294a90a0c81",
+                                    "ebb60f24-14be-4be0-b5e2-31e695eae876",
+                                    "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
+                                    "411f7e5b-cb87-22d4-e063-6394a90a518c",
+                                    "24aaf5ca-08e0-4db8-9734-cf2a606f8e57",
+                                    "60081062-9f4b-4cf5-9c24-02b5a0b7f792",
+                                    "c5e4a665-e54b-4452-bbc7-0a75b633ea94",
+                                    "5862da1c-e73d-44ff-a961-aaef469ed646",
+                                    "878751ea-5bea-42ef-8f56-2b15a683c7ae",
+                                    "ce024e9f-19a7-4819-8069-60121c4cf6c4",
+                                    "edb9906a-4007-40ff-a3dc-3083e50545ae"
+                                ],
+                                "spl_set_id": [
+                                    "ac539a72-77e4-419c-b1d9-42002e9cecf7",
+                                    "109a22f4-a7cb-96c6-e063-6394a90ad7f6",
+                                    "c07fe2e0-dad4-48b5-8a07-7d57a4035ccd",
+                                    "b6e77d9b-a553-63e0-e053-2a95a90a18fe",
+                                    "5b3842f6-c80a-47b8-8a82-b69e465b05f7",
+                                    "174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
+                                    "68247ce8-e812-42f2-a3ba-0f6e49acca63",
+                                    "11de499b-ad8a-46a6-9021-c8eba72ae414",
+                                    "f852b12f-e25f-415b-b1e2-58955d609507",
+                                    "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
+                                    "ceecdbe9-5404-4a93-a488-9211cd103058",
+                                    "f26e7a4e-b3d9-4cf8-baf0-7423d46cd8ba",
+                                    "726b1e63-437a-4b3b-b773-3ac47a5c0f38",
+                                    "ebcb6655-fd60-4099-8099-be911c5b32ae",
+                                    "de814dcd-4759-4e9c-a650-335fb885a79d",
+                                    "206d702c-b09a-4555-972b-6555d6d6d6e6",
+                                    "5f5644a9-e019-4e5d-ab6f-3d30b1024c5a",
+                                    "3fadf4e9-017d-4ccd-91dc-a89b981eb138"
+                                ],
+                                "package_ndc": [
+                                    "68462-226-30",
+                                    "68462-226-90",
+                                    "68462-226-05",
+                                    "68462-226-10",
+                                    "68462-226-11",
+                                    "10135-787-30",
+                                    "10135-787-90",
+                                    "10135-787-05",
+                                    "31722-628-30",
+                                    "31722-628-90",
+                                    "31722-628-01",
+                                    "31722-628-31",
+                                    "31722-628-34",
+                                    "31722-628-10",
+                                    "31722-628-05",
+                                    "76333-170-15",
+                                    "76333-170-14",
+                                    "76333-170-12",
+                                    "76333-170-13",
+                                    "51660-200-30",
+                                    "51660-200-90",
+                                    "51660-200-05",
+                                    "78206-178-01",
+                                    "82009-024-05",
+                                    "50228-379-30",
+                                    "50228-379-90",
+                                    "50228-379-05",
+                                    "50228-379-10",
+                                    "68382-773-06",
+                                    "68382-773-16",
+                                    "68382-773-01",
+                                    "68382-773-05",
+                                    "68382-773-10",
+                                    "68382-773-30",
+                                    "68382-773-77",
+                                    "33342-373-07",
+                                    "33342-373-10",
+                                    "33342-373-15",
+                                    "16729-433-10",
+                                    "16729-433-15",
+                                    "16729-433-01",
+                                    "16729-433-16",
+                                    "16729-433-17",
+                                    "0591-3713-30",
+                                    "0591-3713-19",
+                                    "0591-3713-05",
+                                    "59651-052-30",
+                                    "59651-052-90",
+                                    "59651-052-05",
+                                    "0781-5690-31",
+                                    "0781-5690-92",
+                                    "0781-5690-05",
+                                    "70771-1109-3",
+                                    "70771-1109-9",
+                                    "70771-1109-1",
+                                    "70771-1109-5",
+                                    "70771-1109-0",
+                                    "70771-1109-2",
+                                    "70771-1109-4",
+                                    "67877-490-30",
+                                    "67877-490-90",
+                                    "67877-490-05",
+                                    "67877-490-55",
+                                    "67877-490-01",
+                                    "16714-813-01",
+                                    "16714-813-02",
+                                    "16714-813-03",
+                                    "69238-1154-3",
+                                    "69238-1154-9",
+                                    "69238-1154-5",
+                                    "69238-1154-1"
+                                ],
+                                "nui": [
+                                    "N0000008553",
+                                    "N0000175911"
+                                ],
+                                "pharm_class_pe": [
+                                    "Decreased Cholesterol Absorption [PE]"
+                                ],
+                                "pharm_class_epc": [
+                                    "Dietary Cholesterol Absorption Inhibitor [EPC]"
+                                ],
+                                "unii": [
+                                    "EOR26LQQ24"
+                                ]
+                            }
+                        },
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "ATORVASTATIN",
+                            "drugstructuredosagenumb": "80",
+                            "drugstructuredosageunit": "003",
+                            "drugdosagetext": "80 MG, UNK",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5"
+                        },
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "EVOLOCUMAB",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5",
+                            "openfda": {
+                                "application_number": [
+                                    "BLA125522"
+                                ],
+                                "brand_name": [
+                                    "REPATHA"
+                                ],
+                                "generic_name": [
+                                    "EVOLOCUMAB"
+                                ],
+                                "manufacturer_name": [
+                                    "Amgen USA Inc."
+                                ],
+                                "product_ndc": [
+                                    "72511-393",
+                                    "72511-760",
+                                    "72511-750",
+                                    "72511-770",
+                                    "72511-501"
+                                ],
+                                "product_type": [
+                                    "HUMAN PRESCRIPTION DRUG"
+                                ],
+                                "route": [
+                                    "SUBCUTANEOUS"
+                                ],
+                                "substance_name": [
+                                    "EVOLOCUMAB"
+                                ],
+                                "rxcui": [
+                                    "1665895",
+                                    "1665900",
+                                    "1665904",
+                                    "1665906",
+                                    "1801319",
+                                    "1801322"
+                                ],
+                                "spl_id": [
+                                    "d9a0c476-16cf-46ae-8525-a89da9d76fc4"
+                                ],
+                                "spl_set_id": [
+                                    "cd61e902-166d-4aa6-9f3c-a18c1008d07e"
+                                ],
+                                "package_ndc": [
+                                    "72511-760-01",
+                                    "72511-760-02",
+                                    "72511-760-91",
+                                    "72511-750-01",
+                                    "72511-770-01",
+                                    "72511-770-91",
+                                    "72511-393-02",
+                                    "72511-393-01",
+                                    "72511-393-96",
+                                    "72511-501-01"
+                                ],
+                                "nui": [
+                                    "N0000191731",
+                                    "N0000191730",
+                                    "M0001357"
+                                ],
+                                "pharm_class_epc": [
+                                    "PCSK9 Inhibitor [EPC]"
+                                ],
+                                "pharm_class_moa": [
+                                    "PCSK9 Inhibitors [MoA]"
+                                ],
+                                "pharm_class_cs": [
+                                    "Antibodies, Monoclonal [CS]"
+                                ],
+                                "unii": [
+                                    "LKC0U3A8NJ"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "safetyreportversion": "2",
+                "safetyreportid": "10220346",
+                "primarysourcecountry": "ZA",
+                "occurcountry": "US",
+                "transmissiondateformat": "102",
+                "transmissiondate": "20141212",
+                "reporttype": "2",
+                "serious": "1",
+                "seriousnessother": "1",
+                "receivedateformat": "102",
+                "receivedate": "20140606",
+                "receiptdateformat": "102",
+                "receiptdate": "20140619",
+                "fulfillexpeditecriteria": "1",
+                "companynumb": "ZA-009507513-1406USA002861",
+                "duplicate": "1",
+                "reportduplicate": {
+                    "duplicatesource": "MERCK",
+                    "duplicatenumb": "ZA-009507513-1406USA002861"
+                },
+                "primarysource": {
+                    "reportercountry": "US",
+                    "qualification": "1"
+                },
+                "sender": {
+                    "sendertype": "2",
+                    "senderorganization": "FDA-Public Use"
+                },
+                "receiver": {
+                    "receivertype": "6",
+                    "receiverorganization": "FDA"
+                },
+                "patient": {
+                    "patientsex": "0",
+                    "reaction": [
+                        {
+                            "reactionmeddraversionpt": "17.0",
+                            "reactionmeddrapt": "Ventricular extrasystoles",
+                            "reactionoutcome": "6"
+                        }
+                    ],
+                    "drug": [
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "EZETIMIBE",
+                            "drugauthorizationnumb": "021445",
+                            "drugstructuredosagenumb": "10",
+                            "drugstructuredosageunit": "003",
+                            "drugseparatedosagenumb": "1",
+                            "drugintervaldosageunitnumb": "1",
+                            "drugintervaldosagedefinition": "804",
+                            "drugdosagetext": "10 MG, QD",
+                            "drugdosageform": "TABLET",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5",
+                            "openfda": {
+                                "application_number": [
+                                    "ANDA078560",
+                                    "ANDA215693",
+                                    "ANDA210859",
+                                    "ANDA207311",
+                                    "NDA021445",
+                                    "ANDA204331",
+                                    "ANDA210673",
+                                    "ANDA211159",
+                                    "ANDA211550",
+                                    "ANDA200831",
+                                    "ANDA209838",
+                                    "ANDA203931",
+                                    "ANDA209234",
+                                    "ANDA208803"
+                                ],
+                                "brand_name": [
+                                    "EZETIMIBE",
+                                    "ZETIA"
+                                ],
+                                "generic_name": [
+                                    "EZETIMIBE"
+                                ],
+                                "manufacturer_name": [
+                                    "Glenmark Pharmaceuticals Inc., USA",
+                                    "Marlex Pharmaceuticals, Inc.",
+                                    "Camber Pharmaceuticals, Inc.",
+                                    "Orient Pharma Co., Ltd.",
+                                    "Ohm Laboratories Inc.",
+                                    "Organon LLC",
+                                    "Quallent Pharmaceuticals Health LLC",
+                                    "ScieGen Pharmaceuticals Inc",
+                                    "Zydus Pharmaceuticals USA Inc.",
+                                    "Macleods Pharmaceuticals Limited",
+                                    "Accord Healthcare Inc.",
+                                    "Actavis Pharma, Inc.",
+                                    "Aurobindo Pharma Limited",
+                                    "Sandoz Inc",
+                                    "Zydus Lifesciences Limited",
+                                    "Ascend Laboratories, LLC",
+                                    "NorthStar Rx LLC",
+                                    "Amneal Pharmaceuticals NY LLC"
+                                ],
+                                "product_ndc": [
+                                    "68462-226",
+                                    "10135-787",
+                                    "31722-628",
+                                    "76333-170",
+                                    "51660-200",
+                                    "78206-178",
+                                    "82009-024",
+                                    "50228-379",
+                                    "68382-773",
+                                    "33342-373",
+                                    "16729-433",
+                                    "0591-3713",
+                                    "59651-052",
+                                    "0781-5690",
+                                    "70771-1109",
+                                    "67877-490",
+                                    "16714-813",
+                                    "69238-1154"
+                                ],
+                                "product_type": [
+                                    "HUMAN PRESCRIPTION DRUG"
+                                ],
+                                "route": [
+                                    "ORAL"
+                                ],
+                                "substance_name": [
+                                    "EZETIMIBE"
+                                ],
+                                "rxcui": [
+                                    "349556",
+                                    "352304"
+                                ],
+                                "spl_id": [
+                                    "5009c162-91bb-425a-a688-6237c259d33e",
+                                    "43046023-125e-85f6-e063-6294a90ab8c7",
+                                    "1d93c66e-c5ea-de6f-e063-6294a90acfb8",
+                                    "161b88d8-6679-e793-e063-6394a90a481b",
+                                    "12e7e79e-85d0-0c5d-e063-6394a90a8b78",
+                                    "8e5eed2a-7b64-4350-9b87-500f1b04225d",
+                                    "98acb755-ad5c-414a-b9e9-6cd30c10a2e7",
+                                    "1ab4be5f-4926-88ad-e063-6294a90a0c81",
+                                    "ebb60f24-14be-4be0-b5e2-31e695eae876",
+                                    "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
+                                    "411f7e5b-cb87-22d4-e063-6394a90a518c",
+                                    "24aaf5ca-08e0-4db8-9734-cf2a606f8e57",
+                                    "60081062-9f4b-4cf5-9c24-02b5a0b7f792",
+                                    "c5e4a665-e54b-4452-bbc7-0a75b633ea94",
+                                    "5862da1c-e73d-44ff-a961-aaef469ed646",
+                                    "878751ea-5bea-42ef-8f56-2b15a683c7ae",
+                                    "ce024e9f-19a7-4819-8069-60121c4cf6c4",
+                                    "edb9906a-4007-40ff-a3dc-3083e50545ae"
+                                ],
+                                "spl_set_id": [
+                                    "ac539a72-77e4-419c-b1d9-42002e9cecf7",
+                                    "109a22f4-a7cb-96c6-e063-6394a90ad7f6",
+                                    "c07fe2e0-dad4-48b5-8a07-7d57a4035ccd",
+                                    "b6e77d9b-a553-63e0-e053-2a95a90a18fe",
+                                    "5b3842f6-c80a-47b8-8a82-b69e465b05f7",
+                                    "174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
+                                    "68247ce8-e812-42f2-a3ba-0f6e49acca63",
+                                    "11de499b-ad8a-46a6-9021-c8eba72ae414",
+                                    "f852b12f-e25f-415b-b1e2-58955d609507",
+                                    "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
+                                    "ceecdbe9-5404-4a93-a488-9211cd103058",
+                                    "f26e7a4e-b3d9-4cf8-baf0-7423d46cd8ba",
+                                    "726b1e63-437a-4b3b-b773-3ac47a5c0f38",
+                                    "ebcb6655-fd60-4099-8099-be911c5b32ae",
+                                    "de814dcd-4759-4e9c-a650-335fb885a79d",
+                                    "206d702c-b09a-4555-972b-6555d6d6d6e6",
+                                    "5f5644a9-e019-4e5d-ab6f-3d30b1024c5a",
+                                    "3fadf4e9-017d-4ccd-91dc-a89b981eb138"
+                                ],
+                                "package_ndc": [
+                                    "68462-226-30",
+                                    "68462-226-90",
+                                    "68462-226-05",
+                                    "68462-226-10",
+                                    "68462-226-11",
+                                    "10135-787-30",
+                                    "10135-787-90",
+                                    "10135-787-05",
+                                    "31722-628-30",
+                                    "31722-628-90",
+                                    "31722-628-01",
+                                    "31722-628-31",
+                                    "31722-628-34",
+                                    "31722-628-10",
+                                    "31722-628-05",
+                                    "76333-170-15",
+                                    "76333-170-14",
+                                    "76333-170-12",
+                                    "76333-170-13",
+                                    "51660-200-30",
+                                    "51660-200-90",
+                                    "51660-200-05",
+                                    "78206-178-01",
+                                    "82009-024-05",
+                                    "50228-379-30",
+                                    "50228-379-90",
+                                    "50228-379-05",
+                                    "50228-379-10",
+                                    "68382-773-06",
+                                    "68382-773-16",
+                                    "68382-773-01",
+                                    "68382-773-05",
+                                    "68382-773-10",
+                                    "68382-773-30",
+                                    "68382-773-77",
+                                    "33342-373-07",
+                                    "33342-373-10",
+                                    "33342-373-15",
+                                    "16729-433-10",
+                                    "16729-433-15",
+                                    "16729-433-01",
+                                    "16729-433-16",
+                                    "16729-433-17",
+                                    "0591-3713-30",
+                                    "0591-3713-19",
+                                    "0591-3713-05",
+                                    "59651-052-30",
+                                    "59651-052-90",
+                                    "59651-052-05",
+                                    "0781-5690-31",
+                                    "0781-5690-92",
+                                    "0781-5690-05",
+                                    "70771-1109-3",
+                                    "70771-1109-9",
+                                    "70771-1109-1",
+                                    "70771-1109-5",
+                                    "70771-1109-0",
+                                    "70771-1109-2",
+                                    "70771-1109-4",
+                                    "67877-490-30",
+                                    "67877-490-90",
+                                    "67877-490-05",
+                                    "67877-490-55",
+                                    "67877-490-01",
+                                    "16714-813-01",
+                                    "16714-813-02",
+                                    "16714-813-03",
+                                    "69238-1154-3",
+                                    "69238-1154-9",
+                                    "69238-1154-5",
+                                    "69238-1154-1"
+                                ],
+                                "nui": [
+                                    "N0000008553",
+                                    "N0000175911"
+                                ],
+                                "pharm_class_pe": [
+                                    "Decreased Cholesterol Absorption [PE]"
+                                ],
+                                "pharm_class_epc": [
+                                    "Dietary Cholesterol Absorption Inhibitor [EPC]"
+                                ],
+                                "unii": [
+                                    "EOR26LQQ24"
+                                ]
+                            }
+                        },
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "ATORVASTATIN",
+                            "drugstructuredosagenumb": "80",
+                            "drugstructuredosageunit": "003",
+                            "drugdosagetext": "80 MG, UNK",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5"
+                        },
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "EVOLOCUMAB",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5",
+                            "openfda": {
+                                "application_number": [
+                                    "BLA125522"
+                                ],
+                                "brand_name": [
+                                    "REPATHA"
+                                ],
+                                "generic_name": [
+                                    "EVOLOCUMAB"
+                                ],
+                                "manufacturer_name": [
+                                    "Amgen USA Inc."
+                                ],
+                                "product_ndc": [
+                                    "72511-393",
+                                    "72511-760",
+                                    "72511-750",
+                                    "72511-770",
+                                    "72511-501"
+                                ],
+                                "product_type": [
+                                    "HUMAN PRESCRIPTION DRUG"
+                                ],
+                                "route": [
+                                    "SUBCUTANEOUS"
+                                ],
+                                "substance_name": [
+                                    "EVOLOCUMAB"
+                                ],
+                                "rxcui": [
+                                    "1665895",
+                                    "1665900",
+                                    "1665904",
+                                    "1665906",
+                                    "1801319",
+                                    "1801322"
+                                ],
+                                "spl_id": [
+                                    "d9a0c476-16cf-46ae-8525-a89da9d76fc4"
+                                ],
+                                "spl_set_id": [
+                                    "cd61e902-166d-4aa6-9f3c-a18c1008d07e"
+                                ],
+                                "package_ndc": [
+                                    "72511-760-01",
+                                    "72511-760-02",
+                                    "72511-760-91",
+                                    "72511-750-01",
+                                    "72511-770-01",
+                                    "72511-770-91",
+                                    "72511-393-02",
+                                    "72511-393-01",
+                                    "72511-393-96",
+                                    "72511-501-01"
+                                ],
+                                "nui": [
+                                    "N0000191731",
+                                    "N0000191730",
+                                    "M0001357"
+                                ],
+                                "pharm_class_epc": [
+                                    "PCSK9 Inhibitor [EPC]"
+                                ],
+                                "pharm_class_moa": [
+                                    "PCSK9 Inhibitors [MoA]"
+                                ],
+                                "pharm_class_cs": [
+                                    "Antibodies, Monoclonal [CS]"
+                                ],
+                                "unii": [
+                                    "LKC0U3A8NJ"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "safetyreportversion": "2",
+                "safetyreportid": "10220661",
+                "primarysourcecountry": "ZA",
+                "occurcountry": "US",
+                "transmissiondateformat": "102",
+                "transmissiondate": "20141212",
+                "reporttype": "2",
+                "serious": "1",
+                "seriousnessother": "1",
+                "receivedateformat": "102",
+                "receivedate": "20140606",
+                "receiptdateformat": "102",
+                "receiptdate": "20140619",
+                "fulfillexpeditecriteria": "1",
+                "companynumb": "ZA-009507513-1406USA002869",
+                "duplicate": "1",
+                "reportduplicate": {
+                    "duplicatesource": "MERCK",
+                    "duplicatenumb": "ZA-009507513-1406USA002869"
+                },
+                "primarysource": {
+                    "reportercountry": "US",
+                    "qualification": "1"
+                },
+                "sender": {
+                    "sendertype": "2",
+                    "senderorganization": "FDA-Public Use"
+                },
+                "receiver": {
+                    "receivertype": "6",
+                    "receiverorganization": "FDA"
+                },
+                "patient": {
+                    "patientsex": "0",
+                    "reaction": [
+                        {
+                            "reactionmeddraversionpt": "17.0",
+                            "reactionmeddrapt": "Back pain",
+                            "reactionoutcome": "6"
+                        }
+                    ],
+                    "drug": [
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "EZETIMIBE",
+                            "drugauthorizationnumb": "021445",
+                            "drugstructuredosagenumb": "10",
+                            "drugstructuredosageunit": "003",
+                            "drugseparatedosagenumb": "1",
+                            "drugintervaldosageunitnumb": "1",
+                            "drugintervaldosagedefinition": "804",
+                            "drugdosagetext": "10 MG, QD",
+                            "drugdosageform": "TABLET",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5",
+                            "openfda": {
+                                "application_number": [
+                                    "ANDA078560",
+                                    "ANDA215693",
+                                    "ANDA210859",
+                                    "ANDA207311",
+                                    "NDA021445",
+                                    "ANDA204331",
+                                    "ANDA210673",
+                                    "ANDA211159",
+                                    "ANDA211550",
+                                    "ANDA200831",
+                                    "ANDA209838",
+                                    "ANDA203931",
+                                    "ANDA209234",
+                                    "ANDA208803"
+                                ],
+                                "brand_name": [
+                                    "EZETIMIBE",
+                                    "ZETIA"
+                                ],
+                                "generic_name": [
+                                    "EZETIMIBE"
+                                ],
+                                "manufacturer_name": [
+                                    "Glenmark Pharmaceuticals Inc., USA",
+                                    "Marlex Pharmaceuticals, Inc.",
+                                    "Camber Pharmaceuticals, Inc.",
+                                    "Orient Pharma Co., Ltd.",
+                                    "Ohm Laboratories Inc.",
+                                    "Organon LLC",
+                                    "Quallent Pharmaceuticals Health LLC",
+                                    "ScieGen Pharmaceuticals Inc",
+                                    "Zydus Pharmaceuticals USA Inc.",
+                                    "Macleods Pharmaceuticals Limited",
+                                    "Accord Healthcare Inc.",
+                                    "Actavis Pharma, Inc.",
+                                    "Aurobindo Pharma Limited",
+                                    "Sandoz Inc",
+                                    "Zydus Lifesciences Limited",
+                                    "Ascend Laboratories, LLC",
+                                    "NorthStar Rx LLC",
+                                    "Amneal Pharmaceuticals NY LLC"
+                                ],
+                                "product_ndc": [
+                                    "68462-226",
+                                    "10135-787",
+                                    "31722-628",
+                                    "76333-170",
+                                    "51660-200",
+                                    "78206-178",
+                                    "82009-024",
+                                    "50228-379",
+                                    "68382-773",
+                                    "33342-373",
+                                    "16729-433",
+                                    "0591-3713",
+                                    "59651-052",
+                                    "0781-5690",
+                                    "70771-1109",
+                                    "67877-490",
+                                    "16714-813",
+                                    "69238-1154"
+                                ],
+                                "product_type": [
+                                    "HUMAN PRESCRIPTION DRUG"
+                                ],
+                                "route": [
+                                    "ORAL"
+                                ],
+                                "substance_name": [
+                                    "EZETIMIBE"
+                                ],
+                                "rxcui": [
+                                    "349556",
+                                    "352304"
+                                ],
+                                "spl_id": [
+                                    "5009c162-91bb-425a-a688-6237c259d33e",
+                                    "43046023-125e-85f6-e063-6294a90ab8c7",
+                                    "1d93c66e-c5ea-de6f-e063-6294a90acfb8",
+                                    "161b88d8-6679-e793-e063-6394a90a481b",
+                                    "12e7e79e-85d0-0c5d-e063-6394a90a8b78",
+                                    "8e5eed2a-7b64-4350-9b87-500f1b04225d",
+                                    "98acb755-ad5c-414a-b9e9-6cd30c10a2e7",
+                                    "1ab4be5f-4926-88ad-e063-6294a90a0c81",
+                                    "ebb60f24-14be-4be0-b5e2-31e695eae876",
+                                    "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
+                                    "411f7e5b-cb87-22d4-e063-6394a90a518c",
+                                    "24aaf5ca-08e0-4db8-9734-cf2a606f8e57",
+                                    "60081062-9f4b-4cf5-9c24-02b5a0b7f792",
+                                    "c5e4a665-e54b-4452-bbc7-0a75b633ea94",
+                                    "5862da1c-e73d-44ff-a961-aaef469ed646",
+                                    "878751ea-5bea-42ef-8f56-2b15a683c7ae",
+                                    "ce024e9f-19a7-4819-8069-60121c4cf6c4",
+                                    "edb9906a-4007-40ff-a3dc-3083e50545ae"
+                                ],
+                                "spl_set_id": [
+                                    "ac539a72-77e4-419c-b1d9-42002e9cecf7",
+                                    "109a22f4-a7cb-96c6-e063-6394a90ad7f6",
+                                    "c07fe2e0-dad4-48b5-8a07-7d57a4035ccd",
+                                    "b6e77d9b-a553-63e0-e053-2a95a90a18fe",
+                                    "5b3842f6-c80a-47b8-8a82-b69e465b05f7",
+                                    "174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
+                                    "68247ce8-e812-42f2-a3ba-0f6e49acca63",
+                                    "11de499b-ad8a-46a6-9021-c8eba72ae414",
+                                    "f852b12f-e25f-415b-b1e2-58955d609507",
+                                    "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
+                                    "ceecdbe9-5404-4a93-a488-9211cd103058",
+                                    "f26e7a4e-b3d9-4cf8-baf0-7423d46cd8ba",
+                                    "726b1e63-437a-4b3b-b773-3ac47a5c0f38",
+                                    "ebcb6655-fd60-4099-8099-be911c5b32ae",
+                                    "de814dcd-4759-4e9c-a650-335fb885a79d",
+                                    "206d702c-b09a-4555-972b-6555d6d6d6e6",
+                                    "5f5644a9-e019-4e5d-ab6f-3d30b1024c5a",
+                                    "3fadf4e9-017d-4ccd-91dc-a89b981eb138"
+                                ],
+                                "package_ndc": [
+                                    "68462-226-30",
+                                    "68462-226-90",
+                                    "68462-226-05",
+                                    "68462-226-10",
+                                    "68462-226-11",
+                                    "10135-787-30",
+                                    "10135-787-90",
+                                    "10135-787-05",
+                                    "31722-628-30",
+                                    "31722-628-90",
+                                    "31722-628-01",
+                                    "31722-628-31",
+                                    "31722-628-34",
+                                    "31722-628-10",
+                                    "31722-628-05",
+                                    "76333-170-15",
+                                    "76333-170-14",
+                                    "76333-170-12",
+                                    "76333-170-13",
+                                    "51660-200-30",
+                                    "51660-200-90",
+                                    "51660-200-05",
+                                    "78206-178-01",
+                                    "82009-024-05",
+                                    "50228-379-30",
+                                    "50228-379-90",
+                                    "50228-379-05",
+                                    "50228-379-10",
+                                    "68382-773-06",
+                                    "68382-773-16",
+                                    "68382-773-01",
+                                    "68382-773-05",
+                                    "68382-773-10",
+                                    "68382-773-30",
+                                    "68382-773-77",
+                                    "33342-373-07",
+                                    "33342-373-10",
+                                    "33342-373-15",
+                                    "16729-433-10",
+                                    "16729-433-15",
+                                    "16729-433-01",
+                                    "16729-433-16",
+                                    "16729-433-17",
+                                    "0591-3713-30",
+                                    "0591-3713-19",
+                                    "0591-3713-05",
+                                    "59651-052-30",
+                                    "59651-052-90",
+                                    "59651-052-05",
+                                    "0781-5690-31",
+                                    "0781-5690-92",
+                                    "0781-5690-05",
+                                    "70771-1109-3",
+                                    "70771-1109-9",
+                                    "70771-1109-1",
+                                    "70771-1109-5",
+                                    "70771-1109-0",
+                                    "70771-1109-2",
+                                    "70771-1109-4",
+                                    "67877-490-30",
+                                    "67877-490-90",
+                                    "67877-490-05",
+                                    "67877-490-55",
+                                    "67877-490-01",
+                                    "16714-813-01",
+                                    "16714-813-02",
+                                    "16714-813-03",
+                                    "69238-1154-3",
+                                    "69238-1154-9",
+                                    "69238-1154-5",
+                                    "69238-1154-1"
+                                ],
+                                "nui": [
+                                    "N0000008553",
+                                    "N0000175911"
+                                ],
+                                "pharm_class_pe": [
+                                    "Decreased Cholesterol Absorption [PE]"
+                                ],
+                                "pharm_class_epc": [
+                                    "Dietary Cholesterol Absorption Inhibitor [EPC]"
+                                ],
+                                "unii": [
+                                    "EOR26LQQ24"
+                                ]
+                            }
+                        },
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "ATORVASTATIN",
+                            "drugstructuredosagenumb": "80",
+                            "drugstructuredosageunit": "003",
+                            "drugdosagetext": "80 MG, UNK",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5"
+                        },
+                        {
+                            "drugcharacterization": "1",
+                            "medicinalproduct": "EVOLOCUMAB",
+                            "drugadministrationroute": "048",
+                            "drugindication": "HYPERLIPIDAEMIA",
+                            "actiondrug": "5",
+                            "openfda": {
+                                "application_number": [
+                                    "BLA125522"
+                                ],
+                                "brand_name": [
+                                    "REPATHA"
+                                ],
+                                "generic_name": [
+                                    "EVOLOCUMAB"
+                                ],
+                                "manufacturer_name": [
+                                    "Amgen USA Inc."
+                                ],
+                                "product_ndc": [
+                                    "72511-393",
+                                    "72511-760",
+                                    "72511-750",
+                                    "72511-770",
+                                    "72511-501"
+                                ],
+                                "product_type": [
+                                    "HUMAN PRESCRIPTION DRUG"
+                                ],
+                                "route": [
+                                    "SUBCUTANEOUS"
+                                ],
+                                "substance_name": [
+                                    "EVOLOCUMAB"
+                                ],
+                                "rxcui": [
+                                    "1665895",
+                                    "1665900",
+                                    "1665904",
+                                    "1665906",
+                                    "1801319",
+                                    "1801322"
+                                ],
+                                "spl_id": [
+                                    "d9a0c476-16cf-46ae-8525-a89da9d76fc4"
+                                ],
+                                "spl_set_id": [
+                                    "cd61e902-166d-4aa6-9f3c-a18c1008d07e"
+                                ],
+                                "package_ndc": [
+                                    "72511-760-01",
+                                    "72511-760-02",
+                                    "72511-760-91",
+                                    "72511-750-01",
+                                    "72511-770-01",
+                                    "72511-770-91",
+                                    "72511-393-02",
+                                    "72511-393-01",
+                                    "72511-393-96",
+                                    "72511-501-01"
+                                ],
+                                "nui": [
+                                    "N0000191731",
+                                    "N0000191730",
+                                    "M0001357"
+                                ],
+                                "pharm_class_epc": [
+                                    "PCSK9 Inhibitor [EPC]"
+                                ],
+                                "pharm_class_moa": [
+                                    "PCSK9 Inhibitors [MoA]"
+                                ],
+                                "pharm_class_cs": [
+                                    "Antibodies, Monoclonal [CS]"
+                                ],
+                                "unii": [
+                                    "LKC0U3A8NJ"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
