@@ -1,6 +1,9 @@
 import argparse
 
-from shared.database_wrappers.openfda import get_faers_events
+from shared.database_wrappers import (
+    get_faers_events,
+    get_gtex_expression,
+)
 
 from dossier_generator.formatter import save_results
 
@@ -24,6 +27,8 @@ def main():
     print("Disease:", args.disease)
 
     faers = get_faers_events(args.drug)
+
+    print(get_gtex_expression("PCSK9"))
 
     print("\nFAERS Summary")
     print("----------------------------")

@@ -2,8 +2,8 @@
 openFDA FAERS wrapper
 """
 
-import requests
-
+from shared.database_wrappers.base import success, error
+from shared.api_client import get_json
 
 BASE_URL = "https://api.fda.gov/drug/event.json"
 
@@ -31,27 +31,21 @@ def get_faers_events(drug_name, limit=3):
         f"&limit={limit}"
     )
 
-    try:
+    result = get_json(url)
 
-        response = requests.get(url, timeout=15)
+    if result["status"] == "error":
+        return error(
+            "openFDA",
+            result["error"],
+            )
 
-        response.raise_for_status()
+    data = result["data"]
 
-        data = response.json()
-
-        return {
-            "status": "success",
-            "drug": drug_name,
-            "num_reports": len(data.get("results", [])),
-            "raw_results": data.get("results", [])
-        }
-
-    except requests.exceptions.RequestException as error:
-
-        return {
-            "status": "error",
-            "drug": drug_name,
-            "message": str(error),
-            "num_reports": 0,
-            "raw_results": []
-        }
+    return success(
+        "openFDA",
+        {
+        "drug": drug_name,
+        "num_reports": len(data.get("results", [])),
+        "raw_results": data.get("results", []),
+        },
+        )
