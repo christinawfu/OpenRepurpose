@@ -1,59 +1,301 @@
-from pathlib import Path
-import json
-
-def save_results(target, drug, disease, results):
-    output_folder = Path("dossier_generator/cards")
-    output_folder.mkdir(exist_ok=True)
-
-    # Save JSON
-    json_file = output_folder / f"{target}_{drug}_summary.json"
-
-    with open(json_file, "w") as f:
-        json.dump(results, f, indent=4)
-
-    # Build Markdown
-    markdown_file = output_folder / f"{target}_{drug}_evidence_card.md"
-
-    markdown = f"""# OpenRepurpose Evidence Card
-
-## Input
-
-- **Target:** {target}
-- **Drug:** {drug}
-- **Disease:** {disease}
-
----
-
-## FAERS Summary
-
-- Status: {results["faers"]["status"]}
-- Reports Retrieved: {results["faers"]["data"]["num_reports"]}
-
----
-
-## Current Verdict
-
-This evidence card currently contains only FAERS data.
-
-Additional evidence sources (GTEx, HPA, OMIM, DisGeNET, Ontology)
-will be integrated in future development.
-
----
-
-## Open Targets Associations
-
-| Disease | Association Score |
-|---------|-------------------|
+"""
+Evidence dossier Markdown formatter.
 """
 
-    for association in results["opentargets"]["data"]["results"]:
-        markdown += (
-            f"| {association['disease_name']} "
-            f"| {association['association_score']:.3f} |\n"
+
+def format_evidence_card(evidence):
+    """
+    Convert unified evidence into a Markdown evidence card.
+    """
+
+    target = evidence["target"]
+    drug = evidence["drug"]
+    disease = evidence["disease"]
+
+    sources = evidence["sources"]
+
+    markdown = []
+
+    markdown.append(
+        f"# OpenRepurpose Evidence Card"
     )
 
-    # Write Markdown file
-    with open(markdown_file, "w") as f:
-        f.write(markdown)
+    markdown.append("")
 
-    return json_file, markdown_file
+    markdown.append(
+        f"**Target:** {target}"
+    )
+
+    markdown.append(
+        f"**Drug:** {drug}"
+    )
+
+    markdown.append(
+        f"**Disease:** {disease}"
+    )
+
+    markdown.append("")
+
+
+    # --------------------------------------------------
+    # Source status
+    # --------------------------------------------------
+
+    markdown.append(
+        "## Evidence Sources"
+    )
+
+    markdown.append("")
+
+    markdown.append(
+        "| Source | Status |"
+    )
+
+    markdown.append(
+        "|---|---|"
+    )
+
+    for source, result in sources.items():
+
+        status = result.get(
+            "status",
+            "unknown",
+        )
+
+        markdown.append(
+            f"| {source} | {status} |"
+        )
+
+    markdown.append("")
+
+
+    # --------------------------------------------------
+    # Open Targets
+    # --------------------------------------------------
+
+    opentargets = sources.get(
+        "opentargets"
+    )
+
+    if (
+        opentargets
+        and opentargets.get("status") == "success"
+    ):
+
+        results = (
+            opentargets["data"]
+            .get("results", [])
+        )
+
+        markdown.append(
+            "## Open Targets Disease Associations"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            "| Disease | Score |"
+        )
+
+        markdown.append(
+            "|---|---:|"
+        )
+
+        for association in results:
+
+            disease_name = association.get(
+                "disease_name",
+                "Unknown",
+            )
+
+            score = association.get(
+                "association_score",
+                0,
+            )
+
+            markdown.append(
+                f"| {disease_name} | {score:.3f} |"
+            )
+
+        markdown.append("")
+
+
+    # --------------------------------------------------
+    # GTEx
+    # --------------------------------------------------
+
+    gtex = sources.get("gtex")
+
+    if gtex and gtex.get("status") == "success":
+
+        results = (
+            gtex["data"]
+            .get("results", [])
+        )
+
+        markdown.append(
+            "## GTEx Tissue Expression"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            f"GENCODE ID: "
+            f"{gtex['data'].get('gencode_id', 'Unknown')}"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            f"Expression records returned: "
+            f"{len(results)}"
+        )
+
+        markdown.append("")
+
+
+    # --------------------------------------------------
+    # HPA
+    # --------------------------------------------------
+
+    hpa = sources.get("hpa")
+
+    if hpa and hpa.get("status") == "success":
+
+        results = (
+            hpa["data"]
+            .get("results", [])
+        )
+
+        markdown.append(
+            "## Human Protein Atlas"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            f"Protein records returned: "
+            f"{len(results)}"
+        )
+
+        markdown.append("")
+
+
+    # --------------------------------------------------
+    # ClinVar
+    # --------------------------------------------------
+
+    clinvar = sources.get("clinvar")
+
+    if (
+        clinvar
+        and clinvar.get("status") == "success"
+    ):
+
+        data = clinvar["data"]
+
+        markdown.append(
+            "## ClinVar"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            f"ClinVar records identified: "
+            f"{data.get('count', 0)}"
+        )
+
+        markdown.append("")
+
+
+    # --------------------------------------------------
+    # ChEMBL
+    # --------------------------------------------------
+
+    chembl = sources.get("chembl")
+
+    if (
+        chembl
+        and chembl.get("status") == "success"
+    ):
+
+        markdown.append(
+            "## ChEMBL"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            "Drug/molecule information retrieved "
+            "from ChEMBL."
+        )
+
+        markdown.append("")
+
+
+    # --------------------------------------------------
+    # openFDA
+    # --------------------------------------------------
+
+    faers = sources.get("faers")
+
+    if (
+        faers
+        and faers.get("status") == "success"
+    ):
+
+        markdown.append(
+            "## FAERS Safety Signals"
+        )
+
+        markdown.append("")
+
+        data = faers.get(
+            "data",
+            {},
+        )
+
+        markdown.append(
+            f"Drug: {data.get('drug', drug)}"
+        )
+
+        markdown.append("")
+
+
+    # --------------------------------------------------
+    # Disease ontology
+    # --------------------------------------------------
+
+    ontology = sources.get(
+        "ontology"
+    )
+
+    if (
+        ontology
+        and ontology.get("status") == "success"
+    ):
+
+        data = ontology["data"]
+
+        markdown.append(
+            "## Disease Ontology"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            f"Canonical disease: "
+            f"{data.get('canonical_name', disease)}"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            f"Canonical ID: "
+            f"{data.get('canonical_id', 'Unknown')}"
+        )
+
+        markdown.append("")
+
+
+    return "\n".join(markdown)

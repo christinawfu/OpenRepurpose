@@ -1,35 +1,48 @@
 # OpenRepurpose Evidence Card
 
-## Input
+**Target:** PCSK9
+**Drug:** evolocumab
+**Disease:** hypercholesterolemia
 
-- **Target:** PCSK9
-- **Drug:** evolocumab
-- **Disease:** hypercholesterolemia
+## Evidence Sources
 
----
+| Source | Status |
+|---|---|
+| ensembl | success |
+| opentargets | error |
+| gtex | success |
+| hpa | success |
+| clinvar | success |
+| chembl | success |
+| faers | success |
+| ontology | success |
+| disgenet | error |
+| omim | error |
 
-## FAERS Summary
+## GTEx Tissue Expression
 
-- Status: success
-- Reports Retrieved: 3
+GENCODE ID: ENSG00000169174.10
 
----
+Expression records returned: 0
 
-## Current Verdict
+## Human Protein Atlas
 
-This evidence card currently contains only FAERS data.
+Protein records returned: 3
 
-Additional evidence sources (GTEx, HPA, OMIM, DisGeNET, Ontology)
-will be integrated in future development.
+## ClinVar
 
----
+ClinVar records identified: 5
 
-## Open Targets Associations
+## ChEMBL
 
-| Disease | Association Score |
-|---------|-------------------|
-| familial hypercholesterolemia | 0.852 |
-| Hypercholesterolemia | 0.820 |
-| hypercholesterolemia, autosomal dominant, 3 | 0.816 |
-| cardiovascular disorder | 0.724 |
-| coronary artery disorder | 0.718 |
+Drug/molecule information retrieved from ChEMBL.
+
+## FAERS Safety Signals
+
+Drug: evolocumab
+
+## Disease Ontology
+
+Canonical disease: Hypercholesterolemia
+
+Canonical ID: HP:0003124
