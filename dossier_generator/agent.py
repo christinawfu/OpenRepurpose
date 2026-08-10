@@ -3,6 +3,7 @@ import argparse
 from shared.database_wrappers import (
     get_faers_events,
     get_gtex_expression,
+    get_target_disease_associations,
 )
 
 from dossier_generator.formatter import save_results
@@ -28,20 +29,25 @@ def main():
 
     faers = get_faers_events(args.drug)
 
+    opentargets = get_target_disease_associations(
+        args.target
+    )
+
     print(get_gtex_expression("PCSK9"))
 
     print("\nFAERS Summary")
     print("----------------------------")
 
     print("Status:", faers["status"])
-    print("Drug:", faers["drug"])
-    print("Reports Retrieved:", faers["num_reports"])
+    print("Drug:", faers["data"]["drug"])
+    print("Reports Retrieved:", faers["data"]["num_reports"])
 
     results = {
     "target": args.target,
     "drug": args.drug,
     "disease": args.disease,
     "faers": faers,
+    "opentargets": opentargets,
     }
 
     json_path, md_path = save_results(

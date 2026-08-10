@@ -19,3 +19,5 @@ from .opentargets import get_target_disease_associations
 from .clinvar import get_clinvar_variants
 
 from .chembl import get_chembl_drug_info
+
+from .gene_lookup import get_ensembl_id
