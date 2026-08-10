@@ -1,8 +1,6 @@
-from .base import not_implemented
-
-
-def get_target_disease_associations(target):
-    return not_implemented("Open Targets")
+"""
+Open Targets Platform wrapper.
+"""
 
 from shared.api_client import post_json
 from shared.database_wrappers.base import success, error
