@@ -297,5 +297,27 @@ def format_evidence_card(evidence):
 
         markdown.append("")
 
+        
+    # --------------------------------------------------
+    # Gemini synthesis
+    # --------------------------------------------------
 
+    gemini_summary = evidence.get(
+        "gemini_summary"
+    )
+
+    if gemini_summary:
+
+        markdown.append(
+            "## Gemini Evidence Synthesis"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            gemini_summary
+        )
+
+        markdown.append("")
+   
     return "\n".join(markdown)

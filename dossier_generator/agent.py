@@ -9,6 +9,7 @@ import argparse
 import json
 from dossier_generator.formatter import format_evidence_card
 from pathlib import Path
+from dossier_generator.gemini_agent import run_agent
 
 from shared.database_wrappers import (
     get_ensembl_id,
@@ -41,6 +42,16 @@ def collect_evidence(
         "disease": disease,
         "sources": {},
     }
+
+    print("\nRunning Gemini evidence synthesis...\n")
+
+    gemini_summary = run_agent(
+        target,
+        drug,
+        disease,
+    )
+
+    evidence["gemini_summary"] = gemini_summary
 
     # --------------------------------------------------
     # 1. Ensembl gene lookup

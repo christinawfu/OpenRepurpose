@@ -12,10 +12,38 @@
       }
     },
     "opentargets": {
-      "status": "error",
-      "source": "Ensembl",
-      "data": {},
-      "message": "HTTPSConnectionPool(host='rest.ensembl.org', port=443): Read timed out. (read timeout=15)"
+      "status": "success",
+      "source": "Open Targets",
+      "data": {
+        "query": "ENSG00000169174",
+        "results": [
+          {
+            "disease_id": "MONDO_0005439",
+            "disease_name": "familial hypercholesterolemia",
+            "association_score": 0.8519327132421599
+          },
+          {
+            "disease_id": "HP_0003124",
+            "disease_name": "Hypercholesterolemia",
+            "association_score": 0.8196715001915875
+          },
+          {
+            "disease_id": "MONDO_0011369",
+            "disease_name": "hypercholesterolemia, autosomal dominant, 3",
+            "association_score": 0.8157301072336982
+          },
+          {
+            "disease_id": "MONDO_0004995",
+            "disease_name": "cardiovascular disorder",
+            "association_score": 0.7237578733374027
+          },
+          {
+            "disease_id": "MONDO_0005010",
+            "disease_name": "coronary artery disorder",
+            "association_score": 0.7178053170353629
+          }
+        ]
+      }
     },
     "gtex": {
       "status": "success",
@@ -1495,5 +1523,6 @@
       "data": {},
       "message": "OMIM_API_KEY is not configured. Add an authorized OMIM API key to .env."
     }
-  }
+  },
+  "gemini_summary": "# Scientific Evidence Synthesis: PCSK9 / Evolocumab / Hypercholesterolemia\n\n---\n\n### 1. Target Summary\n* **Gene Symbol:** PCSK9 (*Proprotein convertase subtilisin/kexin type 9*)\n* **Ensembl ID:** `ENSG00000169174`\n* **Protein Function & Class:** Serine protease, secreted plasma protein involved in cholesterol, sterol, and lipid metabolism. \n* **Biological Mechanism:** PCSK9 binds to low-density lipoprotein receptors (LDLR) on hepatocytes, promoting their lysosomal degradation and thereby reducing plasma clearance of low-density lipoprotein cholesterol (LDL-C).\n\n---\n\n### 2. Disease Summary\n* **Disease Name:** Hypercholesterolemia\n* **Ontology Mapping:** \n  * `HP:0003124` (*Hypercholesterolemia*)\n  * `MONDO:0005439` (*Familial hypercholesterolemia*)\n  * `MONDO:0011369` (*Hypercholesterolemia, autosomal dominant, 3 / HCHOLA3*)\n* **Clinical Context:** Characterized by pathologically elevated levels of circulating cholesterol (specifically LDL-C), leading to accelerated atherosclerosis and increased risk of coronary artery disease and cardiovascular events.\n\n---\n\n### 3. Drug Summary\n* **Drug Name:** Evolocumab (Trade name: Repatha; ChEMBL ID: `CHEMBL2364655`)\n* **Drug Type & Mechanism:** Fully human IgG2 monoclonal antibody targeting PCSK9. It binds selectively to PCSK9, preventing its interaction with LDLR and leading to increased hepatocyte LDLR surface expression and enhanced clearance of plasma LDL-C.\n* **Approval Status:** First approved in 2015 (Max Phase 4.0; ATC Class `C10AX13`). Administered via parenteral (subcutaneous) route.\n\n---\n\n### 4. Tissue Evidence\n* **Human Protein Atlas (HPA):** Validates PCSK9 as a secreted plasma protein with strong protein-level evidence involved in cholesterol and lipid metabolism, alongside key interacting pathways involving LDLR.\n* **GTEx Expression Data:** Query returned no RNA expression data from the GTEx database API endpoint.\n* **Tissue Match Analysis:** HPA evidence confirms a clear functional alignment with systemic circulation and hepatic cholesterol clearance via the secreted protein pathway.\n\n---\n\n### 5. Genetic Evidence\n* **ClinVar:** Identified multiple clinically annotated genetic variants in `PCSK9` (e.g., ClinVar variant IDs `4875483`, `4874269`, `4861692`).\n* **Mendelian Disease Links:** Gain-of-function mutations in `PCSK9` cause autosomal dominant hypercholesterolemia 3 (`MONDO:0011369`), directly increasing plasma LDL-C levels. Conversely, naturally occurring loss-of-function variants in human populations significantly lower LDL-C and confer protection against coronary artery disease without major adverse developmental phenotypes.\n\n---\n\n### 6. Disease Association Evidence\n* **Open Targets Score:** Strong target-disease associations across multiple ontologies:\n  * Familial Hypercholesterolemia (`MONDO_0005439`): Score **0.852**\n  * Hypercholesterolemia (`HP_0003124`): Score **0.820**\n  * Autosomal Dominant Hypercholesterolemia 3 (`MONDO_0011369`): Score **0.816**\n  * Cardiovascular Disorder (`MONDO_0004995`): Score **0.724**\n  * Coronary Artery Disorder (`MONDO_0005010`): Score **0.718**\n\n---\n\n### 7. Safety Evidence\n* **FAERS Signals:** Post-market spontaneous reports in patients taking evolocumab (often in combination regimens with statins/ezetimibe) note adverse events including:\n  * Angina pectoris\n  * Ventricular extrasystoles\n  * Back pain\n* **Interpretation:** FAERS reports reflect real-world post-market pharmacovigilance surveillance. These reports establish safety signals but do not demonstrate direct drug causality due to potential confounding factors (e.g., underlying cardiovascular disease in high-risk hypercholesterolemic patient populations).\n\n---\n\n### 8. Evidence Gaps\n* **Database Gaps:** GTEx RNA expression records were unretrievable/absent via the automated database call during this query, requiring reliance on Human Protein Atlas for expression/protein localization evidence.\n* **Variant Heterogeneity:** Detailed functional impact characterization for every individual variant in ClinVar requires dedicated variant-level curation.\n\n---\n\n### 9. Potential Mismatches\n* **No Biological or Tissue Mismatch Detected:** Target expression, physiological function, genetic validation, and primary drug indication align across all sources.\n\n---\n\n### 10. Overall Evidence Assessment\n\n| Evidence Category | Evidence Level | Description / Findings |\n| :--- | :--- | :--- |\n| **Direct Evidence** | Strong / Approved | Evolocumab is an FDA/EMA-approved direct PCSK9 inhibitor specifically indicated for hypercholesterolemia and cardiovascular risk reduction. |\n| **Genetic Evidence** | High | Gain-of-function mutations in *PCSK9* cause severe hypercholesterolemia (`MONDO:0011369`), while loss-of-function variants lower LDL-C. |\n| **Database Associations**| High | Open Targets score of >0.82 across hypercholesterolemia ontology terms. |\n| **Tissue Evidence** | Moderate | HPA confirms protein-level evidence as a secreted plasma protein involved in lipid metabolism; GTEx API returned no records. |\n| **Safety Signals** | Monitored | Post-market FAERS reports record cardiovascular events and back pain, typical for a high-risk cardiovascular population, requiring standard clinical surveillance. |\n\n**Synthesis:** The mechanism of evolocumab targeting PCSK9 for hypercholesterolemia represents a benchmark validated target-disease-drug triad supported by direct clinical, pharmacological, and human genetic evidence."
 }
