@@ -7,9 +7,11 @@ and generates a unified evidence dossier.
 
 import argparse
 import json
-from dossier_generator.formatter import format_evidence_card
 from pathlib import Path
+
+from dossier_generator.formatter import format_evidence_card
 from dossier_generator.gemini_agent import run_agent
+from dossier_generator.evidence_analysis import analyze_evidence
 
 from shared.database_wrappers import (
     get_ensembl_id,
@@ -43,15 +45,49 @@ def collect_evidence(
         "sources": {},
     }
 
+    print("\nAnalyzing evidence...\n")
+
+    analysis = analyze_evidence(
+        evidence
+    )
+
+    evidence["analysis"] = analysis
+
     print("\nRunning Gemini evidence synthesis...\n")
 
-    gemini_summary = run_agent(
+    gemini_result = run_agent(
         target,
         drug,
         disease,
     )
 
-    evidence["gemini_summary"] = gemini_summary
+    evidence["gemini"] = gemini_result
+
+    if gemini_result["status"] == "success":
+
+        print(
+            "Gemini synthesis completed successfully."
+        )
+
+    elif gemini_result["status"] == "quota_exceeded":
+
+        print(
+            "Gemini quota exceeded."
+        )
+
+        print(
+            "Continuing without AI synthesis."
+        )
+
+    else:
+
+        print(
+            "Gemini synthesis failed."
+        )
+
+        print(
+            "Continuing without AI synthesis."
+        )
 
     # --------------------------------------------------
     # 1. Ensembl gene lookup

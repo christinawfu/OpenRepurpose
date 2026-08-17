@@ -139,6 +139,9 @@ def run_agent(
 ):
     """
     Run the Gemini evidence agent.
+
+    Returns a dictionary so that the caller can distinguish
+    successful Gemini synthesis from API failures.
     """
 
     request = f"""
@@ -153,6 +156,7 @@ Use the available biomedical database tools to collect evidence.
 Then provide a structured scientific synthesis.
 
 Clearly distinguish:
+
 - direct evidence
 - indirect evidence
 - database associations
@@ -162,15 +166,51 @@ Clearly distinguish:
 - evidence gaps
 
 Do not invent evidence.
+
+If a database is unavailable, explicitly state that
+the source was unavailable.
 """
 
-    response = client.models.generate_content(
-        model="gemini-3.6-flash",
-        contents=request,
-        config={
-            "system_instruction": SYSTEM_PROMPT,
-            "tools": TOOLS,
-        },
-    )
+    try:
 
-    return response.text
+        chat = client.chats.create(
+            model="gemini-3.6-flash",
+            config={
+                "system_instruction": SYSTEM_PROMPT,
+                "tools": TOOLS,
+            },
+        )
+
+        response = chat.send_message(
+            message=request
+        )
+
+        return {
+            "status": "success",
+            "model": "gemini-3.6-flash",
+            "summary": response.text,
+        }
+
+    except Exception as error:
+
+        error_text = str(error)
+
+        if "429" in error_text or "RESOURCE_EXHAUSTED" in error_text:
+
+            return {
+                "status": "quota_exceeded",
+                "model": "gemini-3.6-flash",
+                "summary": "",
+                "error": (
+                    "Gemini API quota was exceeded. "
+                    "Evidence collection completed, but "
+                    "AI synthesis was unavailable."
+                ),
+            }
+
+        return {
+            "status": "error",
+            "model": "gemini-3.6-flash",
+            "summary": "",
+            "error": error_text,
+        }

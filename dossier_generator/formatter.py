@@ -296,28 +296,249 @@ def format_evidence_card(evidence):
         )
 
         markdown.append("")
+   
+       
+    # --------------------------------------------------
+    # Evidence analysis
+    # --------------------------------------------------
 
-        
+    analysis = evidence.get(
+        "analysis"
+    )
+
+    if analysis:
+
+        markdown.append(
+            "## Integrated Evidence Assessment"
+        )
+
+        markdown.append("")
+
+        score = analysis.get(
+            "score",
+            {}
+        )
+
+        markdown.append(
+            f"**Evidence availability:** "
+            f"{analysis.get('evidence_availability', 'unknown').title()}"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            f"**Sources successfully retrieved:** "
+            f"{score.get('score', 0)} / "
+            f"{score.get('maximum', 0)} "
+            f"({score.get('percentage', 0)}%)"
+        )
+
+        markdown.append("")
+
+
+        # Tissue assessment
+
+        tissue = analysis.get(
+            "tissue_assessment",
+            {}
+        )
+
+        markdown.append(
+            "### Tissue Evidence"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            tissue.get(
+                "message",
+                "No tissue assessment available."
+            )
+        )
+
+        markdown.append("")
+
+
+        # Genetic assessment
+
+        genetic = analysis.get(
+            "genetic_assessment",
+            {}
+        )
+
+        markdown.append(
+            "### Genetic Evidence"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            genetic.get(
+                "message",
+                "No genetic assessment available."
+            )
+        )
+
+        markdown.append("")
+
+
+        # Rare disease awareness
+
+        rare_disease = analysis.get(
+            "rare_disease_assessment",
+            {}
+        )
+
+        markdown.append(
+            "### Rare-Disease Relevance"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            rare_disease.get(
+                "message",
+                "No rare-disease assessment available."
+            )
+        )
+
+        markdown.append("")
+
+        if rare_disease.get("sources"):
+
+            markdown.append(
+                "Supporting sources: "
+                + ", ".join(
+                    rare_disease["sources"]
+                )
+            )
+
+            markdown.append("")
+
+
+        # Evidence gaps
+
+        gaps = analysis.get(
+            "evidence_gaps",
+            []
+        )
+
+        markdown.append(
+            "### Evidence Gaps"
+        )
+
+        markdown.append("")
+
+        if gaps:
+
+            for gap in gaps:
+
+                markdown.append(
+                    f"- **{gap['category']}** "
+                    f"({gap['source']}): "
+                    f"{gap['status']}"
+                )
+
+        else:
+
+            markdown.append(
+                "No major evidence gaps were detected."
+            )
+
+        markdown.append("")
+
+
+        markdown.append(
+            f"**Scientific caution:** "
+            f"{analysis.get('caution', '')}"
+        )
+
+        markdown.append("")
+
+
+    # --------------------------------------------------
+    # Integrated verdict
+    # --------------------------------------------------
+
+    if analysis:
+
+        markdown.append(
+            "## Integrated Verdict"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            "The current evidence retrieval indicates "
+            f"**{analysis.get('evidence_availability', 'unknown')} "
+            "evidence availability** across the connected "
+            "biomedical databases."
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            "This is an evidence-availability assessment "
+            "rather than a prediction of clinical efficacy."
+        )
+
+        markdown.append("")
+
+
     # --------------------------------------------------
     # Gemini synthesis
     # --------------------------------------------------
 
-    gemini_summary = evidence.get(
-        "gemini_summary"
+    gemini = evidence.get(
+        "gemini",
+        {}
     )
 
-    if gemini_summary:
+    markdown.append(
+        "## Gemini Evidence Synthesis"
+    )
+
+    markdown.append("")
+
+    if gemini.get("status") == "success":
 
         markdown.append(
-            "## Gemini Evidence Synthesis"
+            gemini.get(
+                "summary",
+                "No Gemini synthesis was returned."
+            )
+        )
+
+    elif gemini.get("status") == "quota_exceeded":
+
+        markdown.append(
+            "**Gemini synthesis unavailable:** "
+            "the Gemini API quota was exceeded during "
+            "this run."
         )
 
         markdown.append("")
 
         markdown.append(
-            gemini_summary
+            "The database evidence and evidence-analysis "
+            "sections were still generated successfully."
+        )
+
+    else:
+
+        markdown.append(
+            "**Gemini synthesis unavailable.**"
         )
 
         markdown.append("")
-   
+
+        markdown.append(
+            gemini.get(
+                "error",
+                "Unknown Gemini error."
+            )
+        )
+
+    markdown.append("")
+
     return "\n".join(markdown)

@@ -68,6 +68,68 @@ Use FAERS to identify post-market safety signals.
 
 A FAERS signal does not establish causality.
 
+## Evidence scoring and gaps
+
+The evidence retrieval pipeline provides an evidence-availability
+assessment.
+
+Interpret this conservatively.
+
+Do not interpret the evidence-availability percentage as:
+
+- probability of efficacy
+- probability of approval
+- clinical validity
+- effect size
+- probability of treatment success
+
+Explicitly identify missing evidence sources.
+
+## Tissue mismatch detection
+
+Compare disease biology with available tissue evidence.
+
+When RNA and protein evidence are available, discuss whether they
+support or complicate the biological hypothesis.
+
+Do not call a tissue mismatch definitive evidence against a target.
+
+## Rare-disease relevance
+
+Pay particular attention to:
+
+- Mendelian disease associations
+- ClinVar findings
+- OMIM relationships
+- disease-gene aggregation
+
+If these sources are unavailable, state that rare-disease assessment
+is incomplete.
+
+Do not claim a disease is rare solely because OMIM or DisGeNET data
+are unavailable.
+
+## Integrated verdict
+
+Your final assessment should distinguish:
+
+- evidence supporting the target-disease relationship
+- evidence supporting the mechanism
+- evidence supporting the drug
+- safety evidence
+- evidence gaps
+- potential contradictions
+
+Use cautious language such as:
+
+- "supports"
+- "consistent with"
+- "suggests"
+- "limited evidence"
+- "requires further validation"
+
+Avoid definitive claims unless the retrieved evidence directly supports them.
+
 ## Final synthesis
 
 Produce:
