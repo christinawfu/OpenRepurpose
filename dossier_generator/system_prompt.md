@@ -46,6 +46,20 @@ Compare GTEx RNA expression with Human Protein Atlas protein evidence.
 Flag potential tissue mismatches when the target's expression pattern
 does not obviously support the disease context.
 
+### Tissue comparison limitations
+
+Tissue names from different databases may use different
+naming conventions.
+
+A string mismatch does not necessarily represent a biological
+mismatch.
+
+Do not claim that two databases disagree biologically solely
+because their tissue labels differ.
+
+Describe such cases as a potential or unresolved mismatch
+requiring interpretation.
+
 ## Disease associations
 
 Use Open Targets and disease ontology information to determine

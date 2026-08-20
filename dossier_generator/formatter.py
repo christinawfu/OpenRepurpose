@@ -357,6 +357,84 @@ def format_evidence_card(evidence):
         )
 
         markdown.append("")
+        
+        tissue_comparison = analysis.get(
+            "tissue_comparison",
+            {}
+        )
+
+        markdown.append(
+            "### Tissue Cross-Database Comparison"
+        )
+
+        markdown.append("")
+
+        markdown.append(
+            tissue_comparison.get(
+                "interpretation",
+                "No tissue comparison available."
+            )
+        )
+
+        markdown.append("")
+
+        shared_tissues = tissue_comparison.get(
+            "shared_tissues",
+            []
+        )
+
+        if shared_tissues:
+
+            markdown.append(
+                "**Shared tissues:** "
+                + ", ".join(shared_tissues)
+            )
+
+            markdown.append("")
+
+
+        gtex_only = tissue_comparison.get(
+            "gtex_only",
+            []
+        )
+
+        if gtex_only:
+
+            markdown.append(
+                "**GTEx-only tissues:** "
+                + ", ".join(gtex_only)
+            )
+
+            markdown.append("")
+
+
+        hpa_only = tissue_comparison.get(
+            "hpa_only",
+            []
+        )
+
+        if hpa_only:
+
+            markdown.append(
+                "**HPA-only tissues:** "
+                + ", ".join(hpa_only)
+            )
+
+            markdown.append("")
+
+
+        if tissue_comparison.get(
+            "mismatch_flag",
+            False
+        ):
+
+            markdown.append(
+                "> **Tissue evidence flag:** "
+                "The current data warrant additional "
+                "biological interpretation."
+            )
+
+            markdown.append("")
 
 
         # Genetic assessment
@@ -538,6 +616,47 @@ def format_evidence_card(evidence):
                 "Unknown Gemini error."
             )
         )
+
+    markdown.append("")
+
+
+    # --------------------------------------------------
+    # Evidence provenance
+    # --------------------------------------------------
+
+    markdown.append(
+        "## Evidence Provenance"
+    )
+
+    markdown.append("")
+
+    markdown.append(
+        "| Source | Retrieval status |"
+    )
+
+    markdown.append(
+        "|---|---|"
+    )
+
+    for source, result in sources.items():
+
+        status = result.get(
+            "status",
+            "unknown"
+        )
+
+        markdown.append(
+            f"| {source} | {status} |"
+        )
+
+    markdown.append("")
+
+    markdown.append(
+        "Evidence is retrieved from public biomedical "
+        "database APIs through OpenRepurpose wrappers. "
+        "Unavailable sources are reported rather than "
+        "treated as evidence of absence."
+    )
 
     markdown.append("")
 

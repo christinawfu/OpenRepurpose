@@ -67,6 +67,12 @@ Canonical ID: MONDO:0013209
 
 Neither GTEx nor Human Protein Atlas returned usable tissue evidence.
 
+### Tissue Cross-Database Comparison
+
+No directly comparable tissue names were available from the current GTEx/HPA responses.
+
+> **Tissue evidence flag:** The current data warrant additional biological interpretation.
+
 ### Genetic Evidence
 
 No dedicated disease-genetics source returned usable evidence.
@@ -100,3 +106,20 @@ This is an evidence-availability assessment rather than a prediction of clinical
 **Gemini synthesis unavailable:** the Gemini API quota was exceeded during this run.
 
 The database evidence and evidence-analysis sections were still generated successfully.
+
+## Evidence Provenance
+
+| Source | Retrieval status |
+|---|---|
+| ensembl | success |
+| opentargets | success |
+| gtex | success |
+| hpa | success |
+| clinvar | success |
+| chembl | success |
+| faers | success |
+| ontology | success |
+| disgenet | error |
+| omim | error |
+
+Evidence is retrieved from public biomedical database APIs through OpenRepurpose wrappers. Unavailable sources are reported rather than treated as evidence of absence.

@@ -21,6 +21,222 @@ def get_source_status(evidence, source):
     )
 
 
+def _extract_tissue_names(data):
+    """
+    Extract tissue names from common biomedical API response structures.
+
+    This function is intentionally defensive because different
+    database wrappers may return slightly different structures.
+    """
+
+    tissues = set()
+
+    if not data:
+        return tissues
+
+    # Case 1: dictionary containing a results list
+    if isinstance(data, dict):
+
+        results = data.get("results", [])
+
+        if isinstance(results, list):
+
+            for item in results:
+
+                if not isinstance(item, dict):
+                    continue
+
+                possible_names = [
+                    item.get("tissue"),
+                    item.get("tissue_name"),
+                    item.get("tissueName"),
+                    item.get("organ"),
+                    item.get("organ_name"),
+                ]
+
+                for name in possible_names:
+
+                    if isinstance(name, str) and name.strip():
+                        tissues.add(name.strip())
+
+
+        # Case 2: dictionary containing a tissues list
+        tissue_list = data.get("tissues", [])
+
+        if isinstance(tissue_list, list):
+
+            for item in tissue_list:
+
+                if isinstance(item, str):
+                    tissues.add(item.strip())
+
+                elif isinstance(item, dict):
+
+                    name = (
+                        item.get("name")
+                        or item.get("tissue")
+                        or item.get("tissue_name")
+                    )
+
+                    if name:
+                        tissues.add(str(name).strip())
+
+
+    # Case 3: direct list
+    elif isinstance(data, list):
+
+        for item in data:
+
+            if isinstance(item, str):
+                tissues.add(item.strip())
+
+            elif isinstance(item, dict):
+
+                name = (
+                    item.get("tissue")
+                    or item.get("tissue_name")
+                    or item.get("name")
+                )
+
+                if name:
+                    tissues.add(str(name).strip())
+
+    return tissues
+
+
+def compare_tissue_expression(evidence):
+    """
+    Compare tissues reported by GTEx and HPA.
+
+    This compares tissue names when the wrappers expose them.
+    It does not claim biological equivalence merely because
+    the same tissue appears in both sources.
+    """
+
+    sources = evidence.get(
+        "sources",
+        {}
+    )
+
+    gtex = sources.get(
+        "gtex",
+        {}
+    )
+
+    hpa = sources.get(
+        "hpa",
+        {}
+    )
+
+    gtex_status = gtex.get(
+        "status",
+        "unknown"
+    )
+
+    hpa_status = hpa.get(
+        "status",
+        "unknown"
+    )
+
+    gtex_tissues = set()
+
+    hpa_tissues = set()
+
+    if gtex_status == "success":
+
+        gtex_tissues = _extract_tissue_names(
+            gtex.get("data")
+        )
+
+    if hpa_status == "success":
+
+        hpa_tissues = _extract_tissue_names(
+            hpa.get("data")
+        )
+
+    shared = sorted(
+        gtex_tissues.intersection(
+            hpa_tissues
+        )
+    )
+
+    gtex_only = sorted(
+        gtex_tissues - hpa_tissues
+    )
+
+    hpa_only = sorted(
+        hpa_tissues - gtex_tissues
+    )
+
+    if shared:
+
+        interpretation = (
+            "GTEx and HPA report overlapping tissues. "
+            "This provides cross-database support for "
+            "tissue-level evidence, although expression "
+            "agreement does not establish target efficacy."
+        )
+
+        status = "overlap_detected"
+
+        mismatch_flag = False
+
+    elif gtex_tissues and hpa_tissues:
+
+        interpretation = (
+            "GTEx and HPA returned tissue-level information, "
+            "but no directly matching tissue names were "
+            "identified by the current comparison."
+        )
+
+        status = "different_tissue_sets"
+
+        mismatch_flag = True
+
+    elif gtex_tissues:
+
+        interpretation = (
+            "GTEx returned tissue information, but HPA "
+            "did not expose comparable tissue information."
+        )
+
+        status = "gtex_only"
+
+        mismatch_flag = True
+
+    elif hpa_tissues:
+
+        interpretation = (
+            "HPA returned tissue information, but GTEx "
+            "did not expose comparable tissue information."
+        )
+
+        status = "hpa_only"
+
+        mismatch_flag = True
+
+    else:
+
+        interpretation = (
+            "No directly comparable tissue names were "
+            "available from the current GTEx/HPA responses."
+        )
+
+        status = "no_comparable_tissues"
+
+        mismatch_flag = True
+
+    return {
+        "status": status,
+        "mismatch_flag": mismatch_flag,
+        "gtex_tissues": sorted(gtex_tissues),
+        "hpa_tissues": sorted(hpa_tissues),
+        "shared_tissues": shared,
+        "gtex_only": gtex_only,
+        "hpa_only": hpa_only,
+        "interpretation": interpretation,
+    }
+
 def count_successful_sources(evidence):
     """
     Count how many evidence sources successfully returned data.
@@ -328,6 +544,10 @@ def generate_integrated_verdict(evidence):
         evidence
     )
 
+    tissue_comparison = compare_tissue_expression(
+        evidence
+    )
+
     genetic = analyze_genetic_evidence(
         evidence
     )
@@ -352,6 +572,7 @@ def generate_integrated_verdict(evidence):
         "evidence_availability": strength,
         "score": score,
         "tissue_assessment": tissue,
+        "tissue_comparison": tissue_comparison,
         "genetic_assessment": genetic,
         "rare_disease_assessment": rare_disease,
         "evidence_gaps": gaps,
