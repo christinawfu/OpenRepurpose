@@ -1,3 +1,9 @@
+"""
+Integration tests for OpenRepurpose database wrappers.
+"""
+
+import json
+
 from shared.database_wrappers import (
     get_gtex_expression,
     get_hpa_protein,
@@ -6,39 +12,60 @@ from shared.database_wrappers import (
 )
 
 
-print("\n=== GTEx ===")
+def print_result(
+    name: str,
+    result: dict,
+):
+    """
+    Print a standardized wrapper result.
+    """
 
-gtex = get_gtex_expression("PCSK9")
-
-print("Status:", gtex["status"])
-print("Source:", gtex["source"])
-
-
-print("\n=== Human Protein Atlas ===")
-
-hpa = get_hpa_protein("PCSK9")
-
-print("Status:", hpa["status"])
-print("Source:", hpa["source"])
-
-
-print("\n=== ClinVar ===")
-
-clinvar = get_clinvar_variants("PCSK9")
-
-print("Status:", clinvar["status"])
-print("Source:", clinvar["source"])
-
-if clinvar["status"] == "success":
     print(
-        "Variants:",
-        clinvar["data"]["count"]
+        f"\n=== {name} ==="
+    )
+
+    print(
+        f"Status: {result.get('status')}"
+    )
+
+    print(
+        f"Source: {result.get('source')}"
+    )
+
+    if result.get("status") == "success":
+
+        print("Result: SUCCESS")
+
+    else:
+
+        print(
+            "Error:",
+            result.get("error")
+        )
+
+
+def main():
+
+    print_result(
+        "GTEx",
+        get_gtex_expression("PCSK9"),
+    )
+
+    print_result(
+        "Human Protein Atlas",
+        get_hpa_protein("PCSK9"),
+    )
+
+    print_result(
+        "ClinVar",
+        get_clinvar_variants("PCSK9"),
+    )
+
+    print_result(
+        "ChEMBL",
+        get_chembl_drug_info("evolocumab"),
     )
 
 
-print("\n=== ChEMBL ===")
-
-chembl = get_chembl_drug_info("evolocumab")
-
-print("Status:", chembl["status"])
-print("Source:", chembl["source"])
+if __name__ == "__main__":
+    main()
