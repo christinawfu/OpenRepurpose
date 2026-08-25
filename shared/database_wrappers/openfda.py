@@ -1,51 +1,80 @@
 """
-openFDA FAERS wrapper
+openFDA FAERS wrapper.
+
+Queries the FDA Adverse Event Reporting System through
+the public openFDA API.
 """
 
-from shared.database_wrappers.base import success, error
 from shared.api_client import get_json
+from .base import success_result, error_result
+
 
 BASE_URL = "https://api.fda.gov/drug/event.json"
 
 
-def get_faers_events(drug_name, limit=3):
+def get_faers_events(
+    drug_name: str,
+    top_n: int = 10,
+) -> dict:
     """
-    Retrieve a small summary of FAERS reports for a drug.
+    Retrieve common adverse-event reports for a drug.
 
     Parameters
     ----------
-    drug_name : str
-        Drug to search.
+    drug_name:
+        Drug name, e.g. evolocumab.
 
-    limit : int
-        Maximum reports.
+    top_n:
+        Number of adverse-event terms to return.
 
     Returns
     -------
     dict
+        Standardized OpenRepurpose response.
     """
 
-    url = (
-        f"{BASE_URL}"
-        f"?search=patient.drug.medicinalproduct:{drug_name}"
-        f"&limit={limit}"
-    )
+    try:
 
-    result = get_json(url)
+        # --------------------------------------------------
+        # Step 1: Query openFDA
+        # --------------------------------------------------
 
-    if result["status"] == "error":
-        return error(
-            "openFDA",
-            result["error"],
-            )
+        params = {
+            "search": f'patient.drug.medicinalproduct:"{drug_name}"',
+            "count": "patient.reaction.reactionmeddrapt.exact",
+            "limit": top_n,
+        }
 
-    data = result["data"]
+        result = get_json(
+            BASE_URL,
+            params=params,
+        )
 
-    return success(
-        "openFDA",
-        {
-        "drug": drug_name,
-        "num_reports": len(data.get("results", [])),
-        "raw_results": data.get("results", []),
-        },
+        # --------------------------------------------------
+        # Step 2: Extract results
+        # --------------------------------------------------
+
+        events = result.get(
+            "results",
+            [],
+        )
+
+        # --------------------------------------------------
+        # Step 3: Standardized response
+        # --------------------------------------------------
+
+        return success_result(
+            source="openFDA FAERS",
+            data={
+                "drug": drug_name,
+                "events": events,
+                "count": len(events),
+            },
+        )
+
+    except Exception as exc:
+
+        return error_result(
+            source="openFDA FAERS",
+            error=str(exc),
         )

@@ -1,32 +1,85 @@
 """
-Shared helper functions used by all database wrappers.
+Shared utilities for OpenRepurpose database wrappers.
 """
 
-def success(source: str, data: dict):
+from typing import Any, Dict
+
+
+def success_result(
+    source: str,
+    data: Any,
+) -> Dict[str, Any]:
+    """
+    Return a standardized successful API result.
+    """
+
     return {
         "status": "success",
         "source": source,
         "data": data,
+        "error": None,
     }
 
 
-def error(source: str, message: str):
+def error_result(
+    source: str,
+    error: str,
+    data: Any = None,
+) -> Dict[str, Any]:
+    """
+    Return a standardized failed API result.
+    """
+
     return {
         "status": "error",
         "source": source,
-        "data": {},
-        "message": message,
+        "data": data,
+        "error": str(error),
     }
 
-def not_implemented(source: str) -> dict:
+
+# --------------------------------------------------
+# Backward-compatible aliases
+# --------------------------------------------------
+
+def success(
+    source: str,
+    data: Any,
+) -> Dict[str, Any]:
     """
-    Return a standardized placeholder response for wrappers
-    that have not been implemented yet.
+    Backward-compatible alias for success_result().
     """
 
-    return {
-        "status": "not_implemented",
-        "source": source,
-        "data": {},
-        "message": f"{source} wrapper has not been implemented yet."
-    }
+    return success_result(
+        source=source,
+        data=data,
+    )
+
+
+def error(
+    source: str,
+    message: str,
+    data: Any = None,
+) -> Dict[str, Any]:
+    """
+    Backward-compatible alias for error_result().
+    """
+
+    return error_result(
+        source=source,
+        error=message,
+        data=data,
+    )
+
+
+def not_implemented(
+    source: str,
+) -> Dict[str, Any]:
+    """
+    Return a standardized result for an unavailable wrapper.
+    """
+
+    return error_result(
+        source=source,
+        error="Wrapper not implemented.",
+    )

@@ -1,75 +1,92 @@
 """
-Disease ontology normalization using EMBL-EBI Ontology Lookup Service.
+Ontology normalization wrapper.
+
+Uses the EMBL-EBI Ontology Lookup Service (OLS)
+to identify canonical disease concepts.
 """
 
-from urllib.parse import quote
-
 from shared.api_client import get_json
-from .base import success, error
+from .base import success_result, error_result
 
 
-BASE_URL = "https://www.ebi.ac.uk/ols4/api"
+BASE_URL = "https://www.ebi.ac.uk/ols4/api/search"
 
 
-def normalize_disease_name(name: str):
+def normalize_disease_name(name: str) -> dict:
     """
-    Search OLS for a disease name and return a canonical ontology ID.
+    Search OLS for a canonical ontology concept.
 
     Parameters
     ----------
-    name : str
-        Disease name, such as "hypercholesterolemia".
+    name:
+        Disease or phenotype name.
 
     Returns
     -------
     dict
-        Standardized wrapper response.
+        Standardized OpenRepurpose response.
     """
 
-    url = (
-        f"{BASE_URL}/search"
-        f"?q={quote(name)}"
-        f"&ontology=mondo"
-        f"&rows=5"
-    )
+    try:
 
-    result = get_json(url)
+        params = {
+            "q": name,
+            "rows": 10,
+        }
 
-    if result["status"] == "error":
-        return error(
-            "OLS/MONDO",
-            result["error"],
+        result = get_json(
+            BASE_URL,
+            params=params,
         )
 
-    data = result["data"]
-
-    docs = data.get("response", {}).get("docs", [])
-
-    if not docs:
-        return error(
-            "OLS/MONDO",
-            f"No MONDO disease found for '{name}'.",
+        response = result.get(
+            "response",
+            {},
         )
 
-    first_match = docs[0]
+        docs = response.get(
+            "docs",
+            [],
+        )
 
-    disease_id = (
-        first_match.get("obo_id")
-        or first_match.get("id")
-    )
+        if not docs:
+            return success_result(
+                source="OLS",
+                data={
+                    "query": name,
+                    "canonical_name": None,
+                    "ontology_id": None,
+                    "matches": [],
+                },
+            )
 
-    label = (
-        first_match.get("label")
-        or first_match.get("title")
-        or name
-    )
+        best = docs[0]
 
-    return success(
-        "OLS/MONDO",
-        {
-            "query": name,
-            "canonical_id": disease_id,
-            "canonical_name": label,
-            "results": docs[:5],
-        },
-    )
+        ontology_id = (
+            best.get("obo_id")
+            or best.get("short_form")
+            or best.get("id")
+        )
+
+        canonical_name = (
+            best.get("label")
+            or best.get("prefLabel")
+            or best.get("title")
+        )
+
+        return success_result(
+            source="OLS",
+            data={
+                "query": name,
+                "canonical_name": canonical_name,
+                "ontology_id": ontology_id,
+                "matches": docs,
+            },
+        )
+
+    except Exception as exc:
+
+        return error_result(
+            source="OLS",
+            error=str(exc),
+        )

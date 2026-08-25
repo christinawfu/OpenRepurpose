@@ -1,57 +1,78 @@
 """
-Human Protein Atlas wrapper.
+Human Protein Atlas database wrapper.
+
+Retrieves protein and tissue expression information
+for a human gene.
 """
 
-from urllib.parse import quote
-
 from shared.api_client import get_json
-from .base import success, error
+
+from shared.database_wrappers.base import (
+    success_result,
+    error_result,
+)
 
 
-BASE_URL = "https://www.proteinatlas.org/api/search_download.php"
+HPA_URL = (
+    "https://www.proteinatlas.org/api/search_download.php"
+)
 
 
-def get_hpa_protein(gene_symbol: str):
+def get_hpa_protein(
+    gene_symbol: str,
+) -> dict:
     """
-    Retrieve Human Protein Atlas protein information.
+    Retrieve Human Protein Atlas protein/tissue information.
 
     Parameters
     ----------
-    gene_symbol : str
-        HGNC gene symbol.
+    gene_symbol:
+        HGNC gene symbol, e.g. PCSK9.
 
     Returns
     -------
     dict
-        Standardized wrapper response.
+        Standardized OpenRepurpose result.
     """
 
-    columns = (
-        "g,gs,eg,gd,pc,upbp,up_mf,di,pe,evih,eviu"
-    )
+    try:
 
-    url = (
-        f"{BASE_URL}"
-        f"?search={quote(gene_symbol)}"
-        f"&format=json"
-        f"&columns={columns}"
-        f"&compress=no"
-    )
+        params = {
+            "search": gene_symbol,
+            "format": "json",
 
-    result = get_json(url)
+            # Requested HPA fields.
+            #
+            # g     = gene
+            # eg    = Ensembl gene ID
+            # prts  = protein tissue specificity
+            # prtd  = protein tissue distribution
+            # prtss = protein tissue specificity score
+            # prtsm = protein tissue-specific intensity
+            #
+            "columns": (
+                "g,eg,prts,prtd,prtss,prtsm"
+            ),
 
-    if result["status"] == "error":
-        return error(
-            "Human Protein Atlas",
-            result["error"],
+            "compress": "no",
+        }
+
+        data = get_json(
+            HPA_URL,
+            params=params,
         )
 
-    data = result["data"]
+        return success_result(
+            source="Human Protein Atlas",
+            data={
+                "gene": gene_symbol,
+                "results": data,
+            },
+        )
 
-    return success(
-        "Human Protein Atlas",
-        {
-            "query": gene_symbol,
-            "results": data,
-        },
-    )
+    except Exception as exc:
+
+        return error_result(
+            source="Human Protein Atlas",
+            error=str(exc),
+        )

@@ -1,86 +1,188 @@
 """
-GTEx gene expression wrapper.
+GTEx database wrapper.
+
+Retrieves median gene expression across tissues
+from the GTEx Portal.
 """
 
-from urllib.parse import quote
-
 from shared.api_client import get_json
-from .base import success, error
+from shared.database_wrappers.base import (
+    success_result,
+    error_result,
+)
 
 
-BASE_URL = "https://gtexportal.org/api/v2"
+GTEX_API_URL = "https://gtexportal.org/api/v2"
+
+# We explicitly use GTEx v8 because the GENCODE annotation
+# returned by the current geneSearch endpoint is compatible
+# with this dataset.
+GTEX_DATASET = "gtex_v8"
 
 
-def get_gtex_expression(gene_symbol: str):
+def get_gtex_expression(
+    gene_symbol: str,
+) -> dict:
     """
-    Retrieve median GTEx gene expression across tissues.
+    Retrieve median GTEx expression across tissues.
 
     Parameters
     ----------
-    gene_symbol : str
-        HGNC gene symbol, such as PCSK9.
+    gene_symbol:
+        HGNC gene symbol, e.g. PCSK9.
 
     Returns
     -------
     dict
-        Standardized wrapper response.
+        Standardized OpenRepurpose result.
     """
 
-    # Step 1: Find the GENCODE ID for the gene symbol.
-    gene_url = (
-        f"{BASE_URL}/reference/gene"
-        f"?geneId={quote(gene_symbol)}"
-        f"&page=0"
-        f"&itemsPerPage=10"
-    )
+    try:
 
-    gene_result = get_json(gene_url)
+        # --------------------------------------------------
+        # Step 1: Resolve gene symbol to GENCODE ID
+        # --------------------------------------------------
 
-    if gene_result["status"] == "error":
-        return error("GTEx", gene_result["error"])
-
-    gene_data = gene_result["data"]
-
-    genes = gene_data.get("data", [])
-
-    if not genes:
-        return error(
-            "GTEx",
-            f"No GTEx gene found for {gene_symbol}",
+        gene_response = get_json(
+            f"{GTEX_API_URL}/reference/geneSearch",
+            params={
+                "geneId": gene_symbol,
+            },
         )
 
-    gencode_id = genes[0].get("gencodeId")
-
-    if not gencode_id:
-        return error(
-            "GTEx",
-            f"No GENCODE ID found for {gene_symbol}",
+        genes = gene_response.get(
+            "data",
+            []
         )
 
-    # Step 2: Retrieve median expression across tissues.
-    expression_url = (
-        f"{BASE_URL}/expression/medianGeneExpression"
-        f"?gencodeId={quote(gencode_id)}"
-        f"&datasetId=gtex_v10"
-        f"&page=0"
-        f"&itemsPerPage=250"
-    )
+        if not genes:
 
-    expression_result = get_json(expression_url)
+            return error_result(
+                source="GTEx",
+                error=(
+                    f"GTEx could not find gene "
+                    f"{gene_symbol}."
+                ),
+            )
 
-    if expression_result["status"] == "error":
-        return error(
-            "GTEx",
-            expression_result["error"],
+        gene_record = genes[0]
+
+        gencode_id = gene_record.get(
+            "gencodeId"
         )
 
-    expression_data = expression_result["data"]
+        if not gencode_id:
 
-    return success(
-        "GTEx",
-        {
-            "query": gene_symbol,
-            "gencode_id": gencode_id,
-            "results": expression_data.get("data", []),
-        },
-    )
+            return error_result(
+                source="GTEx",
+                error=(
+                    f"GTEx returned a gene record for "
+                    f"{gene_symbol}, but no GENCODE ID "
+                    f"was found."
+                ),
+                data=gene_record,
+            )
+
+        # --------------------------------------------------
+        # Step 2: Retrieve median tissue expression
+        # --------------------------------------------------
+
+        expression_response = get_json(
+            f"{GTEX_API_URL}/expression/medianGeneExpression",
+            params={
+                "gencodeId": gencode_id,
+                "datasetId": GTEX_DATASET,
+            },
+        )
+
+        expression_records = expression_response.get(
+            "data",
+            []
+        )
+
+        if not expression_records:
+
+            return error_result(
+                source="GTEx",
+                error=(
+                    f"GTEx returned no expression data "
+                    f"for {gene_symbol} using "
+                    f"{GTEX_DATASET}."
+                ),
+                data={
+                    "gene": gene_symbol,
+                    "gencode_id": gencode_id,
+                },
+            )
+
+        # --------------------------------------------------
+        # Step 3: Standardize tissue records
+        # --------------------------------------------------
+
+        tissues = []
+
+        for record in expression_records:
+
+            tissues.append(
+                {
+                    "tissue": record.get(
+                        "tissueSiteDetailId"
+                    ),
+                    "median_tpm": record.get(
+                        "median"
+                    ),
+                    "ontology_id": record.get(
+                        "ontologyId"
+                    ),
+                    "unit": record.get(
+                        "unit"
+                    ),
+                }
+            )
+
+        # --------------------------------------------------
+        # Step 4: Determine highest-expression tissue
+        # --------------------------------------------------
+
+        valid_tissues = [
+            tissue
+            for tissue in tissues
+            if isinstance(
+                tissue.get("median_tpm"),
+                (int, float),
+            )
+        ]
+
+        highest_expression_tissue = None
+
+        if valid_tissues:
+
+            highest_expression_tissue = max(
+                valid_tissues,
+                key=lambda x: x["median_tpm"],
+            )
+
+        # --------------------------------------------------
+        # Step 5: Return standardized result
+        # --------------------------------------------------
+
+        return success_result(
+            source="GTEx",
+            data={
+                "gene": gene_symbol,
+                "gencode_id": gencode_id,
+                "dataset": GTEX_DATASET,
+                "tissue_count": len(tissues),
+                "tissues": tissues,
+                "highest_expression_tissue": (
+                    highest_expression_tissue
+                ),
+            },
+        )
+
+    except Exception as exc:
+
+        return error_result(
+            source="GTEx",
+            error=str(exc),
+        )
