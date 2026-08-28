@@ -9,13 +9,15 @@
       "data": {
         "query": "PCSK9",
         "ensembl_id": "ENSG00000169174"
-      }
+      },
+      "error": null
     },
     "opentargets": {
       "status": "success",
       "source": "Open Targets",
       "data": {
-        "query": "ENSG00000169174",
+        "query": "PCSK9",
+        "ensembl_id": "ENSG00000169174",
         "results": [
           {
             "disease_id": "MONDO_0005439",
@@ -42,134 +44,394 @@
             "disease_name": "coronary artery disorder",
             "association_score": 0.7178053170353629
           }
-        ]
-      }
+        ],
+        "count": 5
+      },
+      "error": null
     },
     "gtex": {
       "status": "success",
       "source": "GTEx",
       "data": {
-        "query": "PCSK9",
+        "gene": "PCSK9",
         "gencode_id": "ENSG00000169174.10",
-        "results": []
-      }
+        "dataset": "gtex_v8",
+        "tissue_count": 54,
+        "tissues": [
+          {
+            "tissue": "Adipose_Subcutaneous",
+            "median_tpm": 0.070863,
+            "ontology_id": "UBERON:0002190",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adipose_Visceral_Omentum",
+            "median_tpm": 0.267342,
+            "ontology_id": "UBERON:0010414",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adrenal_Gland",
+            "median_tpm": 0.13387000000000002,
+            "ontology_id": "UBERON:0002369",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Aorta",
+            "median_tpm": 0.196964,
+            "ontology_id": "UBERON:0001496",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Coronary",
+            "median_tpm": 0.08357869999999999,
+            "ontology_id": "UBERON:0001621",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Tibial",
+            "median_tpm": 0.101842,
+            "ontology_id": "UBERON:0007610",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Bladder",
+            "median_tpm": 0.149421,
+            "ontology_id": "UBERON:0001255",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Amygdala",
+            "median_tpm": 0.03456,
+            "ontology_id": "UBERON:0001876",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Anterior_cingulate_cortex_BA24",
+            "median_tpm": 0.0677279,
+            "ontology_id": "UBERON:0009835",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Caudate_basal_ganglia",
+            "median_tpm": 0.027266000000000002,
+            "ontology_id": "UBERON:0001873",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellar_Hemisphere",
+            "median_tpm": 23.4952,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellum",
+            "median_tpm": 22.1456,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cortex",
+            "median_tpm": 0.12987200000000002,
+            "ontology_id": "UBERON:0001870",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Frontal_Cortex_BA9",
+            "median_tpm": 0.11809000000000001,
+            "ontology_id": "UBERON:0009834",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hippocampus",
+            "median_tpm": 0.037313400000000004,
+            "ontology_id": "UBERON:0001954",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hypothalamus",
+            "median_tpm": 0.129429,
+            "ontology_id": "UBERON:0001898",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Nucleus_accumbens_basal_ganglia",
+            "median_tpm": 0.224843,
+            "ontology_id": "UBERON:0001882",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Putamen_basal_ganglia",
+            "median_tpm": 0.0213276,
+            "ontology_id": "UBERON:0001874",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Spinal_cord_cervical_c-1",
+            "median_tpm": 0.117227,
+            "ontology_id": "UBERON:0006469",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Substantia_nigra",
+            "median_tpm": 0.0550501,
+            "ontology_id": "UBERON:0002038",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Breast_Mammary_Tissue",
+            "median_tpm": 0.0964767,
+            "ontology_id": "UBERON:0008367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_Cultured_fibroblasts",
+            "median_tpm": 0.539459,
+            "ontology_id": "EFO:0002009",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_EBV-transformed_lymphocytes",
+            "median_tpm": 0.01256,
+            "ontology_id": "EFO:0000572",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Ectocervix",
+            "median_tpm": 0.151602,
+            "ontology_id": "UBERON:0012249",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Endocervix",
+            "median_tpm": 0.12753499999999998,
+            "ontology_id": "UBERON:0000458",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Sigmoid",
+            "median_tpm": 0.0695319,
+            "ontology_id": "UBERON:0001159",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Transverse",
+            "median_tpm": 1.62535,
+            "ontology_id": "UBERON:0001157",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Gastroesophageal_Junction",
+            "median_tpm": 0.124368,
+            "ontology_id": "UBERON:0004550",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Mucosa",
+            "median_tpm": 4.9358,
+            "ontology_id": "UBERON:0006920",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Muscularis",
+            "median_tpm": 0.155779,
+            "ontology_id": "UBERON:0004648",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Fallopian_Tube",
+            "median_tpm": 0.190678,
+            "ontology_id": "UBERON:0003889",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Atrial_Appendage",
+            "median_tpm": 0.0238418,
+            "ontology_id": "UBERON:0006631",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Left_Ventricle",
+            "median_tpm": 0.011451600000000001,
+            "ontology_id": "UBERON:0006566",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Cortex",
+            "median_tpm": 0.13067,
+            "ontology_id": "UBERON:0001225",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Medulla",
+            "median_tpm": 0.27828600000000003,
+            "ontology_id": "UBERON:0001293",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Liver",
+            "median_tpm": 25.5472,
+            "ontology_id": "UBERON:0001114",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Lung",
+            "median_tpm": 6.73579,
+            "ontology_id": "UBERON:0008952",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Minor_Salivary_Gland",
+            "median_tpm": 0.10387300000000001,
+            "ontology_id": "UBERON:0006330",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Muscle_Skeletal",
+            "median_tpm": 0.0113906,
+            "ontology_id": "UBERON:0011907",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Nerve_Tibial",
+            "median_tpm": 1.8183799999999999,
+            "ontology_id": "UBERON:0001323",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Ovary",
+            "median_tpm": 0.0733842,
+            "ontology_id": "UBERON:0000992",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pancreas",
+            "median_tpm": 2.67837,
+            "ontology_id": "UBERON:0001150",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pituitary",
+            "median_tpm": 0.0886118,
+            "ontology_id": "UBERON:0000007",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Prostate",
+            "median_tpm": 0.0963211,
+            "ontology_id": "UBERON:0002367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Not_Sun_Exposed_Suprapubic",
+            "median_tpm": 1.19056,
+            "ontology_id": "UBERON:0036149",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Sun_Exposed_Lower_leg",
+            "median_tpm": 1.4908299999999999,
+            "ontology_id": "UBERON:0004264",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Small_Intestine_Terminal_Ileum",
+            "median_tpm": 2.89367,
+            "ontology_id": "UBERON:0001211",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Spleen",
+            "median_tpm": 0.202812,
+            "ontology_id": "UBERON:0002106",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Stomach",
+            "median_tpm": 0.327288,
+            "ontology_id": "UBERON:0000945",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Testis",
+            "median_tpm": 1.10381,
+            "ontology_id": "UBERON:0000473",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Thyroid",
+            "median_tpm": 0.029624099999999997,
+            "ontology_id": "UBERON:0002046",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Uterus",
+            "median_tpm": 0.0674579,
+            "ontology_id": "UBERON:0000995",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Vagina",
+            "median_tpm": 1.2107299999999999,
+            "ontology_id": "UBERON:0000996",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Whole_Blood",
+            "median_tpm": 0.245957,
+            "ontology_id": "UBERON:0013756",
+            "unit": "TPM"
+          }
+        ],
+        "highest_expression_tissue": {
+          "tissue": "Liver",
+          "median_tpm": 25.5472,
+          "ontology_id": "UBERON:0001114",
+          "unit": "TPM"
+        }
+      },
+      "error": null
     },
     "hpa": {
       "status": "success",
       "source": "Human Protein Atlas",
       "data": {
-        "query": "PCSK9",
+        "gene": "PCSK9",
         "results": [
           {
             "Gene": "PCSK9",
-            "Gene synonym": [
-              "FH3",
-              "HCHOLA3",
-              "NARC-1"
-            ],
             "Ensembl": "ENSG00000169174",
-            "Gene description": "Proprotein convertase subtilisin/kexin type 9",
-            "Protein class": [
-              "Disease related genes",
-              "Enzymes",
-              "FDA approved drug targets",
-              "Human disease related genes",
-              "Plasma proteins",
-              "Predicted intracellular proteins",
-              "Predicted secreted proteins"
-            ],
-            "Biological process": [
-              "Apoptosis",
-              "Cholesterol metabolism",
-              "Lipid metabolism",
-              "Steroid metabolism",
-              "Sterol metabolism"
-            ],
-            "Molecular function": [
-              "Hydrolase",
-              "Protease",
-              "Serine protease"
-            ],
-            "Disease involvement": [
-              "Disease variant",
-              "FDA approved drug targets"
-            ],
-            "Evidence": "Evidence at protein level",
-            "HPA evidence": "Evidence at transcript level",
-            "UniProt evidence": "Evidence at protein level"
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": "83",
+            "Protein tissue specific Intensity": {
+              "kidney": "5642.2",
+              "lung": "10905.9"
+            }
           },
           {
             "Gene": "ANXA2",
-            "Gene synonym": [
-              "ANX2",
-              "ANX2L4",
-              "CAL1H",
-              "LIP2",
-              "LPC2D"
-            ],
             "Ensembl": "ENSG00000182718",
-            "Gene description": "Annexin A2",
-            "Protein class": [
-              "Cancer-related genes",
-              "Disease related genes",
-              "FDA approved drug targets",
-              "Plasma proteins",
-              "Predicted intracellular proteins",
-              "Predicted secreted proteins",
-              "Transporters"
-            ],
-            "Biological process": [
-              "Host-virus interaction"
-            ],
-            "Molecular function": [
-              "RNA-binding"
-            ],
-            "Disease involvement": [
-              "Cancer-related genes",
-              "FDA approved drug targets"
-            ],
-            "Evidence": "Evidence at protein level",
-            "HPA evidence": "Evidence at protein level",
-            "UniProt evidence": "Evidence at protein level"
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
           },
           {
             "Gene": "LDLR",
-            "Gene synonym": [
-              "LDLCQ2"
-            ],
             "Ensembl": "ENSG00000130164",
-            "Gene description": "Low density lipoprotein receptor",
-            "Protein class": [
-              "Disease related genes",
-              "Human disease related genes",
-              "Metabolic proteins",
-              "Plasma proteins",
-              "Predicted intracellular proteins",
-              "Predicted membrane proteins"
-            ],
-            "Biological process": [
-              "Cholesterol metabolism",
-              "Endocytosis",
-              "Host-virus interaction",
-              "Lipid metabolism",
-              "Lipid transport",
-              "Steroid metabolism",
-              "Sterol metabolism",
-              "Transport"
-            ],
-            "Molecular function": [
-              "Host cell receptor for virus entry",
-              "Receptor"
-            ],
-            "Disease involvement": [
-              "Disease variant"
-            ],
-            "Evidence": "Evidence at protein level",
-            "HPA evidence": "Evidence at protein level",
-            "UniProt evidence": "Evidence at protein level"
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "intestine": "2193197.9",
+              "lung": "1952312.4",
+              "ovary": "2187919.5"
+            }
           }
         ]
-      }
+      },
+      "error": null
     },
     "clinvar": {
       "status": "success",
@@ -184,1113 +446,430 @@
           "4861691"
         ],
         "count": 5
-      }
+      },
+      "error": null
     },
     "chembl": {
       "status": "success",
       "source": "ChEMBL",
       "data": {
         "query": "evolocumab",
-        "results": {
-          "molecules": [
-            {
-              "atc_classifications": [
-                "C10AX13"
-              ],
-              "availability_type": 1,
-              "biotherapeutic": {
-                "biocomponents": [
-                  {
-                    "component_id": 29666,
-                    "component_type": "Protein",
-                    "description": "Heavy chain",
-                    "organism": null,
-                    "sequence": "EVQLVQSGAEVKKPGASVKVSCKASGYTLTSYGISWVRQAPGQGLEWMGWVSFYNGNTNYAQKLQGRGTMTTDPSTSTAYMELRSLRSDDTAVYYCARGYGMDVWGQGTTVTVSSASTKGPSVFPLAPCSRSTSESTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSNFGTQTYTCNVDHKPSNTKVDKTVERKCCVECPPCPAPPVAGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVQFNWYVDGVEVHNAKTKPREEQFNSTFRVVSVLTVVHQDWLNGKEYKCKVSNKGLPAPIEKTISKTKGQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPMLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
-                    "tax_id": null
-                  },
-                  {
-                    "component_id": 29730,
-                    "component_type": "Protein",
-                    "description": "Light chain",
-                    "organism": null,
-                    "sequence": "ESALTQPASVSGSPGQSITISCTGTSSDVGGYNSVSWYQQHPGKAPKLMIYEVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCNSYTSTSMVFGGGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPTECS",
-                    "tax_id": null
-                  }
-                ],
-                "description": "Evolocumab (human mab)",
-                "helm_notation": null,
-                "molecule_chembl_id": "CHEMBL2364655"
-              },
-              "black_box_warning": 0,
-              "chemical_probe": 0,
-              "chirality": 1,
-              "cross_references": [
+        "count": 1,
+        "results": [
+          {
+            "atc_classifications": [
+              "C10AX13"
+            ],
+            "availability_type": 1,
+            "biotherapeutic": {
+              "biocomponents": [
                 {
-                  "xref_id": "evolocumab",
-                  "xref_name": "evolocumab",
-                  "xref_src": "DailyMed"
+                  "component_id": 29666,
+                  "component_type": "Protein",
+                  "description": "Heavy chain",
+                  "organism": null,
+                  "sequence": "EVQLVQSGAEVKKPGASVKVSCKASGYTLTSYGISWVRQAPGQGLEWMGWVSFYNGNTNYAQKLQGRGTMTTDPSTSTAYMELRSLRSDDTAVYYCARGYGMDVWGQGTTVTVSSASTKGPSVFPLAPCSRSTSESTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSNFGTQTYTCNVDHKPSNTKVDKTVERKCCVECPPCPAPPVAGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVQFNWYVDGVEVHNAKTKPREEQFNSTFRVVSVLTVVHQDWLNGKEYKCKVSNKGLPAPIEKTISKTKGQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPMLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+                  "tax_id": null
                 },
                 {
-                  "xref_id": "human/EPAR/repatha",
-                  "xref_name": "repatha",
-                  "xref_src": "EMA"
+                  "component_id": 29730,
+                  "component_type": "Protein",
+                  "description": "Light chain",
+                  "organism": null,
+                  "sequence": "ESALTQPASVSGSPGQSITISCTGTSSDVGGYNSVSWYQQHPGKAPKLMIYEVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCNSYTSTSMVFGGGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPTECS",
+                  "tax_id": null
                 }
               ],
-              "dosed_ingredient": true,
-              "first_approval": 2015,
-              "first_in_class": 0,
+              "description": "Evolocumab (human mab)",
               "helm_notation": null,
-              "inorganic_flag": 0,
-              "max_phase": "4.0",
-              "molecule_chembl_id": "CHEMBL2364655",
-              "molecule_hierarchy": {
-                "active_chembl_id": "CHEMBL2364655",
-                "molecule_chembl_id": "CHEMBL2364655",
-                "parent_chembl_id": "CHEMBL2364655"
+              "molecule_chembl_id": "CHEMBL2364655"
+            },
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": 1,
+            "cross_references": [
+              {
+                "xref_id": "evolocumab",
+                "xref_name": "evolocumab",
+                "xref_src": "DailyMed"
               },
-              "molecule_properties": null,
-              "molecule_structures": null,
-              "molecule_synonyms": [
-                {
-                  "molecule_synonym": "AMG-145",
-                  "syn_type": "RESEARCH_CODE",
-                  "synonyms": "AMG-145"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "ATC",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "BNF",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "EMA",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "FDA",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "INN",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "MERCK_INDEX",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "OTHER",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Evolocumab",
-                  "syn_type": "USAN",
-                  "synonyms": "EVOLOCUMAB"
-                },
-                {
-                  "molecule_synonym": "Repatha",
-                  "syn_type": "TRADE_NAME",
-                  "synonyms": "REPATHA"
-                },
-                {
-                  "molecule_synonym": "Repatha sureclick",
-                  "syn_type": "TRADE_NAME",
-                  "synonyms": "REPATHA SURECLICK"
-                }
-              ],
-              "molecule_type": "Antibody",
-              "natural_product": 0,
-              "oral": false,
-              "orphan": 0,
-              "parenteral": true,
-              "polymer_flag": 0,
-              "pref_name": "EVOLOCUMAB",
-              "prodrug": 0,
-              "score": 41.0,
-              "structure_type": "SEQ",
-              "therapeutic_flag": true,
-              "topical": false,
-              "usan_stem": "-mab",
-              "usan_stem_definition": "monoclonal antibodies: fully human",
-              "usan_substem": "-mab (-umab)",
-              "usan_year": 2013,
-              "veterinary": 0,
-              "withdrawn_flag": false
-            }
-          ],
-          "page_meta": {
-            "limit": 20,
-            "next": null,
-            "offset": 0,
-            "previous": null,
-            "total_count": 1
+              {
+                "xref_id": "human/EPAR/repatha",
+                "xref_name": "repatha",
+                "xref_src": "EMA"
+              }
+            ],
+            "dosed_ingredient": true,
+            "first_approval": 2015,
+            "first_in_class": 0,
+            "helm_notation": null,
+            "inorganic_flag": 0,
+            "max_phase": "4.0",
+            "molecule_chembl_id": "CHEMBL2364655",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL2364655",
+              "molecule_chembl_id": "CHEMBL2364655",
+              "parent_chembl_id": "CHEMBL2364655"
+            },
+            "molecule_properties": null,
+            "molecule_structures": null,
+            "molecule_synonyms": [
+              {
+                "molecule_synonym": "AMG-145",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "AMG-145"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "ATC",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "BNF",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "EMA",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "FDA",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "INN",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "MERCK_INDEX",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "OTHER",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "USAN",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Repatha",
+                "syn_type": "TRADE_NAME",
+                "synonyms": "REPATHA"
+              },
+              {
+                "molecule_synonym": "Repatha sureclick",
+                "syn_type": "TRADE_NAME",
+                "synonyms": "REPATHA SURECLICK"
+              }
+            ],
+            "molecule_type": "Antibody",
+            "natural_product": 0,
+            "oral": false,
+            "orphan": 0,
+            "parenteral": true,
+            "polymer_flag": 0,
+            "pref_name": "EVOLOCUMAB",
+            "prodrug": 0,
+            "score": 41.0,
+            "structure_type": "SEQ",
+            "therapeutic_flag": true,
+            "topical": false,
+            "usan_stem": "-mab",
+            "usan_stem_definition": "monoclonal antibodies: fully human",
+            "usan_substem": "-mab (-umab)",
+            "usan_year": 2013,
+            "veterinary": 0,
+            "withdrawn_flag": false
           }
-        }
-      }
+        ]
+      },
+      "error": null
     },
     "faers": {
       "status": "success",
-      "source": "openFDA",
+      "source": "openFDA FAERS",
       "data": {
         "drug": "evolocumab",
-        "num_reports": 3,
-        "raw_results": [
+        "events": [
           {
-            "safetyreportversion": "2",
-            "safetyreportid": "10220336",
-            "primarysourcecountry": "ZA",
-            "occurcountry": "US",
-            "transmissiondateformat": "102",
-            "transmissiondate": "20141212",
-            "reporttype": "2",
-            "serious": "1",
-            "seriousnessother": "1",
-            "receivedateformat": "102",
-            "receivedate": "20140606",
-            "receiptdateformat": "102",
-            "receiptdate": "20140619",
-            "fulfillexpeditecriteria": "1",
-            "companynumb": "ZA-009507513-1406USA002857",
-            "duplicate": "1",
-            "reportduplicate": {
-              "duplicatesource": "MERCK",
-              "duplicatenumb": "ZA-009507513-1406USA002857"
-            },
-            "primarysource": {
-              "reportercountry": "US",
-              "qualification": "1"
-            },
-            "sender": {
-              "sendertype": "2",
-              "senderorganization": "FDA-Public Use"
-            },
-            "receiver": {
-              "receivertype": "6",
-              "receiverorganization": "FDA"
-            },
-            "patient": {
-              "patientsex": "0",
-              "reaction": [
-                {
-                  "reactionmeddraversionpt": "17.0",
-                  "reactionmeddrapt": "Angina pectoris",
-                  "reactionoutcome": "6"
-                }
-              ],
-              "drug": [
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "EZETIMIBE",
-                  "drugauthorizationnumb": "021445",
-                  "drugstructuredosagenumb": "10",
-                  "drugstructuredosageunit": "003",
-                  "drugseparatedosagenumb": "1",
-                  "drugintervaldosageunitnumb": "1",
-                  "drugintervaldosagedefinition": "804",
-                  "drugdosagetext": "10 MG, QD",
-                  "drugdosageform": "TABLET",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5",
-                  "openfda": {
-                    "application_number": [
-                      "ANDA078560",
-                      "ANDA215693",
-                      "ANDA210859",
-                      "ANDA207311",
-                      "NDA021445",
-                      "ANDA204331",
-                      "ANDA210673",
-                      "ANDA211159",
-                      "ANDA211550",
-                      "ANDA209838",
-                      "ANDA203931",
-                      "ANDA209234",
-                      "ANDA208803"
-                    ],
-                    "brand_name": [
-                      "EZETIMIBE",
-                      "ZETIA"
-                    ],
-                    "generic_name": [
-                      "EZETIMIBE"
-                    ],
-                    "manufacturer_name": [
-                      "Glenmark Pharmaceuticals Inc., USA",
-                      "Marlex Pharmaceuticals, Inc.",
-                      "Camber Pharmaceuticals, Inc.",
-                      "Orient Pharma Co., Ltd.",
-                      "Ohm Laboratories Inc.",
-                      "Organon LLC",
-                      "Quallent Pharmaceuticals Health LLC",
-                      "ScieGen Pharmaceuticals Inc",
-                      "Zydus Pharmaceuticals USA Inc.",
-                      "Macleods Pharmaceuticals Limited",
-                      "Accord Healthcare Inc.",
-                      "Aurobindo Pharma Limited",
-                      "Sandoz Inc",
-                      "Zydus Lifesciences Limited",
-                      "Ascend Laboratories, LLC",
-                      "NorthStar Rx LLC",
-                      "Amneal Pharmaceuticals NY LLC"
-                    ],
-                    "product_ndc": [
-                      "68462-226",
-                      "10135-787",
-                      "31722-628",
-                      "76333-170",
-                      "51660-200",
-                      "78206-178",
-                      "82009-024",
-                      "50228-379",
-                      "68382-773",
-                      "33342-373",
-                      "16729-433",
-                      "59651-052",
-                      "0781-5690",
-                      "70771-1109",
-                      "67877-490",
-                      "16714-813",
-                      "69238-1154"
-                    ],
-                    "product_type": [
-                      "HUMAN PRESCRIPTION DRUG"
-                    ],
-                    "route": [
-                      "ORAL"
-                    ],
-                    "substance_name": [
-                      "EZETIMIBE"
-                    ],
-                    "rxcui": [
-                      "349556",
-                      "352304"
-                    ],
-                    "spl_id": [
-                      "5009c162-91bb-425a-a688-6237c259d33e",
-                      "43046023-125e-85f6-e063-6294a90ab8c7",
-                      "1d93c66e-c5ea-de6f-e063-6294a90acfb8",
-                      "161b88d8-6679-e793-e063-6394a90a481b",
-                      "12e7e79e-85d0-0c5d-e063-6394a90a8b78",
-                      "8e5eed2a-7b64-4350-9b87-500f1b04225d",
-                      "98acb755-ad5c-414a-b9e9-6cd30c10a2e7",
-                      "1ab4be5f-4926-88ad-e063-6294a90a0c81",
-                      "ebb60f24-14be-4be0-b5e2-31e695eae876",
-                      "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
-                      "411f7e5b-cb87-22d4-e063-6394a90a518c",
-                      "60081062-9f4b-4cf5-9c24-02b5a0b7f792",
-                      "c5e4a665-e54b-4452-bbc7-0a75b633ea94",
-                      "5862da1c-e73d-44ff-a961-aaef469ed646",
-                      "878751ea-5bea-42ef-8f56-2b15a683c7ae",
-                      "ce024e9f-19a7-4819-8069-60121c4cf6c4",
-                      "edb9906a-4007-40ff-a3dc-3083e50545ae"
-                    ],
-                    "spl_set_id": [
-                      "ac539a72-77e4-419c-b1d9-42002e9cecf7",
-                      "109a22f4-a7cb-96c6-e063-6394a90ad7f6",
-                      "c07fe2e0-dad4-48b5-8a07-7d57a4035ccd",
-                      "b6e77d9b-a553-63e0-e053-2a95a90a18fe",
-                      "5b3842f6-c80a-47b8-8a82-b69e465b05f7",
-                      "174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
-                      "68247ce8-e812-42f2-a3ba-0f6e49acca63",
-                      "11de499b-ad8a-46a6-9021-c8eba72ae414",
-                      "f852b12f-e25f-415b-b1e2-58955d609507",
-                      "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
-                      "ceecdbe9-5404-4a93-a488-9211cd103058",
-                      "726b1e63-437a-4b3b-b773-3ac47a5c0f38",
-                      "ebcb6655-fd60-4099-8099-be911c5b32ae",
-                      "de814dcd-4759-4e9c-a650-335fb885a79d",
-                      "206d702c-b09a-4555-972b-6555d6d6d6e6",
-                      "5f5644a9-e019-4e5d-ab6f-3d30b1024c5a",
-                      "3fadf4e9-017d-4ccd-91dc-a89b981eb138"
-                    ],
-                    "package_ndc": [
-                      "68462-226-30",
-                      "68462-226-90",
-                      "68462-226-05",
-                      "68462-226-10",
-                      "68462-226-11",
-                      "10135-787-30",
-                      "10135-787-90",
-                      "10135-787-05",
-                      "31722-628-30",
-                      "31722-628-90",
-                      "31722-628-01",
-                      "31722-628-31",
-                      "31722-628-34",
-                      "31722-628-10",
-                      "31722-628-05",
-                      "76333-170-15",
-                      "76333-170-14",
-                      "76333-170-12",
-                      "76333-170-13",
-                      "51660-200-30",
-                      "51660-200-90",
-                      "51660-200-05",
-                      "78206-178-01",
-                      "82009-024-05",
-                      "50228-379-30",
-                      "50228-379-90",
-                      "50228-379-05",
-                      "50228-379-10",
-                      "68382-773-06",
-                      "68382-773-16",
-                      "68382-773-01",
-                      "68382-773-05",
-                      "68382-773-10",
-                      "68382-773-30",
-                      "68382-773-77",
-                      "33342-373-07",
-                      "33342-373-10",
-                      "33342-373-15",
-                      "16729-433-10",
-                      "16729-433-15",
-                      "16729-433-01",
-                      "16729-433-16",
-                      "16729-433-17",
-                      "59651-052-30",
-                      "59651-052-90",
-                      "59651-052-05",
-                      "0781-5690-31",
-                      "0781-5690-92",
-                      "0781-5690-05",
-                      "70771-1109-3",
-                      "70771-1109-9",
-                      "70771-1109-1",
-                      "70771-1109-5",
-                      "70771-1109-0",
-                      "70771-1109-2",
-                      "70771-1109-4",
-                      "67877-490-30",
-                      "67877-490-90",
-                      "67877-490-05",
-                      "67877-490-55",
-                      "67877-490-01",
-                      "16714-813-01",
-                      "16714-813-02",
-                      "16714-813-03",
-                      "69238-1154-3",
-                      "69238-1154-9",
-                      "69238-1154-5",
-                      "69238-1154-1"
-                    ],
-                    "nui": [
-                      "N0000008553",
-                      "N0000175911"
-                    ],
-                    "pharm_class_pe": [
-                      "Decreased Cholesterol Absorption [PE]"
-                    ],
-                    "pharm_class_epc": [
-                      "Dietary Cholesterol Absorption Inhibitor [EPC]"
-                    ],
-                    "unii": [
-                      "EOR26LQQ24"
-                    ]
-                  }
-                },
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "ATORVASTATIN",
-                  "drugstructuredosagenumb": "80",
-                  "drugstructuredosageunit": "003",
-                  "drugdosagetext": "80 MG, UNK",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5"
-                },
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "EVOLOCUMAB",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5"
-                }
-              ]
-            }
+            "term": "DYSPNOEA",
+            "count": 120
           },
           {
-            "safetyreportversion": "2",
-            "safetyreportid": "10220346",
-            "primarysourcecountry": "ZA",
-            "occurcountry": "US",
-            "transmissiondateformat": "102",
-            "transmissiondate": "20141212",
-            "reporttype": "2",
-            "serious": "1",
-            "seriousnessother": "1",
-            "receivedateformat": "102",
-            "receivedate": "20140606",
-            "receiptdateformat": "102",
-            "receiptdate": "20140619",
-            "fulfillexpeditecriteria": "1",
-            "companynumb": "ZA-009507513-1406USA002861",
-            "duplicate": "1",
-            "reportduplicate": {
-              "duplicatesource": "MERCK",
-              "duplicatenumb": "ZA-009507513-1406USA002861"
-            },
-            "primarysource": {
-              "reportercountry": "US",
-              "qualification": "1"
-            },
-            "sender": {
-              "sendertype": "2",
-              "senderorganization": "FDA-Public Use"
-            },
-            "receiver": {
-              "receivertype": "6",
-              "receiverorganization": "FDA"
-            },
-            "patient": {
-              "patientsex": "0",
-              "reaction": [
-                {
-                  "reactionmeddraversionpt": "17.0",
-                  "reactionmeddrapt": "Ventricular extrasystoles",
-                  "reactionoutcome": "6"
-                }
-              ],
-              "drug": [
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "EZETIMIBE",
-                  "drugauthorizationnumb": "021445",
-                  "drugstructuredosagenumb": "10",
-                  "drugstructuredosageunit": "003",
-                  "drugseparatedosagenumb": "1",
-                  "drugintervaldosageunitnumb": "1",
-                  "drugintervaldosagedefinition": "804",
-                  "drugdosagetext": "10 MG, QD",
-                  "drugdosageform": "TABLET",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5",
-                  "openfda": {
-                    "application_number": [
-                      "ANDA078560",
-                      "ANDA215693",
-                      "ANDA210859",
-                      "ANDA207311",
-                      "NDA021445",
-                      "ANDA204331",
-                      "ANDA210673",
-                      "ANDA211159",
-                      "ANDA211550",
-                      "ANDA209838",
-                      "ANDA203931",
-                      "ANDA209234",
-                      "ANDA208803"
-                    ],
-                    "brand_name": [
-                      "EZETIMIBE",
-                      "ZETIA"
-                    ],
-                    "generic_name": [
-                      "EZETIMIBE"
-                    ],
-                    "manufacturer_name": [
-                      "Glenmark Pharmaceuticals Inc., USA",
-                      "Marlex Pharmaceuticals, Inc.",
-                      "Camber Pharmaceuticals, Inc.",
-                      "Orient Pharma Co., Ltd.",
-                      "Ohm Laboratories Inc.",
-                      "Organon LLC",
-                      "Quallent Pharmaceuticals Health LLC",
-                      "ScieGen Pharmaceuticals Inc",
-                      "Zydus Pharmaceuticals USA Inc.",
-                      "Macleods Pharmaceuticals Limited",
-                      "Accord Healthcare Inc.",
-                      "Aurobindo Pharma Limited",
-                      "Sandoz Inc",
-                      "Zydus Lifesciences Limited",
-                      "Ascend Laboratories, LLC",
-                      "NorthStar Rx LLC",
-                      "Amneal Pharmaceuticals NY LLC"
-                    ],
-                    "product_ndc": [
-                      "68462-226",
-                      "10135-787",
-                      "31722-628",
-                      "76333-170",
-                      "51660-200",
-                      "78206-178",
-                      "82009-024",
-                      "50228-379",
-                      "68382-773",
-                      "33342-373",
-                      "16729-433",
-                      "59651-052",
-                      "0781-5690",
-                      "70771-1109",
-                      "67877-490",
-                      "16714-813",
-                      "69238-1154"
-                    ],
-                    "product_type": [
-                      "HUMAN PRESCRIPTION DRUG"
-                    ],
-                    "route": [
-                      "ORAL"
-                    ],
-                    "substance_name": [
-                      "EZETIMIBE"
-                    ],
-                    "rxcui": [
-                      "349556",
-                      "352304"
-                    ],
-                    "spl_id": [
-                      "5009c162-91bb-425a-a688-6237c259d33e",
-                      "43046023-125e-85f6-e063-6294a90ab8c7",
-                      "1d93c66e-c5ea-de6f-e063-6294a90acfb8",
-                      "161b88d8-6679-e793-e063-6394a90a481b",
-                      "12e7e79e-85d0-0c5d-e063-6394a90a8b78",
-                      "8e5eed2a-7b64-4350-9b87-500f1b04225d",
-                      "98acb755-ad5c-414a-b9e9-6cd30c10a2e7",
-                      "1ab4be5f-4926-88ad-e063-6294a90a0c81",
-                      "ebb60f24-14be-4be0-b5e2-31e695eae876",
-                      "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
-                      "411f7e5b-cb87-22d4-e063-6394a90a518c",
-                      "60081062-9f4b-4cf5-9c24-02b5a0b7f792",
-                      "c5e4a665-e54b-4452-bbc7-0a75b633ea94",
-                      "5862da1c-e73d-44ff-a961-aaef469ed646",
-                      "878751ea-5bea-42ef-8f56-2b15a683c7ae",
-                      "ce024e9f-19a7-4819-8069-60121c4cf6c4",
-                      "edb9906a-4007-40ff-a3dc-3083e50545ae"
-                    ],
-                    "spl_set_id": [
-                      "ac539a72-77e4-419c-b1d9-42002e9cecf7",
-                      "109a22f4-a7cb-96c6-e063-6394a90ad7f6",
-                      "c07fe2e0-dad4-48b5-8a07-7d57a4035ccd",
-                      "b6e77d9b-a553-63e0-e053-2a95a90a18fe",
-                      "5b3842f6-c80a-47b8-8a82-b69e465b05f7",
-                      "174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
-                      "68247ce8-e812-42f2-a3ba-0f6e49acca63",
-                      "11de499b-ad8a-46a6-9021-c8eba72ae414",
-                      "f852b12f-e25f-415b-b1e2-58955d609507",
-                      "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
-                      "ceecdbe9-5404-4a93-a488-9211cd103058",
-                      "726b1e63-437a-4b3b-b773-3ac47a5c0f38",
-                      "ebcb6655-fd60-4099-8099-be911c5b32ae",
-                      "de814dcd-4759-4e9c-a650-335fb885a79d",
-                      "206d702c-b09a-4555-972b-6555d6d6d6e6",
-                      "5f5644a9-e019-4e5d-ab6f-3d30b1024c5a",
-                      "3fadf4e9-017d-4ccd-91dc-a89b981eb138"
-                    ],
-                    "package_ndc": [
-                      "68462-226-30",
-                      "68462-226-90",
-                      "68462-226-05",
-                      "68462-226-10",
-                      "68462-226-11",
-                      "10135-787-30",
-                      "10135-787-90",
-                      "10135-787-05",
-                      "31722-628-30",
-                      "31722-628-90",
-                      "31722-628-01",
-                      "31722-628-31",
-                      "31722-628-34",
-                      "31722-628-10",
-                      "31722-628-05",
-                      "76333-170-15",
-                      "76333-170-14",
-                      "76333-170-12",
-                      "76333-170-13",
-                      "51660-200-30",
-                      "51660-200-90",
-                      "51660-200-05",
-                      "78206-178-01",
-                      "82009-024-05",
-                      "50228-379-30",
-                      "50228-379-90",
-                      "50228-379-05",
-                      "50228-379-10",
-                      "68382-773-06",
-                      "68382-773-16",
-                      "68382-773-01",
-                      "68382-773-05",
-                      "68382-773-10",
-                      "68382-773-30",
-                      "68382-773-77",
-                      "33342-373-07",
-                      "33342-373-10",
-                      "33342-373-15",
-                      "16729-433-10",
-                      "16729-433-15",
-                      "16729-433-01",
-                      "16729-433-16",
-                      "16729-433-17",
-                      "59651-052-30",
-                      "59651-052-90",
-                      "59651-052-05",
-                      "0781-5690-31",
-                      "0781-5690-92",
-                      "0781-5690-05",
-                      "70771-1109-3",
-                      "70771-1109-9",
-                      "70771-1109-1",
-                      "70771-1109-5",
-                      "70771-1109-0",
-                      "70771-1109-2",
-                      "70771-1109-4",
-                      "67877-490-30",
-                      "67877-490-90",
-                      "67877-490-05",
-                      "67877-490-55",
-                      "67877-490-01",
-                      "16714-813-01",
-                      "16714-813-02",
-                      "16714-813-03",
-                      "69238-1154-3",
-                      "69238-1154-9",
-                      "69238-1154-5",
-                      "69238-1154-1"
-                    ],
-                    "nui": [
-                      "N0000008553",
-                      "N0000175911"
-                    ],
-                    "pharm_class_pe": [
-                      "Decreased Cholesterol Absorption [PE]"
-                    ],
-                    "pharm_class_epc": [
-                      "Dietary Cholesterol Absorption Inhibitor [EPC]"
-                    ],
-                    "unii": [
-                      "EOR26LQQ24"
-                    ]
-                  }
-                },
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "ATORVASTATIN",
-                  "drugstructuredosagenumb": "80",
-                  "drugstructuredosageunit": "003",
-                  "drugdosagetext": "80 MG, UNK",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5"
-                },
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "EVOLOCUMAB",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5"
-                }
-              ]
-            }
+            "term": "ATRIAL FIBRILLATION",
+            "count": 101
           },
           {
-            "safetyreportversion": "2",
-            "safetyreportid": "10220661",
-            "primarysourcecountry": "ZA",
-            "occurcountry": "US",
-            "transmissiondateformat": "102",
-            "transmissiondate": "20141212",
-            "reporttype": "2",
-            "serious": "1",
-            "seriousnessother": "1",
-            "receivedateformat": "102",
-            "receivedate": "20140606",
-            "receiptdateformat": "102",
-            "receiptdate": "20140619",
-            "fulfillexpeditecriteria": "1",
-            "companynumb": "ZA-009507513-1406USA002869",
-            "duplicate": "1",
-            "reportduplicate": {
-              "duplicatesource": "MERCK",
-              "duplicatenumb": "ZA-009507513-1406USA002869"
-            },
-            "primarysource": {
-              "reportercountry": "US",
-              "qualification": "1"
-            },
-            "sender": {
-              "sendertype": "2",
-              "senderorganization": "FDA-Public Use"
-            },
-            "receiver": {
-              "receivertype": "6",
-              "receiverorganization": "FDA"
-            },
-            "patient": {
-              "patientsex": "0",
-              "reaction": [
-                {
-                  "reactionmeddraversionpt": "17.0",
-                  "reactionmeddrapt": "Back pain",
-                  "reactionoutcome": "6"
-                }
-              ],
-              "drug": [
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "EZETIMIBE",
-                  "drugauthorizationnumb": "021445",
-                  "drugstructuredosagenumb": "10",
-                  "drugstructuredosageunit": "003",
-                  "drugseparatedosagenumb": "1",
-                  "drugintervaldosageunitnumb": "1",
-                  "drugintervaldosagedefinition": "804",
-                  "drugdosagetext": "10 MG, QD",
-                  "drugdosageform": "TABLET",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5",
-                  "openfda": {
-                    "application_number": [
-                      "ANDA078560",
-                      "ANDA215693",
-                      "ANDA210859",
-                      "ANDA207311",
-                      "NDA021445",
-                      "ANDA204331",
-                      "ANDA210673",
-                      "ANDA211159",
-                      "ANDA211550",
-                      "ANDA209838",
-                      "ANDA203931",
-                      "ANDA209234",
-                      "ANDA208803"
-                    ],
-                    "brand_name": [
-                      "EZETIMIBE",
-                      "ZETIA"
-                    ],
-                    "generic_name": [
-                      "EZETIMIBE"
-                    ],
-                    "manufacturer_name": [
-                      "Glenmark Pharmaceuticals Inc., USA",
-                      "Marlex Pharmaceuticals, Inc.",
-                      "Camber Pharmaceuticals, Inc.",
-                      "Orient Pharma Co., Ltd.",
-                      "Ohm Laboratories Inc.",
-                      "Organon LLC",
-                      "Quallent Pharmaceuticals Health LLC",
-                      "ScieGen Pharmaceuticals Inc",
-                      "Zydus Pharmaceuticals USA Inc.",
-                      "Macleods Pharmaceuticals Limited",
-                      "Accord Healthcare Inc.",
-                      "Aurobindo Pharma Limited",
-                      "Sandoz Inc",
-                      "Zydus Lifesciences Limited",
-                      "Ascend Laboratories, LLC",
-                      "NorthStar Rx LLC",
-                      "Amneal Pharmaceuticals NY LLC"
-                    ],
-                    "product_ndc": [
-                      "68462-226",
-                      "10135-787",
-                      "31722-628",
-                      "76333-170",
-                      "51660-200",
-                      "78206-178",
-                      "82009-024",
-                      "50228-379",
-                      "68382-773",
-                      "33342-373",
-                      "16729-433",
-                      "59651-052",
-                      "0781-5690",
-                      "70771-1109",
-                      "67877-490",
-                      "16714-813",
-                      "69238-1154"
-                    ],
-                    "product_type": [
-                      "HUMAN PRESCRIPTION DRUG"
-                    ],
-                    "route": [
-                      "ORAL"
-                    ],
-                    "substance_name": [
-                      "EZETIMIBE"
-                    ],
-                    "rxcui": [
-                      "349556",
-                      "352304"
-                    ],
-                    "spl_id": [
-                      "5009c162-91bb-425a-a688-6237c259d33e",
-                      "43046023-125e-85f6-e063-6294a90ab8c7",
-                      "1d93c66e-c5ea-de6f-e063-6294a90acfb8",
-                      "161b88d8-6679-e793-e063-6394a90a481b",
-                      "12e7e79e-85d0-0c5d-e063-6394a90a8b78",
-                      "8e5eed2a-7b64-4350-9b87-500f1b04225d",
-                      "98acb755-ad5c-414a-b9e9-6cd30c10a2e7",
-                      "1ab4be5f-4926-88ad-e063-6294a90a0c81",
-                      "ebb60f24-14be-4be0-b5e2-31e695eae876",
-                      "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
-                      "411f7e5b-cb87-22d4-e063-6394a90a518c",
-                      "60081062-9f4b-4cf5-9c24-02b5a0b7f792",
-                      "c5e4a665-e54b-4452-bbc7-0a75b633ea94",
-                      "5862da1c-e73d-44ff-a961-aaef469ed646",
-                      "878751ea-5bea-42ef-8f56-2b15a683c7ae",
-                      "ce024e9f-19a7-4819-8069-60121c4cf6c4",
-                      "edb9906a-4007-40ff-a3dc-3083e50545ae"
-                    ],
-                    "spl_set_id": [
-                      "ac539a72-77e4-419c-b1d9-42002e9cecf7",
-                      "109a22f4-a7cb-96c6-e063-6394a90ad7f6",
-                      "c07fe2e0-dad4-48b5-8a07-7d57a4035ccd",
-                      "b6e77d9b-a553-63e0-e053-2a95a90a18fe",
-                      "5b3842f6-c80a-47b8-8a82-b69e465b05f7",
-                      "174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
-                      "68247ce8-e812-42f2-a3ba-0f6e49acca63",
-                      "11de499b-ad8a-46a6-9021-c8eba72ae414",
-                      "f852b12f-e25f-415b-b1e2-58955d609507",
-                      "ebe3fa4e-82c4-4a9a-9aec-f64019391f4e",
-                      "ceecdbe9-5404-4a93-a488-9211cd103058",
-                      "726b1e63-437a-4b3b-b773-3ac47a5c0f38",
-                      "ebcb6655-fd60-4099-8099-be911c5b32ae",
-                      "de814dcd-4759-4e9c-a650-335fb885a79d",
-                      "206d702c-b09a-4555-972b-6555d6d6d6e6",
-                      "5f5644a9-e019-4e5d-ab6f-3d30b1024c5a",
-                      "3fadf4e9-017d-4ccd-91dc-a89b981eb138"
-                    ],
-                    "package_ndc": [
-                      "68462-226-30",
-                      "68462-226-90",
-                      "68462-226-05",
-                      "68462-226-10",
-                      "68462-226-11",
-                      "10135-787-30",
-                      "10135-787-90",
-                      "10135-787-05",
-                      "31722-628-30",
-                      "31722-628-90",
-                      "31722-628-01",
-                      "31722-628-31",
-                      "31722-628-34",
-                      "31722-628-10",
-                      "31722-628-05",
-                      "76333-170-15",
-                      "76333-170-14",
-                      "76333-170-12",
-                      "76333-170-13",
-                      "51660-200-30",
-                      "51660-200-90",
-                      "51660-200-05",
-                      "78206-178-01",
-                      "82009-024-05",
-                      "50228-379-30",
-                      "50228-379-90",
-                      "50228-379-05",
-                      "50228-379-10",
-                      "68382-773-06",
-                      "68382-773-16",
-                      "68382-773-01",
-                      "68382-773-05",
-                      "68382-773-10",
-                      "68382-773-30",
-                      "68382-773-77",
-                      "33342-373-07",
-                      "33342-373-10",
-                      "33342-373-15",
-                      "16729-433-10",
-                      "16729-433-15",
-                      "16729-433-01",
-                      "16729-433-16",
-                      "16729-433-17",
-                      "59651-052-30",
-                      "59651-052-90",
-                      "59651-052-05",
-                      "0781-5690-31",
-                      "0781-5690-92",
-                      "0781-5690-05",
-                      "70771-1109-3",
-                      "70771-1109-9",
-                      "70771-1109-1",
-                      "70771-1109-5",
-                      "70771-1109-0",
-                      "70771-1109-2",
-                      "70771-1109-4",
-                      "67877-490-30",
-                      "67877-490-90",
-                      "67877-490-05",
-                      "67877-490-55",
-                      "67877-490-01",
-                      "16714-813-01",
-                      "16714-813-02",
-                      "16714-813-03",
-                      "69238-1154-3",
-                      "69238-1154-9",
-                      "69238-1154-5",
-                      "69238-1154-1"
-                    ],
-                    "nui": [
-                      "N0000008553",
-                      "N0000175911"
-                    ],
-                    "pharm_class_pe": [
-                      "Decreased Cholesterol Absorption [PE]"
-                    ],
-                    "pharm_class_epc": [
-                      "Dietary Cholesterol Absorption Inhibitor [EPC]"
-                    ],
-                    "unii": [
-                      "EOR26LQQ24"
-                    ]
-                  }
-                },
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "ATORVASTATIN",
-                  "drugstructuredosagenumb": "80",
-                  "drugstructuredosageunit": "003",
-                  "drugdosagetext": "80 MG, UNK",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5"
-                },
-                {
-                  "drugcharacterization": "1",
-                  "medicinalproduct": "EVOLOCUMAB",
-                  "drugadministrationroute": "048",
-                  "drugindication": "HYPERLIPIDAEMIA",
-                  "actiondrug": "5"
-                }
-              ]
-            }
+            "term": "CORONARY ARTERY DISEASE",
+            "count": 100
+          },
+          {
+            "term": "DRUG INEFFECTIVE",
+            "count": 99
+          },
+          {
+            "term": "MUSCLE SPASMS",
+            "count": 96
+          },
+          {
+            "term": "COUGH",
+            "count": 93
+          },
+          {
+            "term": "NASOPHARYNGITIS",
+            "count": 89
+          },
+          {
+            "term": "CARDIAC DISORDER",
+            "count": 86
+          },
+          {
+            "term": "DYSPHONIA",
+            "count": 85
+          },
+          {
+            "term": "CHEST DISCOMFORT",
+            "count": 83
           }
-        ]
-      }
+        ],
+        "count": 10
+      },
+      "error": null
     },
     "ontology": {
       "status": "success",
-      "source": "OLS/MONDO",
+      "source": "OLS",
       "data": {
         "query": "hypercholesterolemia",
-        "canonical_id": "HP:0003124",
-        "canonical_name": "Hypercholesterolemia",
-        "results": [
+        "canonical_name": "Hypercholesterolemia (disorder)",
+        "ontology_id": "SNOMED:13644009",
+        "matches": [
           {
-            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
-            "ontology_name": "mondo",
-            "ontology_prefix": "MONDO",
-            "short_form": "HP_0003124",
+            "iri": "http://snomed.info/id/13644009",
+            "ontology_name": "snomed",
+            "ontology_prefix": "SNOMED",
+            "short_form": "SNOMED_13644009",
             "description": [],
-            "label": "Hypercholesterolemia",
-            "obo_id": "HP:0003124",
+            "label": "Hypercholesterolemia (disorder)",
+            "obo_id": "SNOMED:13644009",
             "type": "class"
           },
           {
-            "iri": "http://purl.obolibrary.org/obo/MONDO_0011374",
-            "ontology_name": "mondo",
+            "iri": "http://id.nlm.nih.gov/mesh/D006937",
+            "ontology_name": "mesh",
             "related_synonyms": [
-              "hypercholesterolemia, autosomal recessive",
-              "FHCB1",
-              "FHCB2",
-              "hypercholesterolemia, autosomal recessive, 1",
-              "hypercholesterolemia, autosomal recessive, 2"
+              "Cholesterol Level, High",
+              "Cholesterol Levels, High",
+              "Cholesterol, Elevated",
+              "Cholesterols, Elevated",
+              "Elevated Cholesterol",
+              "Elevated Cholesterols",
+              "High Cholesterol Level",
+              "High Cholesterol Levels",
+              "Hypercholesteremia",
+              "Hypercholesteremias",
+              "Hypercholesterolemias",
+              "Level, High Cholesterol",
+              "Levels, High Cholesterol"
             ],
-            "ontology_prefix": "MONDO",
-            "short_form": "MONDO_0011374",
+            "ontology_prefix": "mesh",
+            "short_form": "mesh_D006937",
             "description": [
-              "An autosomal recessive condition caused by mutation(s) in the LDLRAP1 gene, encoding low density lipoprotein receptor adaptor protein 1. The phenotype is similar to that of familial hypercholesterolemia, but generally considered to be a milder form of hypercholesterolemia."
+              "A condition with abnormally high levels of CHOLESTEROL in the blood. It is defined as a cholesterol value exceeding the 95th percentile for the population."
             ],
-            "narrow_synonyms": [
-              "autosomal recessive hypercholesterolemia 1",
-              "autosomal recessive hypercholesterolemia 2",
-              "ARH1",
-              "ARH2"
-            ],
-            "label": "hypercholesterolemia, familial, 4",
-            "obo_id": "MONDO:0011374",
-            "type": "class",
-            "exact_synonyms": [
-              "ARH"
-            ]
+            "label": "Hypercholesterolemia",
+            "obo_id": "mesh:D006937",
+            "type": "class"
           },
           {
-            "iri": "http://purl.obolibrary.org/obo/MONDO_0011369",
-            "ontology_name": "mondo",
-            "related_synonyms": [
-              "HCHOLA3"
-            ],
-            "ontology_prefix": "MONDO",
-            "short_form": "MONDO_0011369",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C37967",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C37967",
             "description": [
-              "Any familial hypercholesterolemia in which the cause of the disease is a mutation in the PCSK9 gene."
+              "A laboratory test result indicating an increased amount of cholesterol in the blood."
             ],
-            "label": "hypercholesterolemia, autosomal dominant, 3",
-            "obo_id": "MONDO:0011369",
+            "label": "Hypercholesterolemia",
+            "obo_id": "NCIT:C37967",
             "type": "class",
             "exact_synonyms": [
-              "hypercholesterolemia, autosomal dominant, type 3",
-              "low density lipoprotein cholesterol level QTL 1",
-              "PCSK9 familial hypercholesterolemia",
-              "familial hypercholesterolemia caused by mutation in PCSK9",
-              "hypercholesterolemia, autosomal dominant, 3",
-              "hypercholesterolemia, familial, 3"
+              "Cholesterol high",
+              "High Cholesterol",
+              "Hypercholesterolemia"
             ]
           },
           {
-            "iri": "http://purl.obolibrary.org/obo/MONDO_0007750",
-            "ontology_name": "mondo",
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "hp",
+            "ontology_prefix": "HP",
+            "short_form": "HP_0003124",
+            "broad_synonyms": [
+              "High cholesterol"
+            ],
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
+            "type": "class",
+            "exact_synonyms": [
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/OMIT_0008071",
+            "ontology_name": "omit",
+            "ontology_prefix": "OMIT",
+            "short_form": "OMIT_0008071",
+            "description": [],
+            "label": "Hypercholesterolemia",
+            "obo_id": "OMIT:0008071",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/MEDGENCUI_C0020443",
+            "ontology_name": "medgen",
             "related_synonyms": [
-              "FHC"
+              "Cholesterol Level, High",
+              "Cholesterol Levels, High",
+              "Cholesterol, Elevated",
+              "Cholesterols, Elevated",
+              "Elevated Cholesterol",
+              "Elevated Cholesterols",
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "High Cholesterol Level",
+              "High Cholesterol Levels",
+              "High cholesterol",
+              "Hypercholesteremia",
+              "Hypercholesteremias",
+              "Hypercholesterolaemia",
+              "Hypercholesterolemia",
+              "Hypercholesterolemias",
+              "Increased total cholesterol",
+              "Level, High Cholesterol",
+              "Levels, High Cholesterol",
+              "Primary hypercholesterolemia"
             ],
-            "ontology_prefix": "MONDO",
-            "short_form": "MONDO_0007750",
+            "short_form": "MEDGENCUI_C0020443",
             "description": [],
-            "label": "hypercholesterolemia, familial, 1",
-            "obo_id": "MONDO:0007750",
+            "label": "Hypercholesterolemia",
+            "obo_id": "MEDGENCUI_C0020443",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/UMLS_C0020443",
+            "ontology_name": "medgen",
+            "related_synonyms": [
+              "Cholesterol Level, High",
+              "Cholesterol Levels, High",
+              "Cholesterol, Elevated",
+              "Cholesterols, Elevated",
+              "Elevated Cholesterol",
+              "Elevated Cholesterols",
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "High Cholesterol Level",
+              "High Cholesterol Levels",
+              "High cholesterol",
+              "Hypercholesteremia",
+              "Hypercholesteremias",
+              "Hypercholesterolaemia",
+              "Hypercholesterolemia",
+              "Hypercholesterolemias",
+              "Increased total cholesterol",
+              "Level, High Cholesterol",
+              "Levels, High Cholesterol",
+              "Primary hypercholesterolemia"
+            ],
+            "short_form": "UMLS_C0020443",
+            "description": [],
+            "label": "Hypercholesterolemia",
+            "obo_id": "UMLS_C0020443",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "cido",
+            "ontology_prefix": "CIDO",
+            "short_form": "HP_0003124",
+            "broad_synonyms": [
+              "High cholesterol"
+            ],
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
             "type": "class",
             "exact_synonyms": [
-              "LDL cholesterol level QTL2",
-              "hypercholesterolemia, familial",
-              "hypercholesterolemia, familial, due to ldlr defect, modifier of",
-              "hypercholesterolemia, familial, modifier of",
-              "FHCL1",
-              "LDL receptor disorder",
-              "hypercholesterolemia, familial, 1",
-              "hypercholesterolemic xanthomatosis, familial",
-              "hyperlipoproteinemia, type 2",
-              "hyperlipoproteinemia, type 2A"
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
             ]
           },
           {
-            "iri": "http://purl.obolibrary.org/obo/MONDO_0007751",
-            "ontology_name": "mondo",
-            "ontology_prefix": "MONDO",
-            "short_form": "MONDO_0007751",
-            "description": [],
-            "label": "hypercholesterolemia, autosomal dominant, type B",
-            "obo_id": "MONDO:0007751",
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "cpont",
+            "ontology_prefix": "CPONT",
+            "short_form": "HP_0003124",
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
             "type": "class",
             "exact_synonyms": [
-              "hypercholesterolemia, autosomal dominant, type B",
-              "hypercholesterolemia, familial, 2"
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "efo",
+            "ontology_prefix": "EFO",
+            "short_form": "HP_0003124",
+            "broad_synonyms": [
+              "High cholesterol"
+            ],
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
+            "type": "class",
+            "exact_synonyms": [
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
             ]
           }
         ]
-      }
+      },
+      "error": null
     },
     "disgenet": {
       "status": "error",
       "source": "DisGeNET",
-      "data": {},
-      "message": "DISGENET_API_KEY is not configured. Add it to your .env file."
+      "data": null,
+      "error": "DISGENET_API_KEY is not configured. DisGeNET is unavailable for this run."
     },
     "omim": {
       "status": "error",
       "source": "OMIM",
-      "data": {},
-      "message": "OMIM_API_KEY is not configured. Add an authorized OMIM API key to .env."
+      "data": null,
+      "error": "OMIM_API_KEY is not configured. OMIM API access requires an OMIM API key."
     }
   },
   "analysis": {
@@ -1375,8 +954,9 @@
     "caution": "This assessment describes evidence availability and does not establish clinical efficacy, causality, or therapeutic suitability."
   },
   "gemini": {
-    "status": "success",
+    "status": "error",
     "model": "gemini-3.6-flash",
-    "summary": "### 1. Target Summary\n* **Gene Symbol:** PCSK9 (*Proprotein convertase subtilisin/kexin type 9*)\n* **Ensembl ID:** `ENSG00000169174`\n* **Gene Synonyms:** `FH3`, `HCHOLA3`, `NARC-1`\n* **Molecular & Biological Function:** PCSK9 encodes a secreted serine protease involved in cholesterol, sterol, and lipid metabolism. It binds to the low-density lipoprotein receptor (LDLR) and promotes its intracellular degradation, thereby reducing cellular uptake of circulating LDL cholesterol.\n* **Protein Classification:** Secreted/plasma protein, enzyme (protease), FDA-approved drug target.\n\n---\n\n### 2. Disease Summary\n* **Disease Name:** Hypercholesterolemia\n* **Ontology Mapping:** \n  * Phenotype ID: `HP:0003124` (*Hypercholesterolemia*)\n  * Related MONDO Entities: `MONDO_0005439` (*Familial hypercholesterolemia*), `MONDO_0011369` (*Hypercholesterolemia, autosomal dominant, 3 / PCSK9-related*)\n* **Pathophysiology Context:** Hypercholesterolemia is characterized by abnormally elevated blood levels of cholesterol, specifically LDL-C, leading to increased risk for atherosclerotic cardiovascular disease and coronary artery disease.\n\n---\n\n### 3. Drug Summary\n* **Drug Name:** Evolocumab (Trade Name: *Repatha*, *Repatha SureClick*)\n* **ChEMBL Identifier:** `CHEMBL2364655`\n* **Molecule Type & Subclass:** Fully human IgG2 monoclonal antibody (`-umab`)\n* **ATC Classification:** `C10AX13` (*Lipid modifying agents, other lipid modifying agents*)\n* **Development Status:** Phase 4 (Approved worldwide; First approved in 2015)\n* **Administration Route:** Parenteral (subcutaneous injection)\n* **Mechanism of Action:** Evolocumab binds selectively and with high affinity to extracellular PCSK9, preventing PCSK9 from binding to LDLR. This inhibits PCSK9-mediated LDLR degradation, increasing LDLR recycling back to the hepatocyte cell membrane and enhancing systemic clearance of LDL-C from the bloodstream.\n\n---\n\n### 4. Tissue Evidence\n* **Human Protein Atlas (HPA):** Protein and transcript evidence confirm expression as a secreted plasma protein with direct biological roles in cholesterol and lipid metabolism. HPA also documents interacting metabolic receptors, including LDLR (`ENSG00000130164`).\n* **GTEx Expression Data:** The GTEx query returned no results for RNA expression profiles in this query run.\n* **Tissue Interpretation:** While GTEx RNA quantification was unavailable in the current query, HPA protein annotations establish that PCSK9 functions as a secreted plasma protein acting primarily on hepatic LDL receptor clearance.\n\n---\n\n### 5. Genetic Evidence\n* **ClinVar Evidence:** ClinVar contains multiple documented genetic variation records for *PCSK9* (e.g., variant IDs `4881694`, `4875483`, `4874269`, `4861692`, `4861691`).\n* **Mendelian Relevance:** Gain-of-function variants in *PCSK9* are established causes of severe autosomal dominant hypercholesterolemia type 3 (`MONDO_0011369`). Conversely, loss-of-function variants lead to low plasma LDL cholesterol levels and lifelong protection against coronary heart disease without adverse health consequences, validating PCSK9 inhibition as a therapeutic strategy.\n\n---\n\n### 6. Disease Association Evidence\n* **Open Targets Score:**\n  * **Familial hypercholesterolemia (`MONDO_0005439`):** Score = **0.852**\n  * **Hypercholesterolemia (`HP_0003124`):** Score = **0.820**\n  * **Autosomal dominant hypercholesterolemia 3 (`MONDO_0011369`):** Score = **0.816**\n  * **Cardiovascular disorder (`MONDO_0004995`):** Score = **0.724**\n  * **Coronary artery disorder (`MONDO_0005010`):** Score = **0.718**\n* **Direct vs. Indirect Evidence:**\n  * *Direct:* Human human genetics (ClinVar, MONDO) and Phase 4 clinical trial data unequivocally link PCSK9 function directly to plasma LDL-C levels and hypercholesterolemia.\n  * *Indirect:* Downstream associations with secondary cardiovascular outcomes (coronary artery disease, cardiovascular disease reduction).\n\n---\n\n### 7. Safety Evidence\n* **FAERS Signals:**\n  * Post-marketing spontaneous adverse event reports list co-administered regimens (evolocumab with statins/ezetimibe) associated with reported events such as *angina pectoris*, *ventricular extrasystoles*, and *back pain*.\n* **Safety Interpretation:** Post-market FAERS reports represent passive, spontaneous safety submissions and do not establish causal drug-adverse event relationships. Clinical trial evaluations confirm evolocumab is well tolerated, with primary adverse events typically limited to injection site reactions and common upper respiratory symptoms.\n\n---\n\n### 8. Evidence Gaps\n* **Tissue RNA Baseline:** GTEx database query returned empty results in this session, leaving tissue-specific transcript abundance unquantified within this tool run.\n* **Long-term Safety Profiling:** Post-market surveillance captures spontaneous events; long-term observational registries remain essential for tracking rare real-world adverse event profiles across diverse multi-morbid patient cohorts.\n\n---\n\n### 9. Potential Mismatches\n* **Database Representation Mismatch:** A missing GTEx transcript record contrasts with protein-level evidence from HPA and ChEMBL approval records. This reflects a query/database availability artifact rather than a true biological mismatch.\n* **Tissue Context vs. Secreted Function:** PCSK9 acts extracellularly in the systemic circulation as a secreted protein; local mRNA expression patterns in non-hepatic tissues do not directly dictate systemic target liability or therapeutic efficacy.\n\n---\n\n### 10. Overall Evidence Assessment\n\n| Evidence Category | Status / Evidence Level | Summary Notes |\n| :--- | :--- | :--- |\n| **Target Identity** | Confirmed (`PCSK9` / `ENSG00000169174`) | Secreted serine protease regulating hepatic LDLR degradation. |\n| **Drug Identity** | Approved (`evolocumab` / Phase 4) | Fully human monoclonal antibody targeting extracellular PCSK9. |\n| **Disease Alignment** | Strong canonical match (`HP:0003124`) | Direct association across familial and general hypercholesterolemia. |\n| **Genetic Evidence** | Robust | Gain-of-function causes hypercholesterolemia; loss-of-function lowers LDL-C. |\n| **Tissue Evidence** | Partial (HPA available, GTEx empty) | Confirmed plasma/secreted protein; hepatic LDLR interplay. |\n| **Safety Signals** | Monitored (FAERS reports noted) | FAERS adverse signals require clinical contextualization and do not prove causality. |\n\n**Synthesis Verdict:**\nThe biological, genetic, and clinical evidence strongly supports targeting PCSK9 with evolocumab for hypercholesterolemia. The relationship is backed by human loss-of-function and gain-of-function genetics, high Open Targets association scores (>0.81), and Phase 4 regulatory approvals. Missing GTEx transcript data represents a technical tool retrieval gap rather than biological uncertainty. Overall, the target-drug-disease mechanism is firmly established with a favorable therapeutic rationale."
+    "summary": "",
+    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
   }
 }
