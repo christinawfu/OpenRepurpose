@@ -1,0 +1,1453 @@
+{
+  "target": "BRAF",
+  "drug": "vemurafenib",
+  "disease": "melanoma",
+  "sources": {
+    "ensembl": {
+      "status": "error",
+      "source": "Ensembl",
+      "data": null,
+      "error": "HTTPSConnectionPool(host='rest.ensembl.org', port=443): Read timed out. (read timeout=20)"
+    },
+    "opentargets": {
+      "status": "error",
+      "source": "Open Targets",
+      "data": null,
+      "error": "HTTPSConnectionPool(host='rest.ensembl.org', port=443): Read timed out. (read timeout=20)"
+    },
+    "gtex": {
+      "status": "success",
+      "source": "GTEx",
+      "data": {
+        "gene": "BRAF",
+        "gencode_id": "ENSG00000157764.12",
+        "dataset": "gtex_v8",
+        "tissue_count": 54,
+        "tissues": [
+          {
+            "tissue": "Adipose_Subcutaneous",
+            "median_tpm": 12.5192,
+            "ontology_id": "UBERON:0002190",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adipose_Visceral_Omentum",
+            "median_tpm": 10.2532,
+            "ontology_id": "UBERON:0010414",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adrenal_Gland",
+            "median_tpm": 6.02665,
+            "ontology_id": "UBERON:0002369",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Aorta",
+            "median_tpm": 12.9639,
+            "ontology_id": "UBERON:0001496",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Coronary",
+            "median_tpm": 11.7971,
+            "ontology_id": "UBERON:0001621",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Tibial",
+            "median_tpm": 15.8341,
+            "ontology_id": "UBERON:0007610",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Bladder",
+            "median_tpm": 12.9465,
+            "ontology_id": "UBERON:0001255",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Amygdala",
+            "median_tpm": 4.67397,
+            "ontology_id": "UBERON:0001876",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Anterior_cingulate_cortex_BA24",
+            "median_tpm": 7.127460000000001,
+            "ontology_id": "UBERON:0009835",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Caudate_basal_ganglia",
+            "median_tpm": 6.6355,
+            "ontology_id": "UBERON:0001873",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellar_Hemisphere",
+            "median_tpm": 27.5801,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellum",
+            "median_tpm": 21.4925,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cortex",
+            "median_tpm": 8.38593,
+            "ontology_id": "UBERON:0001870",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Frontal_Cortex_BA9",
+            "median_tpm": 11.9819,
+            "ontology_id": "UBERON:0009834",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hippocampus",
+            "median_tpm": 5.12718,
+            "ontology_id": "UBERON:0001954",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hypothalamus",
+            "median_tpm": 6.47611,
+            "ontology_id": "UBERON:0001898",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Nucleus_accumbens_basal_ganglia",
+            "median_tpm": 7.807810000000001,
+            "ontology_id": "UBERON:0001882",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Putamen_basal_ganglia",
+            "median_tpm": 5.07641,
+            "ontology_id": "UBERON:0001874",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Spinal_cord_cervical_c-1",
+            "median_tpm": 5.81058,
+            "ontology_id": "UBERON:0006469",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Substantia_nigra",
+            "median_tpm": 4.30661,
+            "ontology_id": "UBERON:0002038",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Breast_Mammary_Tissue",
+            "median_tpm": 12.915,
+            "ontology_id": "UBERON:0008367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_Cultured_fibroblasts",
+            "median_tpm": 10.5259,
+            "ontology_id": "EFO:0002009",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_EBV-transformed_lymphocytes",
+            "median_tpm": 16.3174,
+            "ontology_id": "EFO:0000572",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Ectocervix",
+            "median_tpm": 14.8249,
+            "ontology_id": "UBERON:0012249",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Endocervix",
+            "median_tpm": 15.5369,
+            "ontology_id": "UBERON:0000458",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Sigmoid",
+            "median_tpm": 12.6609,
+            "ontology_id": "UBERON:0001159",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Transverse",
+            "median_tpm": 7.91415,
+            "ontology_id": "UBERON:0001157",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Gastroesophageal_Junction",
+            "median_tpm": 11.748,
+            "ontology_id": "UBERON:0004550",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Mucosa",
+            "median_tpm": 7.44243,
+            "ontology_id": "UBERON:0006920",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Muscularis",
+            "median_tpm": 11.9342,
+            "ontology_id": "UBERON:0004648",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Fallopian_Tube",
+            "median_tpm": 16.7007,
+            "ontology_id": "UBERON:0003889",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Atrial_Appendage",
+            "median_tpm": 5.04852,
+            "ontology_id": "UBERON:0006631",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Left_Ventricle",
+            "median_tpm": 3.30936,
+            "ontology_id": "UBERON:0006566",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Cortex",
+            "median_tpm": 5.39542,
+            "ontology_id": "UBERON:0001225",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Medulla",
+            "median_tpm": 9.11994,
+            "ontology_id": "UBERON:0001293",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Liver",
+            "median_tpm": 3.53033,
+            "ontology_id": "UBERON:0001114",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Lung",
+            "median_tpm": 15.5857,
+            "ontology_id": "UBERON:0008952",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Minor_Salivary_Gland",
+            "median_tpm": 8.48882,
+            "ontology_id": "UBERON:0006330",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Muscle_Skeletal",
+            "median_tpm": 4.55772,
+            "ontology_id": "UBERON:0011907",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Nerve_Tibial",
+            "median_tpm": 16.6482,
+            "ontology_id": "UBERON:0001323",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Ovary",
+            "median_tpm": 16.9385,
+            "ontology_id": "UBERON:0000992",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pancreas",
+            "median_tpm": 4.18991,
+            "ontology_id": "UBERON:0001150",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pituitary",
+            "median_tpm": 14.8818,
+            "ontology_id": "UBERON:0000007",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Prostate",
+            "median_tpm": 13.4937,
+            "ontology_id": "UBERON:0002367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Not_Sun_Exposed_Suprapubic",
+            "median_tpm": 13.6854,
+            "ontology_id": "UBERON:0036149",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Sun_Exposed_Lower_leg",
+            "median_tpm": 14.049000000000001,
+            "ontology_id": "UBERON:0004264",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Small_Intestine_Terminal_Ileum",
+            "median_tpm": 8.96973,
+            "ontology_id": "UBERON:0001211",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Spleen",
+            "median_tpm": 9.55425,
+            "ontology_id": "UBERON:0002106",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Stomach",
+            "median_tpm": 7.64239,
+            "ontology_id": "UBERON:0000945",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Testis",
+            "median_tpm": 20.2773,
+            "ontology_id": "UBERON:0000473",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Thyroid",
+            "median_tpm": 17.9417,
+            "ontology_id": "UBERON:0002046",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Uterus",
+            "median_tpm": 17.0366,
+            "ontology_id": "UBERON:0000995",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Vagina",
+            "median_tpm": 13.5706,
+            "ontology_id": "UBERON:0000996",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Whole_Blood",
+            "median_tpm": 5.5311900000000005,
+            "ontology_id": "UBERON:0013756",
+            "unit": "TPM"
+          }
+        ],
+        "highest_expression_tissue": {
+          "tissue": "Brain_Cerebellar_Hemisphere",
+          "median_tpm": 27.5801,
+          "ontology_id": "UBERON:0002037",
+          "unit": "TPM"
+        }
+      },
+      "error": null
+    },
+    "hpa": {
+      "status": "success",
+      "source": "Human Protein Atlas",
+      "data": {
+        "gene": "BRAF",
+        "results": [
+          {
+            "Gene": "BRAF",
+            "Ensembl": "ENSG00000157764",
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "bone marrow": "663710.3",
+              "cerebral cortex": "1522106.4",
+              "Stomach": "994163.0"
+            }
+          },
+          {
+            "Gene": "HMG20B",
+            "Ensembl": "ENSG00000064961",
+            "Protein tissue specificity": "Tissue enhanced",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "fallopian tube": "2595219.5",
+              "ovary": "4770885.7"
+            }
+          },
+          {
+            "Gene": "KIAA1549",
+            "Ensembl": "ENSG00000122778",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "cerebral cortex": "6916851.3"
+            }
+          },
+          {
+            "Gene": "RIPPLY1",
+            "Ensembl": "ENSG00000147223",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "ALDH16A1",
+            "Ensembl": "ENSG00000161618",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "APELA",
+            "Ensembl": "ENSG00000248329",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "BAMBI",
+            "Ensembl": "ENSG00000095739",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "CNPY1",
+            "Ensembl": "ENSG00000146910",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "COL22A1",
+            "Ensembl": "ENSG00000169436",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "skeletal muscle": "4317623.6"
+            }
+          },
+          {
+            "Gene": "COQ6",
+            "Ensembl": "ENSG00000119723",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "heart muscle": "29253841.8"
+            }
+          },
+          {
+            "Gene": "DOCK5",
+            "Ensembl": "ENSG00000147459",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "FOXJ1",
+            "Ensembl": "ENSG00000129654",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "88",
+            "Protein tissue specific Intensity": {
+              "fallopian tube": "8832.0"
+            }
+          },
+          {
+            "Gene": "GSE1",
+            "Ensembl": "ENSG00000131149",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "5040",
+            "Protein tissue specific Intensity": {
+              "bone marrow": "504036.9"
+            }
+          },
+          {
+            "Gene": "KLHL40",
+            "Ensembl": "ENSG00000157119",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "584981",
+            "Protein tissue specific Intensity": {
+              "skeletal muscle": "58498131.3"
+            }
+          },
+          {
+            "Gene": "NCLN",
+            "Ensembl": "ENSG00000125912",
+            "Protein tissue specificity": "Tissue enhanced",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "pancreas": "65458511.9"
+            }
+          },
+          {
+            "Gene": "OTOGL",
+            "Ensembl": "ENSG00000165899",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "PES1",
+            "Ensembl": "ENSG00000100029",
+            "Protein tissue specificity": "Tissue enhanced",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "Stomach": "8455601.0"
+            }
+          },
+          {
+            "Gene": "PHF21A",
+            "Ensembl": "ENSG00000135365",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "PLXNA3",
+            "Ensembl": "ENSG00000130827",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "4985",
+            "Protein tissue specific Intensity": {
+              "cerebral cortex": "498484.0"
+            }
+          },
+          {
+            "Gene": "RAB18",
+            "Ensembl": "ENSG00000099246",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "SLC18B1",
+            "Ensembl": "ENSG00000146409",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "lymphoid tissue": "501651.2"
+            }
+          },
+          {
+            "Gene": "TBC1D32",
+            "Ensembl": "ENSG00000146350",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "5150",
+            "Protein tissue specific Intensity": {
+              "Stomach": "514951.5"
+            }
+          },
+          {
+            "Gene": "TMX3",
+            "Ensembl": "ENSG00000166479",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "UBE2H",
+            "Ensembl": "ENSG00000186591",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "WNT8B",
+            "Ensembl": "ENSG00000075290",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "ZBTB42",
+            "Ensembl": "ENSG00000179627",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          }
+        ]
+      },
+      "error": null
+    },
+    "clinvar": {
+      "status": "success",
+      "source": "ClinVar",
+      "data": {
+        "query": "BRAF",
+        "variant_ids": [
+          "4884749",
+          "4884743",
+          "4884147",
+          "4881354",
+          "4881287"
+        ],
+        "count": 5
+      },
+      "error": null
+    },
+    "chembl": {
+      "status": "success",
+      "source": "ChEMBL",
+      "data": {
+        "query": "vemurafenib",
+        "count": 4,
+        "results": [
+          {
+            "atc_classifications": [
+              "L01EC01"
+            ],
+            "availability_type": 1,
+            "biotherapeutic": null,
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": 2,
+            "cross_references": [
+              {
+                "xref_id": "human/EPAR/zelboraf",
+                "xref_name": "zelboraf",
+                "xref_src": "EMA"
+              },
+              {
+                "xref_id": "vemurafenib",
+                "xref_name": "vemurafenib",
+                "xref_src": "DailyMed"
+              }
+            ],
+            "dosed_ingredient": true,
+            "first_approval": 2011,
+            "first_in_class": 1,
+            "helm_notation": null,
+            "inorganic_flag": 0,
+            "max_phase": "4.0",
+            "molecule_chembl_id": "CHEMBL1229517",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL1229517",
+              "molecule_chembl_id": "CHEMBL1229517",
+              "parent_chembl_id": "CHEMBL1229517"
+            },
+            "molecule_properties": {
+              "alogp": "5.54",
+              "aromatic_rings": 4,
+              "full_molformula": "C23H18ClF2N3O3S",
+              "full_mwt": "489.93",
+              "hba": 4,
+              "hbd": 2,
+              "heavy_atoms": 33,
+              "mw_freebase": "489.93",
+              "np_likeness_score": "-1.38",
+              "num_ro5_violations": 1,
+              "psa": "91.92",
+              "qed_weighted": "0.33",
+              "ro3_pass": "N",
+              "rtb": 7
+            },
+            "molecule_structures": {
+              "canonical_smiles": "CCCS(=O)(=O)Nc1ccc(F)c(C(=O)c2c[nH]c3ncc(-c4ccc(Cl)cc4)cc23)c1F",
+              "molfile": "\n     RDKit          2D\n\n 33 36  0  0  0  0  0  0  0  0999 V2000\n    2.8820    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.0449    6.6574    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    2.4813    4.3490    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    0.4005    2.4755    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    2.2346    9.7786    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    3.2429    5.0347    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n   13.1469    6.6618    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0\n   10.7221    6.6618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   11.9344    8.7618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.4326    8.1560    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    9.5096    7.3618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   10.7221    9.4618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0000    6.8245    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.2972   10.8618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.7179   10.1618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.0847    8.7618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9451    1.0404    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3778    2.3719    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.0847   11.5618    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.5042    4.4527    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    4.5409   11.2945    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    4.1082    7.6978    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   11.9344    7.3618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8020    8.4470    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    9.5096    8.7618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.2972    9.4618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3062    6.0752    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.9367    5.7841    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.5409    9.0292    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.7387    7.4068    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.8724    9.4618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.8724   10.8618    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4409    3.4123    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0\n  1 17  1  0\n  2 22  2  0\n  3 33  2  0\n  4 33  2  0\n  5 24  1  0\n  6 27  1  0\n  7 23  1  0\n  8 11  1  0\n  8 23  2  0\n  9 12  2  0\n  9 23  1  0\n 10 13  2  0\n 10 24  1  0\n 11 25  2  0\n 12 25  1  0\n 13 28  1  0\n 14 19  2  0\n 14 26  1  0\n 15 21  1  0\n 15 29  2  0\n 16 26  2  0\n 16 31  1  0\n 17 18  1  0\n 18 33  1  0\n 19 32  1  0\n 20 28  1  0\n 20 33  1  0\n 21 32  1  0\n 22 29  1  0\n 22 30  1  0\n 24 30  2  0\n 25 26  1  0\n 27 28  2  0\n 27 30  1  0\n 29 31  1  0\n 31 32  2  0\nM  END\n> <chembl_id>\nCHEMBL1229517\n\n> <chembl_pref_name>\nVEMURAFENIB",
+              "standard_inchi": "InChI=1S/C23H18ClF2N3O3S/c1-2-9-33(31,32)29-19-8-7-18(25)20(21(19)26)22(30)17-12-28-23-16(17)10-14(11-27-23)13-3-5-15(24)6-4-13/h3-8,10-12,29H,2,9H2,1H3,(H,27,28)",
+              "standard_inchi_key": "GPXBXXGIAQBQNI-UHFFFAOYSA-N"
+            },
+            "molecule_synonyms": [
+              {
+                "molecule_synonym": "PLX-4032",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "PLX-4032"
+              },
+              {
+                "molecule_synonym": "PLX4032",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "PLX4032"
+              },
+              {
+                "molecule_synonym": "RG 7204",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "RG 7204"
+              },
+              {
+                "molecule_synonym": "RG-7204",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "RG-7204"
+              },
+              {
+                "molecule_synonym": "RO 5185426",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "RO 5185426"
+              },
+              {
+                "molecule_synonym": "RO-51-85426",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "RO-51-85426"
+              },
+              {
+                "molecule_synonym": "RO-5185426",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "RO-5185426"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "ATC",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "BNF",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "EMA",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "FDA",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "INN",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "MERCK_INDEX",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "OTHER",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Vemurafenib",
+                "syn_type": "USAN",
+                "synonyms": "VEMURAFENIB"
+              },
+              {
+                "molecule_synonym": "Zelboraf",
+                "syn_type": "TRADE_NAME",
+                "synonyms": "ZELBORAF"
+              }
+            ],
+            "molecule_type": "Small molecule",
+            "natural_product": 0,
+            "oral": true,
+            "orphan": 0,
+            "parenteral": false,
+            "polymer_flag": 0,
+            "pref_name": "VEMURAFENIB",
+            "prodrug": 0,
+            "score": 36.0,
+            "structure_type": "MOL",
+            "therapeutic_flag": true,
+            "topical": false,
+            "usan_stem": "-rafenib",
+            "usan_stem_definition": "rapidly accelerated fibrosarcoma (RAF) kinase inhibitors",
+            "usan_substem": "-rafenib",
+            "usan_year": 2010,
+            "veterinary": 0,
+            "withdrawn_flag": false
+          },
+          {
+            "atc_classifications": [],
+            "availability_type": -1,
+            "biotherapeutic": null,
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": -1,
+            "cross_references": [],
+            "dosed_ingredient": false,
+            "first_approval": null,
+            "first_in_class": -1,
+            "helm_notation": null,
+            "inorganic_flag": -1,
+            "max_phase": null,
+            "molecule_chembl_id": "CHEMBL3415553",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL3415553",
+              "molecule_chembl_id": "CHEMBL3415553",
+              "parent_chembl_id": "CHEMBL3415553"
+            },
+            "molecule_properties": {
+              "alogp": "5.54",
+              "aromatic_rings": 4,
+              "full_molformula": "C23H18ClF2N3O3S",
+              "full_mwt": "489.93",
+              "hba": 4,
+              "hbd": 2,
+              "heavy_atoms": 33,
+              "mw_freebase": "489.93",
+              "np_likeness_score": "-1.31",
+              "num_ro5_violations": 1,
+              "psa": "91.92",
+              "qed_weighted": "0.33",
+              "ro3_pass": "N",
+              "rtb": 7
+            },
+            "molecule_structures": {
+              "canonical_smiles": "CCCS(=O)(=O)Nc1cc(F)c(C(=O)c2c[nH]c3ncc(-c4ccc(Cl)cc4)cc23)c(F)c1",
+              "molfile": "\n     RDKit          2D\n\n 33 36  0  0  0  0  0  0  0  0999 V2000\n   -2.3155    0.7475    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0028    1.5132    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0028   -1.5132    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.3155   -0.7475    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.2917   -0.7475    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.2917    0.7475    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.7138    1.2033    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5889    0.0182    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.7138   -1.2033    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.6168   -1.4950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9144   -0.7421    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.2151   -1.4892    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.2185   -2.9892    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9211   -3.7421    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.6204   -2.9950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.2590   -3.5868    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0\n    2.1855   -2.6254    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6552   -2.9294    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.3877   -3.5218    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    4.1295   -4.3524    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.5991   -4.6533    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    6.5944   -3.5310    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    6.1201   -2.1080    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.6506   -1.8071    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.2712   -0.6687    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    3.3333   -5.2502    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    8.0653   -3.8290    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    9.0596   -2.7047    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0\n   10.5305   -3.0027    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   11.5247   -1.8785    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   12.7008   -2.1167    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.6782   -1.5670    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    7.8836   -2.4659    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  2  0\n  2  6  1  0\n  5  3  1  0\n  3  4  2  0\n  4  1  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  1  0\n  8  9  2  0\n  9  5  1  0\n 10 11  2  0\n 11 12  1  0\n 12 13  2  0\n 13 14  1  0\n 14 15  2  0\n 15 10  1  0\n  4 10  1  0\n 13 16  1  0\n  9 17  1  0\n 17 18  1  0\n 17 19  2  0\n 18 20  2  0\n 20 21  1  0\n 21 22  2  0\n 22 23  1  0\n 23 24  2  0\n 24 18  1  0\n 24 25  1  0\n 20 26  1  0\n 22 27  1  0\n 27 28  1  0\n 28 29  1  0\n 29 30  1  0\n 30 31  1  0\n 28 32  2  0\n 28 33  2  0\nM  END\n> <chembl_id>\nCHEMBL3415553\n\n> <chembl_pref_name>\nNone",
+              "standard_inchi": "InChI=1S/C23H18ClF2N3O3S/c1-2-7-33(31,32)29-16-9-19(25)21(20(26)10-16)22(30)18-12-28-23-17(18)8-14(11-27-23)13-3-5-15(24)6-4-13/h3-6,8-12,29H,2,7H2,1H3,(H,27,28)",
+              "standard_inchi_key": "WCJKXQIGIZQRIB-UHFFFAOYSA-N"
+            },
+            "molecule_synonyms": [],
+            "molecule_type": "Small molecule",
+            "natural_product": 0,
+            "oral": false,
+            "orphan": -1,
+            "parenteral": false,
+            "polymer_flag": 0,
+            "pref_name": null,
+            "prodrug": -1,
+            "score": 20.0,
+            "structure_type": "MOL",
+            "therapeutic_flag": false,
+            "topical": false,
+            "usan_stem": null,
+            "usan_stem_definition": null,
+            "usan_substem": null,
+            "usan_year": null,
+            "veterinary": -1,
+            "withdrawn_flag": false
+          },
+          {
+            "atc_classifications": [],
+            "availability_type": -1,
+            "biotherapeutic": null,
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": -1,
+            "cross_references": [],
+            "dosed_ingredient": false,
+            "first_approval": null,
+            "first_in_class": -1,
+            "helm_notation": null,
+            "inorganic_flag": -1,
+            "max_phase": null,
+            "molecule_chembl_id": "CHEMBL4209555",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL4209555",
+              "molecule_chembl_id": "CHEMBL4209555",
+              "parent_chembl_id": "CHEMBL4209555"
+            },
+            "molecule_properties": {
+              "alogp": "4.89",
+              "aromatic_rings": 4,
+              "full_molformula": "C23H19F2N3O3S",
+              "full_mwt": "455.49",
+              "hba": 4,
+              "hbd": 2,
+              "heavy_atoms": 32,
+              "mw_freebase": "455.49",
+              "np_likeness_score": "-1.26",
+              "num_ro5_violations": 0,
+              "psa": "91.92",
+              "qed_weighted": "0.39",
+              "ro3_pass": "N",
+              "rtb": 7
+            },
+            "molecule_structures": {
+              "canonical_smiles": "CCCS(=O)(=O)Nc1ccc(F)c(C(=O)c2c[nH]c3ncc(-c4ccccc4)cc23)c1F",
+              "molfile": "\n     RDKit          2D\n\n 32 35  0  0  0  0  0  0  0  0999 V2000\n   23.8884   -8.9685    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   23.1001   -8.7580    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0\n   23.3120   -9.5459    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   17.7828  -11.8864    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   17.7817  -12.7059    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   18.4897  -13.1149    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   18.4879  -11.4775    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   17.0771  -11.4781    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   17.0782  -10.6598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   16.3712  -10.2515    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   15.6627  -10.6603    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   15.6655  -11.4817    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   16.3730  -11.8864    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   19.1965  -11.8828    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   19.2013  -12.7014    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   19.9814  -12.9498    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   20.4587  -12.2847    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   19.9736  -11.6253    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   20.2216  -10.8467    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   21.0199  -10.6721    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   19.6712  -10.2426    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   21.5669  -11.2764    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   22.3645  -11.1023    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   22.6132  -10.3229    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   22.0580   -9.7175    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   21.2624   -9.8947    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   21.3175  -12.0546    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n   20.7091   -9.2933    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n   22.3032   -8.9380    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   23.3461   -7.9810    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   24.1438   -7.8036    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   24.3890   -7.0241    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  2  1  2  0\n  3  2  2  0\n  4  5  2  0\n  5  6  1  0\n  6 15  2  0\n 14  7  2  0\n  7  4  1  0\n  8  9  2  0\n  9 10  1  0\n 10 11  2  0\n 11 12  1  0\n 12 13  2  0\n 13  8  1  0\n  4  8  1  0\n 14 15  1  0\n 15 16  1  0\n 16 17  1  0\n 17 18  2  0\n 18 14  1  0\n 18 19  1  0\n 19 20  1  0\n 19 21  2  0\n 20 22  2  0\n 22 23  1  0\n 23 24  2  0\n 24 25  1  0\n 25 26  2  0\n 26 20  1  0\n 22 27  1  0\n 26 28  1  0\n 25 29  1  0\n 29  2  1  0\n  2 30  1  0\n 30 31  1  0\n 31 32  1  0\nM  END\n> <chembl_id>\nCHEMBL4209555\n\n> <chembl_pref_name>\nNone",
+              "standard_inchi": "InChI=1S/C23H19F2N3O3S/c1-2-10-32(30,31)28-19-9-8-18(24)20(21(19)25)22(29)17-13-27-23-16(17)11-15(12-26-23)14-6-4-3-5-7-14/h3-9,11-13,28H,2,10H2,1H3,(H,26,27)",
+              "standard_inchi_key": "ZBYVHRGXNKMPDO-UHFFFAOYSA-N"
+            },
+            "molecule_synonyms": [],
+            "molecule_type": "Small molecule",
+            "natural_product": 0,
+            "oral": false,
+            "orphan": -1,
+            "parenteral": false,
+            "polymer_flag": 0,
+            "pref_name": null,
+            "prodrug": -1,
+            "score": 19.0,
+            "structure_type": "MOL",
+            "therapeutic_flag": false,
+            "topical": false,
+            "usan_stem": null,
+            "usan_stem_definition": null,
+            "usan_substem": null,
+            "usan_year": null,
+            "veterinary": -1,
+            "withdrawn_flag": false
+          },
+          {
+            "atc_classifications": [],
+            "availability_type": -1,
+            "biotherapeutic": null,
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": -1,
+            "cross_references": [],
+            "dosed_ingredient": false,
+            "first_approval": null,
+            "first_in_class": -1,
+            "helm_notation": null,
+            "inorganic_flag": -1,
+            "max_phase": null,
+            "molecule_chembl_id": "CHEMBL1230020",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL1230020",
+              "molecule_chembl_id": "CHEMBL1230020",
+              "parent_chembl_id": "CHEMBL1230020"
+            },
+            "molecule_properties": {
+              "alogp": "3.88",
+              "aromatic_rings": 3,
+              "full_molformula": "C17H14ClF2N3O3S",
+              "full_mwt": "413.83",
+              "hba": 4,
+              "hbd": 2,
+              "heavy_atoms": 27,
+              "mw_freebase": "413.83",
+              "np_likeness_score": "-1.64",
+              "num_ro5_violations": 0,
+              "psa": "91.92",
+              "qed_weighted": "0.60",
+              "ro3_pass": "N",
+              "rtb": 6
+            },
+            "molecule_structures": {
+              "canonical_smiles": "CCCS(=O)(=O)Nc1ccc(F)c(C(=O)c2c[nH]c3ncc(Cl)cc23)c1F",
+              "molfile": "\n     RDKit          2D\n\n 27 29  0  0  0  0  0  0  0  0999 V2000\n   -2.4200   -0.7758    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.5916    0.0311    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.7631    0.8381    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.3985   -0.1404    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9506    0.4727    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.7575    0.3012    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.7846    0.2027    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2326   -0.4104    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.4256   -0.2389    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.1707    0.5457    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.4875   -1.1951    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.9355   -1.8081    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.1285   -1.6366    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.4235   -2.2497    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    0.1264   -0.8520    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.9334   -0.6805    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4854   -1.2936    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1884    0.1041    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7034    0.7716    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9730    0.3591    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.6874   -0.0534    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9730    1.1841    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1884    1.4390    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    2.6874    1.5966    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    3.4019    1.1841    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.4019    0.3591    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.1164   -0.0534    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  2  0\n  3  2  2  0\n  4  2  1  0\n  7  2  1  0\n  4  5  1  0\n  5  6  1  0\n  8  7  1  0\n  8  9  2  0\n 11  8  1  0\n  9 10  1  0\n 15  9  1  0\n 12 11  2  0\n 13 12  1  0\n 13 14  1  0\n 15 13  2  0\n 16 15  1  0\n 16 17  2  0\n 16 18  1  0\n 19 18  2  0\n 20 18  1  0\n 19 23  1  0\n 21 20  2  0\n 20 22  1  0\n 21 26  1  0\n 22 23  1  0\n 22 24  2  0\n 25 24  1  0\n 25 26  2  0\n 26 27  1  0\nM  END\n> <chembl_id>\nCHEMBL1230020\n\n> <chembl_pref_name>\nPLX-4720",
+              "standard_inchi": "InChI=1S/C17H14ClF2N3O3S/c1-2-5-27(25,26)23-13-4-3-12(19)14(15(13)20)16(24)11-8-22-17-10(11)6-9(18)7-21-17/h3-4,6-8,23H,2,5H2,1H3,(H,21,22)",
+              "standard_inchi_key": "YZDJQTHVDDOVHR-UHFFFAOYSA-N"
+            },
+            "molecule_synonyms": [],
+            "molecule_type": "Small molecule",
+            "natural_product": 0,
+            "oral": false,
+            "orphan": -1,
+            "parenteral": false,
+            "polymer_flag": 0,
+            "pref_name": "PLX-4720",
+            "prodrug": -1,
+            "score": 4.0,
+            "structure_type": "MOL",
+            "therapeutic_flag": false,
+            "topical": false,
+            "usan_stem": null,
+            "usan_stem_definition": null,
+            "usan_substem": null,
+            "usan_year": null,
+            "veterinary": -1,
+            "withdrawn_flag": false
+          }
+        ]
+      },
+      "error": null
+    },
+    "faers": {
+      "status": "success",
+      "source": "openFDA FAERS",
+      "data": {
+        "drug": "vemurafenib",
+        "events": [
+          {
+            "term": "PYREXIA",
+            "count": 321
+          },
+          {
+            "term": "RASH",
+            "count": 319
+          },
+          {
+            "term": "DISEASE PROGRESSION",
+            "count": 272
+          },
+          {
+            "term": "DIARRHOEA",
+            "count": 270
+          },
+          {
+            "term": "ARTHRALGIA",
+            "count": 217
+          },
+          {
+            "term": "NAUSEA",
+            "count": 208
+          },
+          {
+            "term": "FATIGUE",
+            "count": 202
+          },
+          {
+            "term": "OFF LABEL USE",
+            "count": 189
+          },
+          {
+            "term": "VOMITING",
+            "count": 160
+          },
+          {
+            "term": "PHOTOSENSITIVITY REACTION",
+            "count": 151
+          }
+        ],
+        "count": 10
+      },
+      "error": null
+    },
+    "ontology": {
+      "status": "success",
+      "source": "OLS",
+      "data": {
+        "query": "melanoma",
+        "canonical_name": "Melanoma",
+        "ontology_id": "HP:0002861",
+        "matches": [
+          {
+            "iri": "http://purl.obolibrary.org/obo/HP_0002861",
+            "ontology_name": "hp",
+            "ontology_prefix": "HP",
+            "short_form": "HP_0002861",
+            "broad_synonyms": [
+              "Cancer of skin pigment cells",
+              "Skin cancer (melanoma)"
+            ],
+            "description": [
+              "A malignant skin tumor of originating from melanocytes, pigment cells normally present in the epidermis and sometimes in the dermis.",
+              "The presence of a melanoma, a malignant cancer originating from pigment producing melanocytes. Melanoma can originate from the skin or the pigmented layers of the eye (the uvea)."
+            ],
+            "label": "Melanoma",
+            "obo_id": "HP:0002861",
+            "type": "class",
+            "exact_synonyms": [
+              "Malignant melanoma"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C3224",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C3224",
+            "description": [
+              "A malignant, usually aggressive tumor composed of atypical, neoplastic melanocytes. Most often, melanomas arise in the skin (cutaneous melanomas) and include the following histologic subtypes: superficial spreading melanoma, nodular melanoma, acral lentiginous melanoma, and lentigo maligna melanoma. Cutaneous melanomas may arise from acquired or congenital melanocytic or dysplastic nevi. Melanomas may also arise in other anatomic sites including the gastrointestinal system, eye, urinary tract, and reproductive system. Melanomas frequently metastasize to lymph nodes, liver, lungs, and brain."
+            ],
+            "label": "Melanoma",
+            "obo_id": "NCIT:C3224",
+            "type": "class",
+            "exact_synonyms": [
+              "MELANOMA, MALIGNANT",
+              "Malignant Melanoma",
+              "Melanoma",
+              "Melanoma, NOS",
+              "melanoma"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/MONDO_0005105",
+            "ontology_name": "mondo",
+            "ontology_prefix": "MONDO",
+            "short_form": "MONDO_0005105",
+            "description": [
+              "A malignant, usually aggressive tumor composed of atypical, neoplastic melanocytes. Most often, melanomas arise in the skin (cutaneous melanomas) and include the following histologic subtypes: superficial spreading melanoma, nodular melanoma, acral lentiginous melanoma, and lentigo maligna melanoma. Cutaneous melanomas may arise from acquired or congenital melanocytic or dysplastic nevi. Melanomas may also arise in other anatomic sites including the gastrointestinal system, eye, urinary tract, and reproductive system. Melanomas frequently metastasize to lymph nodes, liver, lungs, and brain."
+            ],
+            "label": "melanoma",
+            "obo_id": "MONDO:0005105",
+            "type": "class",
+            "exact_synonyms": [
+              "malignant melanoma",
+              "melanoma (disease)",
+              "melanoma",
+              "melanoma, malignant"
+            ]
+          },
+          {
+            "iri": "http://id.nlm.nih.gov/mesh/D008545",
+            "ontology_name": "mesh",
+            "related_synonyms": [
+              "Malignant Melanoma",
+              "Malignant Melanomas",
+              "Melanoma, Malignant",
+              "Melanomas",
+              "Melanomas, Malignant"
+            ],
+            "ontology_prefix": "mesh",
+            "short_form": "mesh_D008545",
+            "description": [
+              "A malignant neoplasm derived from cells that are capable of forming melanin, which may occur in the skin of any part of the body, in the eye, or, rarely, in the mucous membranes of the genitalia, anus, oral cavity, or other sites. It occurs mostly in adults and may originate de novo or from a pigmented nevus or malignant lentigo. Melanomas frequently metastasize widely, and the regional lymph nodes, liver, lungs, and brain are likely to be involved. The incidence of malignant skin melanomas is rising rapidly in all parts of the world. (Stedman, 25th ed; from Rook et al., Textbook of Dermatology, 4th ed, p2445)"
+            ],
+            "label": "Melanoma",
+            "obo_id": "mesh:D008545",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/DOID_1909",
+            "ontology_name": "doid",
+            "ontology_prefix": "DOID",
+            "short_form": "DOID_1909",
+            "description": [
+              "A cell type cancer that has_material_basis_in abnormally proliferating cells derives_from melanocytes which are found in skin, the bowel and the eye."
+            ],
+            "label": "melanoma",
+            "obo_id": "DOID:1909",
+            "type": "class",
+            "exact_synonyms": [
+              "Naevocarcinoma",
+              "malignant melanoma"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/MPATH_359",
+            "ontology_name": "mpath",
+            "related_synonyms": [
+              "melanosarcoma",
+              "melanosarcoma, malignant melanoma"
+            ],
+            "ontology_prefix": "MPATH",
+            "short_form": "MPATH_359",
+            "description": [
+              "Tumor of neurectodermal origin, usually melanocytes, showing dense deposition of melanin granules, although amelanotic melanomas have been reported. (M-8720/3)."
+            ],
+            "label": "melanoma",
+            "obo_id": "MPATH:359",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/OMIT_0009611",
+            "ontology_name": "omit",
+            "ontology_prefix": "OMIT",
+            "short_form": "OMIT_0009611",
+            "description": [],
+            "label": "Melanoma",
+            "obo_id": "OMIT:0009611",
+            "type": "class"
+          },
+          {
+            "iri": "http://identifiers.org/wikipathways/WP4685",
+            "ontology_name": "wikipathways",
+            "ontology_prefix": "wikipathways",
+            "short_form": "wikipathways_WP4685",
+            "description": [],
+            "label": "Melanoma",
+            "obo_id": "wikipathways:WP4685",
+            "type": "class"
+          },
+          {
+            "iri": "http://identifiers.org/wikipathways/WP4685",
+            "ontology_name": "wikipathways",
+            "ontology_prefix": "wikipathways",
+            "short_form": "wikipathways_WP4685",
+            "description": [],
+            "label": "Melanoma",
+            "obo_id": "wikipathways:WP4685",
+            "type": "individual"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/MONDO_0005105",
+            "ontology_name": "cpont",
+            "ontology_prefix": "CPONT",
+            "short_form": "MONDO_0005105",
+            "description": [
+              "A malignant, usually aggressive tumor composed of atypical, neoplastic melanocytes. Most often, melanomas arise in the skin (cutaneous melanomas) and include the following histologic subtypes: superficial spreading melanoma, nodular melanoma, acral lentiginous melanoma, and lentigo maligna melanoma. Cutaneous melanomas may arise from acquired or congenital melanocytic or dysplastic nevi. Melanomas may also arise in other anatomic sites including the gastrointestinal system, eye, urinary tract, and reproductive system. Melanomas frequently metastasize to lymph nodes, liver, lungs, and brain."
+            ],
+            "label": "melanoma",
+            "obo_id": "MONDO:0005105",
+            "type": "class",
+            "exact_synonyms": [
+              "Naevocarcinoma",
+              "malignant melanoma",
+              "melanoma (disease)",
+              "melanoma",
+              "melanoma, malignant"
+            ]
+          }
+        ]
+      },
+      "error": null
+    },
+    "disgenet": {
+      "status": "error",
+      "source": "DisGeNET",
+      "data": null,
+      "error": "429 Client Error:  for url: https://api.disgenet.com/api/v1/gda/gene/BRAF?limit=5"
+    },
+    "omim": {
+      "status": "success",
+      "source": "OMIM",
+      "data": {
+        "query": "BRAF",
+        "associations": [
+          {
+            "gene": "BRAF",
+            "gene_name": "B-Raf protooncogene, serine/threonine kinase",
+            "gene_mim_number": 164757,
+            "ensembl_ids": "ENSG00000157764,ENST00000646891;;;ENST00000646891",
+            "phenotype": "Adenocarcinoma of lung, somatic",
+            "phenotype_mim_number": 211980,
+            "inheritance": null,
+            "mapping_key": 3
+          },
+          {
+            "gene": "BRAF",
+            "gene_name": "B-Raf protooncogene, serine/threonine kinase",
+            "gene_mim_number": 164757,
+            "ensembl_ids": "ENSG00000157764,ENST00000646891;;;ENST00000646891",
+            "phenotype": "Cardiofaciocutaneous syndrome",
+            "phenotype_mim_number": 115150,
+            "inheritance": "Autosomal dominant",
+            "mapping_key": 3
+          },
+          {
+            "gene": "BRAF",
+            "gene_name": "B-Raf protooncogene, serine/threonine kinase",
+            "gene_mim_number": 164757,
+            "ensembl_ids": "ENSG00000157764,ENST00000646891;;;ENST00000646891",
+            "phenotype": "Colorectal cancer, somatic",
+            "phenotype_mim_number": 114500,
+            "inheritance": null,
+            "mapping_key": 3
+          },
+          {
+            "gene": "BRAF",
+            "gene_name": "B-Raf protooncogene, serine/threonine kinase",
+            "gene_mim_number": 164757,
+            "ensembl_ids": "ENSG00000157764,ENST00000646891;;;ENST00000646891",
+            "phenotype": "LEOPARD syndrome 3",
+            "phenotype_mim_number": 613707,
+            "inheritance": "Autosomal dominant",
+            "mapping_key": 3
+          },
+          {
+            "gene": "BRAF",
+            "gene_name": "B-Raf protooncogene, serine/threonine kinase",
+            "gene_mim_number": 164757,
+            "ensembl_ids": "ENSG00000157764,ENST00000646891;;;ENST00000646891",
+            "phenotype": "Melanoma, malignant, somatic",
+            "phenotype_mim_number": 155600,
+            "inheritance": null,
+            "mapping_key": 3
+          },
+          {
+            "gene": "BRAF",
+            "gene_name": "B-Raf protooncogene, serine/threonine kinase",
+            "gene_mim_number": 164757,
+            "ensembl_ids": "ENSG00000157764,ENST00000646891;;;ENST00000646891",
+            "phenotype": "Nonsmall cell lung cancer, somatic",
+            "phenotype_mim_number": 211980,
+            "inheritance": null,
+            "mapping_key": 3
+          },
+          {
+            "gene": "BRAF",
+            "gene_name": "B-Raf protooncogene, serine/threonine kinase",
+            "gene_mim_number": 164757,
+            "ensembl_ids": "ENSG00000157764,ENST00000646891;;;ENST00000646891",
+            "phenotype": "Noonan syndrome 7",
+            "phenotype_mim_number": 613706,
+            "inheritance": "Autosomal dominant",
+            "mapping_key": 3
+          }
+        ],
+        "count": 7
+      },
+      "error": null
+    }
+  },
+  "analysis": {
+    "evidence_availability": "moderate",
+    "score": {
+      "score": 7,
+      "maximum": 10,
+      "percentage": 70.0
+    },
+    "tissue_assessment": {
+      "status": "concordant_available",
+      "flag": false,
+      "message": "Both RNA-level and protein-level tissue evidence are available."
+    },
+    "tissue_comparison": {
+      "status": "gtex_only",
+      "mismatch_flag": true,
+      "gtex_tissues": [
+        "Adipose_Subcutaneous",
+        "Adipose_Visceral_Omentum",
+        "Adrenal_Gland",
+        "Artery_Aorta",
+        "Artery_Coronary",
+        "Artery_Tibial",
+        "Bladder",
+        "Brain_Amygdala",
+        "Brain_Anterior_cingulate_cortex_BA24",
+        "Brain_Caudate_basal_ganglia",
+        "Brain_Cerebellar_Hemisphere",
+        "Brain_Cerebellum",
+        "Brain_Cortex",
+        "Brain_Frontal_Cortex_BA9",
+        "Brain_Hippocampus",
+        "Brain_Hypothalamus",
+        "Brain_Nucleus_accumbens_basal_ganglia",
+        "Brain_Putamen_basal_ganglia",
+        "Brain_Spinal_cord_cervical_c-1",
+        "Brain_Substantia_nigra",
+        "Breast_Mammary_Tissue",
+        "Cells_Cultured_fibroblasts",
+        "Cells_EBV-transformed_lymphocytes",
+        "Cervix_Ectocervix",
+        "Cervix_Endocervix",
+        "Colon_Sigmoid",
+        "Colon_Transverse",
+        "Esophagus_Gastroesophageal_Junction",
+        "Esophagus_Mucosa",
+        "Esophagus_Muscularis",
+        "Fallopian_Tube",
+        "Heart_Atrial_Appendage",
+        "Heart_Left_Ventricle",
+        "Kidney_Cortex",
+        "Kidney_Medulla",
+        "Liver",
+        "Lung",
+        "Minor_Salivary_Gland",
+        "Muscle_Skeletal",
+        "Nerve_Tibial",
+        "Ovary",
+        "Pancreas",
+        "Pituitary",
+        "Prostate",
+        "Skin_Not_Sun_Exposed_Suprapubic",
+        "Skin_Sun_Exposed_Lower_leg",
+        "Small_Intestine_Terminal_Ileum",
+        "Spleen",
+        "Stomach",
+        "Testis",
+        "Thyroid",
+        "Uterus",
+        "Vagina",
+        "Whole_Blood"
+      ],
+      "hpa_tissues": [],
+      "shared_tissues": [],
+      "gtex_only": [
+        "Adipose_Subcutaneous",
+        "Adipose_Visceral_Omentum",
+        "Adrenal_Gland",
+        "Artery_Aorta",
+        "Artery_Coronary",
+        "Artery_Tibial",
+        "Bladder",
+        "Brain_Amygdala",
+        "Brain_Anterior_cingulate_cortex_BA24",
+        "Brain_Caudate_basal_ganglia",
+        "Brain_Cerebellar_Hemisphere",
+        "Brain_Cerebellum",
+        "Brain_Cortex",
+        "Brain_Frontal_Cortex_BA9",
+        "Brain_Hippocampus",
+        "Brain_Hypothalamus",
+        "Brain_Nucleus_accumbens_basal_ganglia",
+        "Brain_Putamen_basal_ganglia",
+        "Brain_Spinal_cord_cervical_c-1",
+        "Brain_Substantia_nigra",
+        "Breast_Mammary_Tissue",
+        "Cells_Cultured_fibroblasts",
+        "Cells_EBV-transformed_lymphocytes",
+        "Cervix_Ectocervix",
+        "Cervix_Endocervix",
+        "Colon_Sigmoid",
+        "Colon_Transverse",
+        "Esophagus_Gastroesophageal_Junction",
+        "Esophagus_Mucosa",
+        "Esophagus_Muscularis",
+        "Fallopian_Tube",
+        "Heart_Atrial_Appendage",
+        "Heart_Left_Ventricle",
+        "Kidney_Cortex",
+        "Kidney_Medulla",
+        "Liver",
+        "Lung",
+        "Minor_Salivary_Gland",
+        "Muscle_Skeletal",
+        "Nerve_Tibial",
+        "Ovary",
+        "Pancreas",
+        "Pituitary",
+        "Prostate",
+        "Skin_Not_Sun_Exposed_Suprapubic",
+        "Skin_Sun_Exposed_Lower_leg",
+        "Small_Intestine_Terminal_Ileum",
+        "Spleen",
+        "Stomach",
+        "Testis",
+        "Thyroid",
+        "Uterus",
+        "Vagina",
+        "Whole_Blood"
+      ],
+      "hpa_only": [],
+      "interpretation": "GTEx returned tissue information, but HPA did not expose comparable tissue information."
+    },
+    "genetic_assessment": {
+      "status": "available",
+      "sources": [
+        "ClinVar",
+        "OMIM"
+      ],
+      "message": "Genetic evidence is available from: ClinVar, OMIM"
+    },
+    "rare_disease_assessment": {
+      "status": "evidence_available",
+      "sources": [
+        "OMIM",
+        "ClinVar"
+      ],
+      "message": "Disease/genetic evidence relevant to rare-disease assessment is available."
+    },
+    "evidence_gaps": [
+      {
+        "source": "opentargets",
+        "category": "target-disease association",
+        "status": "error"
+      },
+      {
+        "source": "disgenet",
+        "category": "disease-gene aggregation",
+        "status": "error"
+      }
+    ],
+    "caution": "This assessment describes evidence availability and does not establish clinical efficacy, causality, or therapeutic suitability."
+  },
+  "gemini": {
+    "status": "quota_exceeded",
+    "model": "gemini-3.6-flash",
+    "summary": "",
+    "error": "Gemini API quota was exceeded. Evidence collection completed, but AI synthesis was unavailable."
+  }
+}

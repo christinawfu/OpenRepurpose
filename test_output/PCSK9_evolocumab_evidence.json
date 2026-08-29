@@ -863,46 +863,21 @@
       "status": "error",
       "source": "DisGeNET",
       "data": null,
-      "error": "429 Client Error:  for url: https://api.disgenet.com/api/v1/gda/gene/PCSK9?limit=5"
+      "error": "DISGENET_API_KEY is not configured. DisGeNET is unavailable for this run."
     },
     "omim": {
-      "status": "success",
+      "status": "error",
       "source": "OMIM",
-      "data": {
-        "query": "PCSK9",
-        "associations": [
-          {
-            "gene": "PCSK9",
-            "gene_name": "Proprotein convertase, subtilisin/kexin-type, 9",
-            "gene_mim_number": 607786,
-            "ensembl_ids": "ENSG00000169174,ENST00000302118;;;ENST00000302118",
-            "phenotype": "{Low density lipoprotein cholesterol level QTL 1}",
-            "phenotype_mim_number": 603776,
-            "inheritance": "Autosomal dominant",
-            "mapping_key": 3
-          },
-          {
-            "gene": "PCSK9",
-            "gene_name": "Proprotein convertase, subtilisin/kexin-type, 9",
-            "gene_mim_number": 607786,
-            "ensembl_ids": "ENSG00000169174,ENST00000302118;;;ENST00000302118",
-            "phenotype": "Hypercholesterolemia, familial, 3",
-            "phenotype_mim_number": 603776,
-            "inheritance": "Autosomal dominant",
-            "mapping_key": 3
-          }
-        ],
-        "count": 2
-      },
-      "error": null
+      "data": null,
+      "error": "OMIM_API_KEY is not configured. OMIM API access requires an OMIM API key."
     }
   },
   "analysis": {
     "evidence_availability": "broad",
     "score": {
-      "score": 9,
+      "score": 8,
       "maximum": 10,
-      "percentage": 90.0
+      "percentage": 80.0
     },
     "tissue_assessment": {
       "status": "concordant_available",
@@ -1032,15 +1007,13 @@
     "genetic_assessment": {
       "status": "available",
       "sources": [
-        "ClinVar",
-        "OMIM"
+        "ClinVar"
       ],
-      "message": "Genetic evidence is available from: ClinVar, OMIM"
+      "message": "Genetic evidence is available from: ClinVar"
     },
     "rare_disease_assessment": {
       "status": "evidence_available",
       "sources": [
-        "OMIM",
         "ClinVar"
       ],
       "message": "Disease/genetic evidence relevant to rare-disease assessment is available."
@@ -1050,6 +1023,11 @@
         "source": "disgenet",
         "category": "disease-gene aggregation",
         "status": "error"
+      },
+      {
+        "source": "omim",
+        "category": "Mendelian disease genetics",
+        "status": "error"
       }
     ],
     "caution": "This assessment describes evidence availability and does not establish clinical efficacy, causality, or therapeutic suitability."
@@ -1057,6 +1035,6 @@
   "gemini": {
     "status": "success",
     "model": "gemini-3.6-flash",
-    "summary": "An investigation was conducted for the drug-repurposing target **PCSK9**, the drug **evolocumab**, and the disease **hypercholesterolemia** using biomedical database APIs. Below is the structured scientific synthesis.\n\n---\n\n### 1. Target Summary\n* **Gene Symbol:** PCSK9 (Proprotein Convertase Subtilisin/Kexin Type 9)\n* **Ensembl Identifier:** `ENSG00000169174`\n* **Biological Role:** PCSK9 encodes a secreted serine protease that binds to low-density lipoprotein receptors (LDLR) on hepatocytes, promoting LDLR degradation and thereby decreasing hepatic clearance of circulating LDL cholesterol.\n\n---\n\n### 2. Disease Summary\n* **Disease Name:** Hypercholesterolemia\n* **Canonical Ontologies:**\n  * **HPO:** `HP:0003124` (Hypercholesterolemia)\n  * **MeSH:** `mesh:D006937`\n  * **SNOMED CT:** `SNOMED:13644009`\n  * **MONDO / Related Concepts:** Familial Hypercholesterolemia (`MONDO:0005439`), Autosomal Dominant Hypercholesterolemia 3 (`MONDO:0011369`)\n* **Clinical Context:** Characterized by elevated circulating total and LDL cholesterol levels, significantly increasing the risk for premature atherosclerosis and cardiovascular diseases.\n\n---\n\n### 3. Drug Summary\n* **Drug Name:** Evolocumab (Trade Name: Repatha, Research Code: AMG-145)\n* **ChEMBL Identifier:** `CHEMBL2364655`\n* **Drug Class & Type:** Fully human monoclonal antibody (IgG2), Parenteral administration\n* **ATC Classification:** `C10AX13` (Other lipid-modifying agents)\n* **Approval Status:** First approved in 2015; currently at Maximum Clinical Phase 4 (Approved drug).\n* **Mechanism of Action:** Direct inhibition of extracellular PCSK9, blocking its interaction with LDLR and preserving hepatic LDLR recycling to lower plasma LDL cholesterol.\n\n---\n\n### 4. Tissue Evidence\n* **GTEx RNA Expression (GTEx v8):**\n  * **Highest Expression:** **Liver** (Median TPM: **25.55**), aligning with the primary biological site of LDLR regulation and cholesterol homeostasis.\n  * **Other Notable Tissues:** Brain Cerebellum / Cerebellar Hemisphere (22.15\u201323.50 TPM), Lung (6.74 TPM), Esophagus Mucosa (4.94 TPM), Terminal Ileum (2.89 TPM), and Pancreas (2.68 TPM).\n* **Human Protein Atlas (HPA):**\n  * **Protein Tissue Distribution:** Detected in select tissue subsets (\"Group enriched\", specificity score: 83).\n  * **Observed Protein Detection:** High antibody/protein intensity reported in lung and kidney. Related biological pathway proteins (e.g., LDLR) show strong expression across hepatic, intestinal, and endothelial tissues.\n\n---\n\n### 5. Genetic Evidence\n* **ClinVar Records:** Multiple pathogenic and likely pathogenic genetic variant entries for `PCSK9` (e.g., variant IDs `4881694`, `4875483`, `4874269`, `4861692`, `4861691`).\n* **Open Targets Genetic Associations:**\n  * **Hypercholesterolemia, Autosomal Dominant, 3** (`MONDO_0011369`): Association score = **0.816**\n  * **Familial Hypercholesterolemia** (`MONDO_0005439`): Association score = **0.852**\n* **Genetic Interpretation:** Gain-of-function variants in *PCSK9* cause severe hypercholesterolemia, whereas loss-of-function variants are associated with low circulating LDL cholesterol and protection against coronary artery disease, establishing a validated human genetic target.\n\n---\n\n### 6. Disease Association Evidence\n* **Open Targets Score Profile:**\n  * **Familial Hypercholesterolemia:** `0.852`\n  * **Hypercholesterolemia (HPO):** `0.820`\n  * **Autosomal Dominant Hypercholesterolemia 3:** `0.816`\n  * **Cardiovascular Disorder:** `0.724`\n  * **Coronary Artery Disorder:** `0.718`\n* **Evidence Level:** Direct, high-confidence target-disease association supported by human genetics, clinical trial data, and observational studies.\n\n---\n\n### 7. Safety Evidence (FAERS Signals)\n* **Primary Post-Market Adverse Event Reports (openFDA FAERS):**\n  * Dyspnoea (120 events)\n  * Atrial Fibrillation (101 events)\n  * Coronary Artery Disease (100 events)\n  * Drug Ineffective (99 events)\n  * Muscle Spasms (96 events)\n  * Cough (93 events)\n  * Nasopharyngitis (89 events)\n  * Cardiac Disorder (86 events)\n  * Dysphonia (85 events)\n  * Chest Discomfort (83 events)\n* **Safety Interpretation:** FAERS signals reflect voluntary post-market reporting and **do not establish causality**. The presence of cardiovascular reporting terms (e.g., coronary artery disease, chest discomfort) likely represents baseline disease background in hypercholesterolemic patients (indication bias) rather than drug-induced toxicity.\n\n---\n\n### 8. Potential Mismatches & Nuances\n* **Tissue Expression Naming / Detection Nuance:** GTEx demonstrates primary RNA transcript expression in the liver (25.55 TPM) alongside central nervous system tissues (cerebellum), whereas HPA antibody-based protein profiling emphasizes lung and kidney tissue intensity. This represents differences in assay sensitivities, sampling, or protein turnover rates rather than a biological contradiction.\n* **Brain Expression:** Elevated RNA expression in cerebellar tissue warrants awareness, though therapeutic monoclonal antibodies (such as evolocumab) do not readily cross the intact blood-brain barrier under normal physiological conditions.\n\n---\n\n### 9. Evidence Gaps\n* Standalone OMIM and DisGeNET API endpoints were not directly queried via independent individual tools; genetic relationship aggregation was instead evaluated through Open Targets and ClinVar.\n* Functional assessment of neurocognitive or central nervous system effects requires continued clinical safety surveillance due to brain RNA expression.\n\n---\n\n### 10. Integrated Assessment & Synthesis\n\n| Evidence Type | Findings & Strength | Supporting Sources |\n| :--- | :--- | :--- |\n| **Direct Clinical Evidence** | Approved indication for hypercholesterolemia and cardiovascular risk reduction (Phase 4). | ChEMBL, FDA/EMA labels |\n| **Direct Target-Disease Evidence** | Exceptionally high score (0.82\u20130.85) connecting PCSK9 to familial and primary hypercholesterolemia. | Open Targets |\n| **Genetic Evidence** | Robust gain-of-function and loss-of-function human genetic validation in autosomal dominant hypercholesterolemia. | ClinVar, Open Targets |\n| **Tissue Evidence** | GTEx confirms primary hepatic RNA expression (25.55 TPM), matching the site of LDLR regulation. | GTEx, HPA |\n| **Safety Signals** | Post-market reporting shows nasopharyngitis, muscle spasms, and cardiovascular events (the latter influenced by indication bias). | openFDA FAERS |\n\n**Conclusion:** The biological rationale for evolocumab targeting PCSK9 in hypercholesterolemia is supported by robust, concordant evidence across human genetics, physiological tissue distribution (hepatic localization), biochemical mechanism of action, and regulatory approvals."
+    "summary": "### 1. Target Summary\n* **Gene Symbol:** *PCSK9* (Proprotein Convertase Subtilisin/Kexin Type 9)\n* **Ensembl ID:** `ENSG00000169174`\n* **Biological Function:** PCSK9 encodes a secreted serine protease that binds to the low-density lipoprotein receptor (LDLR) on the surface of hepatocytes, promoting LDLR degradation in lysosomes. Inhibiting or blocking PCSK9 prevents LDLR degradation, increasing hepatic surface LDLR expression and accelerating clearance of circulating low-density lipoprotein cholesterol (LDL-C).\n\n---\n\n### 2. Disease Summary\n* **Disease:** Hypercholesterolemia\n* **Canonical Identifiers:** \n  * MeSH: `D006937`\n  * HPO: `HP_0003124`\n  * MONDO: `MONDO_0005439` (Familial hypercholesterolemia), `MONDO_0011369` (Hypercholesterolemia, autosomal dominant, 3)\n* **Pathophysiology:** Characterized by elevated concentrations of total cholesterol and LDL-C in the blood, leading to accelerated atherogenesis and heightened risk of coronary artery disease and major adverse cardiovascular events.\n\n---\n\n### 3. Drug Summary\n* **Drug Name:** Evolocumab (Trade Name: Repatha\u00ae; ChEMBL ID: `CHEMBL2364655`)\n* **Drug Class & Type:** Fully human IgG2 monoclonal antibody targeting extracellular PCSK9 (`-umab` stem; ATC code `C10AX13`).\n* **Approval Status:** Approved (Max Phase 4.0; initial approval in 2015 by FDA/EMA).\n* **Route of Administration:** Parenteral (subcutaneous injection).\n* **Mechanism of Action:** Direct binding to circulating PCSK9, preventing its interaction with the LDLR, thereby reducing LDLR degradation and lowering serum LDL-C levels.\n\n---\n\n### 4. Tissue Evidence\n* **GTEx RNA Expression (v8):**\n  * **Highest Expression:** Liver (median `25.55 TPM`), consistent with primary physiological role in hepatic LDLR regulation.\n  * **Secondary Expression:** Brain Cerebellar Hemisphere (`23.50 TPM`), Brain Cerebellum (`22.15 TPM`), Lung (`6.74 TPM`), Esophagus Mucosa (`4.94 TPM`), Small Intestine (`2.89 TPM`), Pancreas (`2.68 TPM`).\n* **Human Protein Atlas (HPA):**\n  * Protein tissue distribution is categorized as \"Detected in some\" with \"Group enriched\" specificity (score 83). High protein level intensities are reported in lung and kidney.\n* **Tissue Interpretation:** \n  * The strong hepatic expression observed in GTEx aligns directly with hepatic lipid metabolism and LDLR recycling dynamics.\n  * *Potential Tissue Complexity:* High cerebellar RNA levels in GTEx warrant contextual mention, though monoclonal antibodies such as evolocumab do not cross the intact blood-brain barrier under standard therapeutic conditions.\n\n---\n\n### 5. Genetic Evidence\n* **ClinVar Records:** 5 representative variant entries retrieved (`4881694`, `4875483`, `4874269`, `4861692`, `4861691`).\n* **Mendelian Pathology:** Gain-of-function variants in *PCSK9* cause autosomal dominant hypercholesterolemia 3 (`MONDO_0011369`), leading to severe hypercholesterolemia due to excessive LDLR degradation. Conversely, loss-of-function variants in *PCSK9* are well-documented to result in low circulating LDL-C levels and reduced risk of coronary heart disease without severe adverse phenotypes.\n\n---\n\n### 6. Disease Association Evidence\n* **Open Targets Score Summary:**\n  * Familial Hypercholesterolemia (`MONDO_0005439`): **0.852**\n  * Hypercholesterolemia (`HP_0003124`): **0.820**\n  * Autosomal Dominant Hypercholesterolemia 3 (`MONDO_0011369`): **0.816**\n  * Cardiovascular Disorder (`MONDO_0004995`): **0.724**\n  * Coronary Artery Disorder (`MONDO_0005010`): **0.718**\n* **Evidence Level:** Direct genetic, clinical, and database evidence strongly connects *PCSK9* dysregulation to hypercholesterolemia and downstream cardiovascular sequelae.\n\n---\n\n### 7. Safety Evidence\n* **openFDA FAERS Safety Signals:**\n  * Common post-marketing reported adverse events include:\n    * Dyspnoea ($n=120$)\n    * Atrial fibrillation ($n=101$)\n    * Coronary artery disease ($n=100$)\n    * Drug ineffective ($n=99$)\n    * Muscle spasms ($n=96$)\n    * Cough ($n=93$)\n    * Nasopharyngitis ($n=89$)\n    * Cardiac disorder ($n=86$)\n    * Dysphonia ($n=85$)\n    * Chest discomfort ($n=83$)\n* **Safety Interpretation:** \n  * Spontaneous post-marketing reporting in FAERS reflects adverse events reported in patients taking evolocumab, but does **not** establish causality.\n  * Reported cardiac and vascular events (e.g., coronary artery disease, atrial fibrillation) reflect the underlying baseline cardiovascular risk profile of hypercholesterolemic patients receiving therapy.\n  * Nasopharyngitis and upper respiratory symptoms align with established clinical trial safety profiles for monoclonal antibody therapies.\n\n---\n\n### 8. Evidence Gaps\n* **Direct Database Gaps:** Direct standalone OMIM and DisGeNET API endpoints were not directly queried by the tool suite (though human genetic associations are captured in Open Targets and ClinVar).\n* **Mechanistic / Pharmacodynamic Gaps:** Long-term effects of near-complete systemic suppression of extracellular PCSK9 across decades continue to be monitored in long-term extension studies.\n\n---\n\n### 9. Potential Contradictions and Mismatches\n* **GTEx vs. Target Site:** GTEx displays notable transcript expression in cerebellar brain tissues alongside the primary liver target. However, because evolocumab is a high-molecular-weight IgG2 monoclonal antibody administered parenterally, central nervous system exposure is extremely low due to the blood-brain barrier. Thus, CNS RNA expression does not represent an immediate therapeutic mismatch for systemic lipid lowering.\n* **HPA vs. GTEx Annotations:** Tissue naming and intensity scores differ between GTEx (RNA) and HPA (protein) due to non-standardized tissue sample labeling across databases rather than established biological contradiction.\n\n---\n\n### 10. Overall Evidence Assessment\n\n| Category | Evidence Level | Summary |\n| :--- | :--- | :--- |\n| **Direct Clinical Evidence** | **Strong / Confirmed** | Evolocumab is an FDA- and EMA-approved therapeutic (Phase 4) specifically indicated for hypercholesterolemia and cardiovascular risk reduction. |\n| **Mechanistic Evidence** | **Strong** | Monoclonal antibody inhibition of extracellular PCSK9 prevents LDLR lysosomal degradation, increasing hepatic surface LDLR density and lowering serum LDL-C. |\n| **Genetic Validation** | **Very High** | Gain-of-function variants cause human hypercholesterolemia; loss-of-function variants lower LDL-C and confer cardiovascular protection. |\n| **Tissue Alignment** | **Consistent** | Predominant hepatic GTEx expression aligns with the primary site of cholesterol clearance via LDLR. |\n| **Safety Profile** | **Acceptable / Monitored** | FAERS signals predominantly capture baseline cardiovascular risk of target patient population and minor respiratory/injection-site symptoms. |\n\n**Verdict:** The target-drug-disease triplet (*PCSK9* \u2013 evolocumab \u2013 hypercholesterolemia) represents a fully validated, clinically approved indication backed by concordant genetic, mechanistic, tissue-level, and human clinical trial evidence."
   }
 }

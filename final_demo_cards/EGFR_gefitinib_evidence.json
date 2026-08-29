@@ -1,0 +1,1458 @@
+{
+  "target": "EGFR",
+  "drug": "gefitinib",
+  "disease": "non-small cell lung cancer",
+  "sources": {
+    "ensembl": {
+      "status": "success",
+      "source": "Ensembl",
+      "data": {
+        "query": "EGFR",
+        "ensembl_id": "ENSG00000146648"
+      },
+      "error": null
+    },
+    "opentargets": {
+      "status": "success",
+      "source": "Open Targets",
+      "data": {
+        "query": "EGFR",
+        "ensembl_id": "ENSG00000146648",
+        "results": [
+          {
+            "disease_id": "MONDO_0005233",
+            "disease_name": "non-small cell lung carcinoma",
+            "association_score": 0.8525670184292347
+          },
+          {
+            "disease_id": "MONDO_0005061",
+            "disease_name": "lung adenocarcinoma",
+            "association_score": 0.7744435748658476
+          },
+          {
+            "disease_id": "MONDO_0004992",
+            "disease_name": "cancer",
+            "association_score": 0.7369034999647346
+          },
+          {
+            "disease_id": "MONDO_0010150",
+            "disease_name": "head and neck squamous cell carcinoma",
+            "association_score": 0.7252247263598263
+          },
+          {
+            "disease_id": "MONDO_0008903",
+            "disease_name": "lung cancer",
+            "association_score": 0.7173634187423739
+          }
+        ],
+        "count": 5
+      },
+      "error": null
+    },
+    "gtex": {
+      "status": "success",
+      "source": "GTEx",
+      "data": {
+        "gene": "EGFR",
+        "gencode_id": "ENSG00000146648.17",
+        "dataset": "gtex_v8",
+        "tissue_count": 54,
+        "tissues": [
+          {
+            "tissue": "Adipose_Subcutaneous",
+            "median_tpm": 39.7322,
+            "ontology_id": "UBERON:0002190",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adipose_Visceral_Omentum",
+            "median_tpm": 25.8382,
+            "ontology_id": "UBERON:0010414",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adrenal_Gland",
+            "median_tpm": 14.6419,
+            "ontology_id": "UBERON:0002369",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Aorta",
+            "median_tpm": 23.4493,
+            "ontology_id": "UBERON:0001496",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Coronary",
+            "median_tpm": 20.1819,
+            "ontology_id": "UBERON:0001621",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Tibial",
+            "median_tpm": 33.1978,
+            "ontology_id": "UBERON:0007610",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Bladder",
+            "median_tpm": 23.5296,
+            "ontology_id": "UBERON:0001255",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Amygdala",
+            "median_tpm": 4.94781,
+            "ontology_id": "UBERON:0001876",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Anterior_cingulate_cortex_BA24",
+            "median_tpm": 5.58234,
+            "ontology_id": "UBERON:0009835",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Caudate_basal_ganglia",
+            "median_tpm": 7.9245600000000005,
+            "ontology_id": "UBERON:0001873",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellar_Hemisphere",
+            "median_tpm": 2.39642,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellum",
+            "median_tpm": 4.72511,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cortex",
+            "median_tpm": 6.2543,
+            "ontology_id": "UBERON:0001870",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Frontal_Cortex_BA9",
+            "median_tpm": 5.61144,
+            "ontology_id": "UBERON:0009834",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hippocampus",
+            "median_tpm": 2.9834,
+            "ontology_id": "UBERON:0001954",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hypothalamus",
+            "median_tpm": 3.28776,
+            "ontology_id": "UBERON:0001898",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Nucleus_accumbens_basal_ganglia",
+            "median_tpm": 6.9520100000000005,
+            "ontology_id": "UBERON:0001882",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Putamen_basal_ganglia",
+            "median_tpm": 5.38999,
+            "ontology_id": "UBERON:0001874",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Spinal_cord_cervical_c-1",
+            "median_tpm": 2.0341,
+            "ontology_id": "UBERON:0006469",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Substantia_nigra",
+            "median_tpm": 4.05847,
+            "ontology_id": "UBERON:0002038",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Breast_Mammary_Tissue",
+            "median_tpm": 32.9422,
+            "ontology_id": "UBERON:0008367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_Cultured_fibroblasts",
+            "median_tpm": 60.6276,
+            "ontology_id": "EFO:0002009",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_EBV-transformed_lymphocytes",
+            "median_tpm": 0.148094,
+            "ontology_id": "EFO:0000572",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Ectocervix",
+            "median_tpm": 30.9548,
+            "ontology_id": "UBERON:0012249",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Endocervix",
+            "median_tpm": 24.7174,
+            "ontology_id": "UBERON:0000458",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Sigmoid",
+            "median_tpm": 18.9776,
+            "ontology_id": "UBERON:0001159",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Transverse",
+            "median_tpm": 15.0498,
+            "ontology_id": "UBERON:0001157",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Gastroesophageal_Junction",
+            "median_tpm": 34.6313,
+            "ontology_id": "UBERON:0004550",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Mucosa",
+            "median_tpm": 29.9136,
+            "ontology_id": "UBERON:0006920",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Muscularis",
+            "median_tpm": 31.8016,
+            "ontology_id": "UBERON:0004648",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Fallopian_Tube",
+            "median_tpm": 28.1227,
+            "ontology_id": "UBERON:0003889",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Atrial_Appendage",
+            "median_tpm": 4.9930699999999995,
+            "ontology_id": "UBERON:0006631",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Left_Ventricle",
+            "median_tpm": 3.11803,
+            "ontology_id": "UBERON:0006566",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Cortex",
+            "median_tpm": 5.2046,
+            "ontology_id": "UBERON:0001225",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Medulla",
+            "median_tpm": 10.6746,
+            "ontology_id": "UBERON:0001293",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Liver",
+            "median_tpm": 16.9142,
+            "ontology_id": "UBERON:0001114",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Lung",
+            "median_tpm": 22.1273,
+            "ontology_id": "UBERON:0008952",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Minor_Salivary_Gland",
+            "median_tpm": 31.625999999999998,
+            "ontology_id": "UBERON:0006330",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Muscle_Skeletal",
+            "median_tpm": 6.7897300000000005,
+            "ontology_id": "UBERON:0011907",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Nerve_Tibial",
+            "median_tpm": 43.1228,
+            "ontology_id": "UBERON:0001323",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Ovary",
+            "median_tpm": 20.7359,
+            "ontology_id": "UBERON:0000992",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pancreas",
+            "median_tpm": 6.84974,
+            "ontology_id": "UBERON:0001150",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pituitary",
+            "median_tpm": 4.23149,
+            "ontology_id": "UBERON:0000007",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Prostate",
+            "median_tpm": 27.0509,
+            "ontology_id": "UBERON:0002367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Not_Sun_Exposed_Suprapubic",
+            "median_tpm": 75.9298,
+            "ontology_id": "UBERON:0036149",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Sun_Exposed_Lower_leg",
+            "median_tpm": 78.3374,
+            "ontology_id": "UBERON:0004264",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Small_Intestine_Terminal_Ileum",
+            "median_tpm": 12.8558,
+            "ontology_id": "UBERON:0001211",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Spleen",
+            "median_tpm": 6.2702,
+            "ontology_id": "UBERON:0002106",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Stomach",
+            "median_tpm": 11.0075,
+            "ontology_id": "UBERON:0000945",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Testis",
+            "median_tpm": 5.731380000000001,
+            "ontology_id": "UBERON:0000473",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Thyroid",
+            "median_tpm": 25.0389,
+            "ontology_id": "UBERON:0002046",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Uterus",
+            "median_tpm": 21.3998,
+            "ontology_id": "UBERON:0000995",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Vagina",
+            "median_tpm": 40.6031,
+            "ontology_id": "UBERON:0000996",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Whole_Blood",
+            "median_tpm": 0.0450544,
+            "ontology_id": "UBERON:0013756",
+            "unit": "TPM"
+          }
+        ],
+        "highest_expression_tissue": {
+          "tissue": "Skin_Sun_Exposed_Lower_leg",
+          "median_tpm": 78.3374,
+          "ontology_id": "UBERON:0004264",
+          "unit": "TPM"
+        }
+      },
+      "error": null
+    },
+    "hpa": {
+      "status": "success",
+      "source": "Human Protein Atlas",
+      "data": {
+        "gene": "EGFR",
+        "results": [
+          {
+            "Gene": "EGFR",
+            "Ensembl": "ENSG00000146648",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "FLT4",
+            "Ensembl": "ENSG00000037280",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "76",
+            "Protein tissue specific Intensity": {
+              "lymphoid tissue": "7570.6"
+            }
+          },
+          {
+            "Gene": "KDR",
+            "Ensembl": "ENSG00000128052",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "30376",
+            "Protein tissue specific Intensity": {
+              "heart muscle": "3037579.7"
+            }
+          },
+          {
+            "Gene": "FLT1",
+            "Ensembl": "ENSG00000102755",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "1602",
+            "Protein tissue specific Intensity": {
+              "skeletal muscle": "160212.6"
+            }
+          },
+          {
+            "Gene": "RHBDF1",
+            "Ensembl": "ENSG00000007384",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "75",
+            "Protein tissue specific Intensity": {
+              "salivary gland": "7529.2"
+            }
+          },
+          {
+            "Gene": "EREG",
+            "Ensembl": "ENSG00000124882",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "EPS15",
+            "Ensembl": "ENSG00000085832",
+            "Protein tissue specificity": "Tissue enhanced",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "bone marrow": "80552790.0"
+            }
+          },
+          {
+            "Gene": "EPS8",
+            "Ensembl": "ENSG00000151491",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "ERBB3",
+            "Ensembl": "ENSG00000065361",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "470",
+            "Protein tissue specific Intensity": {
+              "lung": "46964.9"
+            }
+          },
+          {
+            "Gene": "GRB7",
+            "Ensembl": "ENSG00000141738",
+            "Protein tissue specificity": "Tissue enhanced",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "intestine": "985992.9"
+            }
+          },
+          {
+            "Gene": "NRG4",
+            "Ensembl": "ENSG00000169752",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "RAB11FIP1",
+            "Ensembl": "ENSG00000156675",
+            "Protein tissue specificity": "Tissue enhanced",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "lymphoid tissue": "5181831.4",
+              "ovary": "6262787.0"
+            }
+          },
+          {
+            "Gene": "SPINK9",
+            "Ensembl": "ENSG00000204909",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "UBASH3B",
+            "Ensembl": "ENSG00000154127",
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "lung": "1196265.6",
+              "lymphoid tissue": "4510161.4"
+            }
+          },
+          {
+            "Gene": "VEGFC",
+            "Ensembl": "ENSG00000150630",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "VEGFD",
+            "Ensembl": "ENSG00000165197",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "AREG",
+            "Ensembl": "ENSG00000109321",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "BTC",
+            "Ensembl": "ENSG00000174808",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "EGF",
+            "Ensembl": "ENSG00000138798",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in single",
+            "Protein tissue specificity score": "389",
+            "Protein tissue specific Intensity": {
+              "kidney": "38908.0"
+            }
+          },
+          {
+            "Gene": "ERBB2",
+            "Ensembl": "ENSG00000141736",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "lymphoid tissue": "8296603.9"
+            }
+          },
+          {
+            "Gene": "GRB2",
+            "Ensembl": "ENSG00000177885",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "HBEGF",
+            "Ensembl": "ENSG00000113070",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "MMRN2",
+            "Ensembl": "ENSG00000173269",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "SH3D19",
+            "Ensembl": "ENSG00000109686",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "SHC1",
+            "Ensembl": "ENSG00000160691",
+            "Protein tissue specificity": "Tissue enriched",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "bone marrow": "13633356.2"
+            }
+          },
+          {
+            "Gene": "TGFA",
+            "Ensembl": "ENSG00000163235",
+            "Protein tissue specificity": "Not detected",
+            "Protein tissue distribution": "Not detected",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "TNK2",
+            "Ensembl": "ENSG00000061938",
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": "170",
+            "Protein tissue specific Intensity": {
+              "cerebral cortex": "8137.9",
+              "lymphoid tissue": "25931.5"
+            }
+          },
+          {
+            "Gene": "VEGFB",
+            "Ensembl": "ENSG00000173511",
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in many",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "blood vessel": "933689.6",
+              "skin": "288639.0"
+            }
+          }
+        ]
+      },
+      "error": null
+    },
+    "clinvar": {
+      "status": "success",
+      "source": "ClinVar",
+      "data": {
+        "query": "EGFR",
+        "variant_ids": [
+          "4883967",
+          "4881378",
+          "4881265",
+          "4881261",
+          "4881248"
+        ],
+        "count": 5
+      },
+      "error": null
+    },
+    "chembl": {
+      "status": "success",
+      "source": "ChEMBL",
+      "data": {
+        "query": "gefitinib",
+        "count": 3,
+        "results": [
+          {
+            "atc_classifications": [
+              "L01EB01"
+            ],
+            "availability_type": 1,
+            "biotherapeutic": null,
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": 2,
+            "cross_references": [
+              {
+                "xref_id": "gefitinib",
+                "xref_name": "gefitinib",
+                "xref_src": "DailyMed"
+              },
+              {
+                "xref_id": "human/EPAR/gefitinib-mylan",
+                "xref_name": "gefitinib-mylan",
+                "xref_src": "EMA"
+              },
+              {
+                "xref_id": "human/EPAR/iressa",
+                "xref_name": "iressa",
+                "xref_src": "EMA"
+              }
+            ],
+            "dosed_ingredient": true,
+            "first_approval": 2003,
+            "first_in_class": 0,
+            "helm_notation": null,
+            "inorganic_flag": 0,
+            "max_phase": "4.0",
+            "molecule_chembl_id": "CHEMBL939",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL939",
+              "molecule_chembl_id": "CHEMBL939",
+              "parent_chembl_id": "CHEMBL939"
+            },
+            "molecule_properties": {
+              "alogp": "4.28",
+              "aromatic_rings": 3,
+              "full_molformula": "C22H24ClFN4O3",
+              "full_mwt": "446.91",
+              "hba": 7,
+              "hbd": 1,
+              "heavy_atoms": 31,
+              "mw_freebase": "446.91",
+              "np_likeness_score": "-1.75",
+              "num_ro5_violations": 0,
+              "psa": "68.74",
+              "qed_weighted": "0.52",
+              "ro3_pass": "N",
+              "rtb": 8
+            },
+            "molecule_structures": {
+              "canonical_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1",
+              "molfile": "\n     RDKit          2D\n\n 31 34  0  0  0  0  0  0  0  0999 V2000\n    2.4667   -5.2708    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0833   -5.6250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.4667   -4.5625    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8542   -5.6292    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6958   -5.2667    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8542   -4.2083    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0833   -6.3333    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2417   -5.2750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2417   -4.5625    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.3125   -7.7417    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0750   -4.2042    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6958   -7.3917    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8250   -5.6292    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6917   -4.5542    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6958   -6.6833    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.9250   -7.3875    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0542   -6.3292    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    4.9208   -6.6750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.3125   -8.4500    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0\n    4.3042   -6.3250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.5375   -7.7375    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    0.6292   -5.6292    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    0.6292   -4.2083    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2125   -5.2750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.6000   -5.6292    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4375   -5.2708    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8250   -6.3333    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4417   -6.6875    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0500   -5.6208    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0125   -5.2750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0167   -4.5625    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  2  1  1  0\n  3  1  1  0\n  4  1  2  0\n  5  2  2  0\n  6  3  2  0\n  7  2  1  0\n  8  4  1  0\n  9  8  2  0\n 10 12  1  0\n 11  3  1  0\n 12 15  2  0\n 13 24  1  0\n 14  5  1  0\n 15  7  1  0\n 16 10  2  0\n 17 28  1  0\n 18 20  2  0\n 19 10  1  0\n 20 15  1  0\n 21 16  1  0\n 22  8  1  0\n 23  9  1  0\n 24 25  1  0\n 25 30  1  0\n 26 13  1  0\n 27 13  1  0\n 28 27  1  0\n 29 26  1  0\n 30 22  1  0\n 31 23  1  0\n 11 14  2  0\n  9  6  1  0\n 18 16  1  0\n 17 29  1  0\nM  END\n> <chembl_id>\nCHEMBL939\n\n> <chembl_pref_name>\nGEFITINIB",
+              "standard_inchi": "InChI=1S/C22H24ClFN4O3/c1-29-20-13-19-16(12-21(20)31-8-2-5-28-6-9-30-10-7-28)22(26-14-25-19)27-15-3-4-18(24)17(23)11-15/h3-4,11-14H,2,5-10H2,1H3,(H,25,26,27)",
+              "standard_inchi_key": "XGALLCVXEZPNRQ-UHFFFAOYSA-N"
+            },
+            "molecule_synonyms": [
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "ATC",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "BAN",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "BNF",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "EMA",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "FDA",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "INN",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "JAN",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "MERCK_INDEX",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "OTHER",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib",
+                "syn_type": "USAN",
+                "synonyms": "GEFITINIB"
+              },
+              {
+                "molecule_synonym": "Gefitinib mylan",
+                "syn_type": "TRADE_NAME",
+                "synonyms": "GEFITINIB MYLAN"
+              },
+              {
+                "molecule_synonym": "Iressa",
+                "syn_type": "TRADE_NAME",
+                "synonyms": "IRESSA"
+              },
+              {
+                "molecule_synonym": "NSC-759856",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "NSC-759856"
+              },
+              {
+                "molecule_synonym": "ZD-1839",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "ZD-1839"
+              },
+              {
+                "molecule_synonym": "ZD1839",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "ZD1839"
+              }
+            ],
+            "molecule_type": "Small molecule",
+            "natural_product": 0,
+            "oral": true,
+            "orphan": 0,
+            "parenteral": false,
+            "polymer_flag": 0,
+            "pref_name": "GEFITINIB",
+            "prodrug": 0,
+            "score": 39.0,
+            "structure_type": "MOL",
+            "therapeutic_flag": true,
+            "topical": false,
+            "usan_stem": "-tinib",
+            "usan_stem_definition": "tyrosine kinase inhibitors",
+            "usan_substem": "-tinib",
+            "usan_year": 2002,
+            "veterinary": 0,
+            "withdrawn_flag": false
+          },
+          {
+            "atc_classifications": [],
+            "availability_type": -1,
+            "biotherapeutic": null,
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": -1,
+            "cross_references": [],
+            "dosed_ingredient": false,
+            "first_approval": null,
+            "first_in_class": -1,
+            "helm_notation": null,
+            "inorganic_flag": -1,
+            "max_phase": null,
+            "molecule_chembl_id": "CHEMBL5956974",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL5956974",
+              "molecule_chembl_id": "CHEMBL5956974",
+              "parent_chembl_id": "CHEMBL5956974"
+            },
+            "molecule_properties": {
+              "alogp": "3.55",
+              "aromatic_rings": 2,
+              "full_molformula": "C22H26ClFN4O3",
+              "full_mwt": "448.93",
+              "hba": 7,
+              "hbd": 1,
+              "heavy_atoms": 31,
+              "mw_freebase": "448.93",
+              "np_likeness_score": "-0.77",
+              "num_ro5_violations": 0,
+              "psa": "68.74",
+              "qed_weighted": "0.49",
+              "ro3_pass": "N",
+              "rtb": 8
+            },
+            "molecule_structures": {
+              "canonical_smiles": "COc1cc2ncnc(NC3=CC(Cl)C(F)C=C3)c2cc1OCCCN1CCOCC1",
+              "molfile": "BDBM582528\n     RDKit          2D\n\n 31 34  0  0  0  0  0  0  0  0999 V2000\n    0.7500   -6.4952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000   -5.1962    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -3.8971    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    0.0000    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0000    0.0000    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0000    2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.7500    3.8971    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0000    5.1962    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0\n   -5.2500    3.8971    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.0000    5.1962    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.0000    2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.2500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -3.8971    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000   -5.1962    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0000   -5.1962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.7500   -6.4952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.2500   -6.4952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.0000   -7.7942    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.5000   -7.7942    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -8.2500   -9.0933    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.5000  -10.3923    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.0000  -10.3923    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.2500   -9.0933    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  2  0\n  4  5  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  2  0\n  8  9  1  0\n  9 10  1  0\n 10 11  1  0\n 11 12  2  0\n 12 13  1  0\n 13 14  1  0\n 13 15  1  0\n 15 16  1  0\n 15 17  1  0\n 17 18  2  0\n  9 19  2  0\n 19 20  1  0\n 20 21  2  0\n 21 22  1  0\n 22 23  1  0\n 23 24  1  0\n 24 25  1  0\n 25 26  1  0\n 26 27  1  0\n 27 28  1  0\n 28 29  1  0\n 29 30  1  0\n 30 31  1  0\n 21  3  1  0\n 31 26  1  0\n 19  5  1  0\n 18 11  1  0\nM  END\n> <chembl_id>\nCHEMBL5956974\n\n> <chembl_pref_name>\nNone",
+              "standard_inchi": "InChI=1S/C22H26ClFN4O3/c1-29-20-13-19-16(12-21(20)31-8-2-5-28-6-9-30-10-7-28)22(26-14-25-19)27-15-3-4-18(24)17(23)11-15/h3-4,11-14,17-18H,2,5-10H2,1H3,(H,25,26,27)",
+              "standard_inchi_key": "YWEAQFVLBUGCSC-UHFFFAOYSA-N"
+            },
+            "molecule_synonyms": [],
+            "molecule_type": null,
+            "natural_product": 0,
+            "oral": false,
+            "orphan": -1,
+            "parenteral": false,
+            "polymer_flag": 0,
+            "pref_name": null,
+            "prodrug": -1,
+            "score": 30.0,
+            "structure_type": "MOL",
+            "therapeutic_flag": false,
+            "topical": false,
+            "usan_stem": null,
+            "usan_stem_definition": null,
+            "usan_substem": null,
+            "usan_year": null,
+            "veterinary": -1,
+            "withdrawn_flag": false
+          },
+          {
+            "atc_classifications": [],
+            "availability_type": -1,
+            "biotherapeutic": null,
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": -1,
+            "cross_references": [],
+            "dosed_ingredient": false,
+            "first_approval": null,
+            "first_in_class": -1,
+            "helm_notation": null,
+            "inorganic_flag": -1,
+            "max_phase": null,
+            "molecule_chembl_id": "CHEMBL4587573",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL4587573",
+              "molecule_chembl_id": "CHEMBL4587573",
+              "parent_chembl_id": "CHEMBL4587573"
+            },
+            "molecule_properties": {
+              "alogp": "7.39",
+              "aromatic_rings": 5,
+              "full_molformula": "C47H57ClFN7O8S",
+              "full_mwt": "934.53",
+              "hba": 13,
+              "hbd": 4,
+              "heavy_atoms": 65,
+              "mw_freebase": "934.53",
+              "np_likeness_score": "-0.90",
+              "num_ro5_violations": 3,
+              "psa": "186.36",
+              "qed_weighted": "0.05",
+              "ro3_pass": "N",
+              "rtb": 22
+            },
+            "molecule_structures": {
+              "canonical_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCCCOCCOCCC(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(-c2scnc2C)cc1)C(C)(C)C",
+              "molfile": " \n     RDKit          2D\n\n 65 70  0  0  0  0  0  0  0  0999 V2000\n   -7.7949   -4.3418    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.7938   -5.1613    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.0903   -5.5703    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.0885   -3.9329    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.3774   -4.3382    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.3781   -5.1572    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.6669   -5.5643    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9636   -5.1535    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9672   -4.3313    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.6778   -3.9280    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.0839   -6.3875    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.7887   -6.7977    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.2609   -3.9184    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.2641   -3.1013    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.2532   -5.5593    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.5478   -5.1480    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.8373   -5.5538    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.1319   -5.1425    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.4214   -5.5483    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7160   -5.1370    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.0056   -5.5428    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -8.5007   -6.3874    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -9.2060   -6.7970    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -9.2074   -7.6150    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -8.4930   -8.0218    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.7849   -7.6099    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -9.9173   -6.3897    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0\n   -9.9127   -8.0262    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7034   -5.1315    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4127   -5.5373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.1188   -5.1260    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    2.8281   -5.5318    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.5342   -5.1205    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.2435   -5.5263    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.9496   -5.1150    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    4.2467   -6.3435    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    5.6589   -5.5208    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    6.3650   -5.1094    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.6621   -6.3380    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.9560   -6.7493    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    6.3714   -6.7438    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.6543   -7.1525    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.0743   -5.5153    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    6.3619   -4.2923    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    7.1598   -6.3277    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.9598   -6.4945    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.3657   -5.7851    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.8164   -5.1801    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.2951   -7.2397    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    7.9825   -4.3799    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.7585   -4.1237    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    9.3684   -4.6677    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   10.1444   -4.4115    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.3727   -3.8360    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   10.7508   -4.9555    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   11.5261   -4.6999    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   11.6929   -3.8990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   11.0781   -3.3542    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   10.3051   -3.6127    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   12.4685   -3.6418    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   13.1307   -4.1203    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   13.7889   -3.6359    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   13.5317   -2.8602    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   12.7145   -2.8653    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0\n   13.1342   -4.9374    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  2  0\n  2  3  1  0\n  3  6  2  0\n  5  4  2  0\n  4  1  1  0\n  5  6  1  0\n  6  7  1  0\n  7  8  2  0\n  8  9  1  0\n  9 10  2  0\n 10  5  1  0\n  3 11  1  0\n 11 12  1  0\n  9 13  1  0\n 13 14  1  0\n  8 15  1  0\n 15 16  1  0\n 16 17  1  0\n 17 18  1  0\n 18 19  1  0\n 19 20  1  0\n 20 21  1  0\n 12 22  2  0\n 22 23  1  0\n 23 24  2  0\n 24 25  1  0\n 25 26  2  0\n 26 12  1  0\n 23 27  1  0\n 24 28  1  0\n 21 29  1  0\n 29 30  1  0\n 30 31  1  0\n 31 32  1  0\n 32 33  1  0\n 33 34  1  0\n 34 35  1  0\n 34 36  2  0\n 37 35  1  0\n 37 38  1  0\n 37 39  1  6\n 39 40  1  0\n 39 41  1  0\n 39 42  1  0\n 38 43  1  0\n 38 44  2  0\n 43 45  1  0\n 45 46  1  0\n 46 47  1  0\n 47 48  1  0\n 48 43  1  0\n 46 49  1  1\n 48 50  1  6\n 50 51  1  0\n 51 52  1  0\n 52 53  1  0\n 50 54  2  0\n 53 55  2  0\n 55 56  1  0\n 56 57  2  0\n 57 58  1  0\n 58 59  2  0\n 59 53  1  0\n 57 60  1  0\n 60 61  2  0\n 61 62  1  0\n 62 63  2  0\n 63 64  1  0\n 64 60  1  0\n 61 65  1  0\nM  END\n> <chembl_id>\nCHEMBL4587573\n\n> <chembl_pref_name>\nNone",
+              "standard_inchi": "InChI=1S/C47H57ClFN7O8S/c1-29-42(65-28-53-29)31-11-9-30(10-12-31)25-50-45(59)38-22-33(57)26-56(38)46(60)43(47(2,3)4)55-41(58)15-18-63-20-19-62-16-7-6-8-17-64-40-23-34-37(24-39(40)61-5)51-27-52-44(34)54-32-13-14-36(49)35(48)21-32/h9-14,21,23-24,27-28,33,38,43,57H,6-8,15-20,22,25-26H2,1-5H3,(H,50,59)(H,55,58)(H,51,52,54)/t33-,38+,43-/m1/s1",
+              "standard_inchi_key": "NICKHWYZMNLEPJ-TZSMONEZSA-N"
+            },
+            "molecule_synonyms": [],
+            "molecule_type": "Unknown",
+            "natural_product": 0,
+            "oral": false,
+            "orphan": -1,
+            "parenteral": false,
+            "polymer_flag": 0,
+            "pref_name": null,
+            "prodrug": -1,
+            "score": 3.0,
+            "structure_type": "MOL",
+            "therapeutic_flag": false,
+            "topical": false,
+            "usan_stem": null,
+            "usan_stem_definition": null,
+            "usan_substem": null,
+            "usan_year": null,
+            "veterinary": -1,
+            "withdrawn_flag": false
+          }
+        ]
+      },
+      "error": null
+    },
+    "faers": {
+      "status": "success",
+      "source": "openFDA FAERS",
+      "data": {
+        "drug": "gefitinib",
+        "events": [
+          {
+            "term": "MALIGNANT NEOPLASM PROGRESSION",
+            "count": 611
+          },
+          {
+            "term": "DRUG RESISTANCE",
+            "count": 488
+          },
+          {
+            "term": "ACQUIRED GENE MUTATION",
+            "count": 219
+          },
+          {
+            "term": "DIARRHOEA",
+            "count": 175
+          },
+          {
+            "term": "DISEASE PROGRESSION",
+            "count": 150
+          },
+          {
+            "term": "RASH",
+            "count": 144
+          },
+          {
+            "term": "METASTASES TO CENTRAL NERVOUS SYSTEM",
+            "count": 112
+          },
+          {
+            "term": "EGFR GENE MUTATION",
+            "count": 110
+          },
+          {
+            "term": "DEATH",
+            "count": 109
+          },
+          {
+            "term": "NAUSEA",
+            "count": 94
+          }
+        ],
+        "count": 10
+      },
+      "error": null
+    },
+    "ontology": {
+      "status": "success",
+      "source": "OLS",
+      "data": {
+        "query": "non-small cell lung cancer",
+        "canonical_name": "Non-small cell lung cancer",
+        "ontology_id": "SNOMED:254637007",
+        "matches": [
+          {
+            "iri": "http://snomed.info/id/254637007",
+            "ontology_name": "snomed",
+            "ontology_prefix": "SNOMED",
+            "short_form": "SNOMED_254637007",
+            "description": [],
+            "label": "Non-small cell lung cancer",
+            "obo_id": "SNOMED:254637007",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C2926",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C2926",
+            "description": [
+              "A group of at least three distinct histological types of lung cancer, including non-small cell squamous cell carcinoma, adenocarcinoma, and large cell carcinoma. Non-small cell lung carcinomas have a poor response to conventional chemotherapy."
+            ],
+            "label": "Lung Non-Small Cell Carcinoma",
+            "obo_id": "NCIT:C2926",
+            "type": "class",
+            "exact_synonyms": [
+              "Lung Non-Small Cell Carcinoma",
+              "NSCLC - Non-Small Cell Lung Cancer",
+              "NSCLC",
+              "Non Small Cell Lung Cancer NOS",
+              "Non-Small Cell Cancer of Lung",
+              "Non-Small Cell Cancer of the Lung",
+              "Non-Small Cell Carcinoma of Lung",
+              "Non-Small Cell Carcinoma of the Lung",
+              "Non-Small Cell Lung Cancer",
+              "Non-Small Cell Lung Carcinoma",
+              "Non-small cell lung cancer, NOS",
+              "non-small cell lung cancer"
+            ]
+          },
+          {
+            "iri": "http://snomed.info/id/426964009",
+            "ontology_name": "snomed",
+            "ontology_prefix": "SNOMED",
+            "short_form": "SNOMED_426964009",
+            "description": [],
+            "label": "Epidermal growth factor receptor positive non-small cell lung cancer",
+            "obo_id": "SNOMED:426964009",
+            "type": "class"
+          },
+          {
+            "iri": "http://snomed.info/id/427038005",
+            "ontology_name": "snomed",
+            "ontology_prefix": "SNOMED",
+            "short_form": "SNOMED_427038005",
+            "description": [],
+            "label": "Epidermal growth factor receptor negative non-small cell lung cancer",
+            "obo_id": "SNOMED:427038005",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C9102",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C9102",
+            "description": [
+              "Stage IIIA includes: (T1a, N2, M0); (T1b, N2, M0); (T2a, N2, M0); (T2b, N2, M0); (T3, N1, M0); (T3, N2, M0); (T4, N0, M0); (T4, N1, M0).  T4: Lung cancer with a tumor of any size that invades any of the following: mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, and separate tumor nodule(s) in a different ipsilateral lobe.  N1: Lung cancer with metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary lymph nodes, including involvement by direct extension.  N2: Lung cancer with metastasis to ipsilateral mediastinal and/or subcarinal lymph nodes.  M0: No distant metastasis. (AJCC 7th ed.)"
+            ],
+            "label": "Stage IIIA Lung Non-Small Cell Cancer AJCC v7",
+            "obo_id": "NCIT:C9102",
+            "type": "class",
+            "exact_synonyms": [
+              "Non Small Cell Lung Cancer Stage IIIA",
+              "Non Small Cell Lung Cancer, Stage IIIA",
+              "Stage IIIA Lung Non-Small Cell Cancer AJCC v7",
+              "Stage IIIA NSCLC",
+              "Stage IIIA Non-Oat Cell Carcinoma of Lung",
+              "Stage IIIA Non-Oat Cell Carcinoma of the Lung",
+              "Stage IIIA Non-Oat Cell Lung Carcinoma",
+              "Stage IIIA Non-Small Cell Carcinoma of Lung",
+              "Stage IIIA Non-Small Cell Carcinoma of the Lung",
+              "Stage IIIA Non-Small Cell Lung Cancer AJCC v7",
+              "Stage IIIA Non-Small Cell Lung Cancer",
+              "Stage IIIA Non-Small Cell Lung Carcinoma",
+              "stage IIIA non-small cell lung cancer"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C9103",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C9103",
+            "description": [
+              "Stage IIIB includes: (T1a, N3, M0); (T1b, N3, M0); (T2a, N3, M0); (T2b, N3, M0); (T3, N3, M0); (T4, N2, M0); (T4, N3, M0).  T4: Lung cancer with a tumor of any size that invades any of the following: mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, and separate tumor nodule(s) in a different ipsilateral lobe.  N2: Lung cancer with metastasis to ipsilateral mediastinal and/or subcarinal lymph nodes.  N3: Lung cancer with metastasis to contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph nodes.  M0: No distant metastasis. (AJCC 7th ed.)"
+            ],
+            "label": "Stage IIIB Lung Non-Small Cell Cancer AJCC v7",
+            "obo_id": "NCIT:C9103",
+            "type": "class",
+            "exact_synonyms": [
+              "Non Small Cell Lung Cancer Stage IIIB",
+              "Non Small Cell Lung Cancer, Stage IIIB",
+              "Stage IIIB Lung Non-Small Cell Cancer AJCC v7",
+              "Stage IIIB NSCLC",
+              "Stage IIIB Non-Oat Cell Carcinoma of Lung",
+              "Stage IIIB Non-Oat Cell Carcinoma of the Lung",
+              "Stage IIIB Non-Oat Cell Lung Carcinoma",
+              "Stage IIIB Non-Small Cell Carcinoma of Lung",
+              "Stage IIIB Non-Small Cell Carcinoma of the Lung",
+              "Stage IIIB Non-Small Cell Lung Cancer AJCC v7",
+              "Stage IIIB Non-Small Cell Lung Cancer",
+              "Stage IIIB Non-Small Cell Lung Carcinoma",
+              "stage IIIB non-small cell lung cancer"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/MONDO_0005233",
+            "ontology_name": "mondo",
+            "ontology_prefix": "MONDO",
+            "short_form": "MONDO_0005233",
+            "description": [
+              "A group of at least three distinct histological types of lung cancer, including non-small cell squamous cell carcinoma, adenocarcinoma, and large cell carcinoma. Non-small cell lung carcinomas have a poor response to conventional chemotherapy."
+            ],
+            "label": "non-small cell lung carcinoma",
+            "obo_id": "MONDO:0005233",
+            "type": "class",
+            "exact_synonyms": [
+              "NSCLC - non-small cell lung cancer",
+              "NSCLC",
+              "non-small cell cancer of lung",
+              "non-small cell cancer of the lung",
+              "non-small cell carcinoma of lung",
+              "non-small cell carcinoma of the lung",
+              "non-small cell lung cancer",
+              "non-small cell lung carcinoma (disease)",
+              "non-small cell lung carcinoma"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C7777",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C7777",
+            "description": [
+              "Stage II includes: IIA (T2b, N0, M0); (T1a, N1, M0); (T1b, N1, M0); (T2a, N1, M0) and IIB (T2b, N1, M0); (T3, N0, M0).  T2b: Lung cancer with a tumor size more than 5 cm but 7 cm or less in greatest dimension.  T1a: Lung cancer with a tumor size of 2 cm or less in greatest dimension, surrounded by lung or visceral pleura and without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus). The uncommon superficial tumor of any size with its invasive component limited to the bronchial wall, which may extend proximal to the main bronchus, is also classified as T1a.  T1b: Lung cancer with a tumor size more than 2 cm but 3 cm or less in greatest dimension, surrounded by lung or visceral pleura and without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus).  T2a: Lung cancer with a tumor size more than 3 cm but 5 cm or less in greatest dimension.  T3: Lung cancer with a tumor size more than 7 cm or one that directly invades any of the following: parietal pleural (PL3) chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or tumor in the main bronchus (less than 2 cm distal to the carina but without involvement of the carina); or associated atelectasis or obstructive pneumonitis of the entire lung or separate tumor nodule(s) in the same lobe. N0: No regional lymph node metastasis.  N1: Lung cancer with metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary lymph nodes, including involvement by direct extension. M0: No distant metastasis. (AJCC 7th ed.)"
+            ],
+            "label": "Stage II Lung Non-Small Cell Cancer AJCC v7",
+            "obo_id": "NCIT:C7777",
+            "type": "class",
+            "exact_synonyms": [
+              "Non -Small Cell Lung Cancer Stage II",
+              "Non Small Cell Lung Cancer Stage II",
+              "Stage II Lung Non-Small Cell Cancer AJCC v7",
+              "Stage II Non-Oat Cell Carcinoma of Lung",
+              "Stage II Non-Oat Cell Carcinoma of the Lung",
+              "Stage II Non-Oat Cell Lung Carcinoma",
+              "Stage II Non-Small Cell Carcinoma of Lung",
+              "Stage II Non-Small Cell Carcinoma of the Lung",
+              "Stage II Non-Small Cell Lung Cancer AJCC v7",
+              "Stage II Non-Small Cell Lung Cancer",
+              "Stage II Non-Small Cell Lung Carcinoma"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C9104",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C9104",
+            "description": [
+              "Stage 0 includes: Tis, N0, M0.  Tis: Carcinoma in situ.  N0: No regional lymph node metastasis.  M0: No distant metastasis. (AJCC 6th and 7th eds.)"
+            ],
+            "label": "Stage 0 Lung Non-Small Cell Cancer AJCC v6 and v7",
+            "obo_id": "NCIT:C9104",
+            "type": "class",
+            "exact_synonyms": [
+              "Lung Non-Small Cell Carcinoma in situ",
+              "Non-Small Cell Carcinoma in situ of Lung",
+              "Non-Small Cell Carcinoma in situ of the Lung",
+              "Stage 0 Lung Non-Small Cell Cancer AJCC v6 and v7",
+              "Stage 0 NSCLC",
+              "Stage 0 Non-Small Cell Carcinoma of Lung",
+              "Stage 0 Non-Small Cell Carcinoma of the Lung",
+              "Stage 0 Non-Small Cell Lung Cancer AJCC v6 and v7",
+              "Stage 0 Non-Small Cell Lung Cancer AJCC v6",
+              "Stage 0 Non-Small Cell Lung Cancer AJCC v7",
+              "Stage 0 Non-Small Cell Lung Cancer",
+              "Stage 0 Non-Small Cell Lung Carcinoma",
+              "stage 0 non-small cell lung carcinoma in situ"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C7783",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C7783",
+            "description": [
+              "The reemergence of non-small cell lung carcinoma after a period of remission."
+            ],
+            "label": "Recurrent Lung Non-Small Cell Carcinoma",
+            "obo_id": "NCIT:C7783",
+            "type": "class",
+            "exact_synonyms": [
+              "Non Small Cell Lung Cancer Recurrent",
+              "Non Small Cell Lung Cancer, Recurrent",
+              "Recurrent Lung Non-Small Cell Carcinoma",
+              "Recurrent NSCLC",
+              "Recurrent Non-Small Cell Cancer of Lung",
+              "Recurrent Non-Small Cell Cancer of the Lung",
+              "Recurrent Non-Small Cell Lung Cancer",
+              "Recurrent Non-Small Cell Lung Carcinoma"
+            ]
+          }
+        ]
+      },
+      "error": null
+    },
+    "disgenet": {
+      "status": "error",
+      "source": "DisGeNET",
+      "data": null,
+      "error": "429 Client Error:  for url: https://api.disgenet.com/api/v1/gda/gene/EGFR?limit=5"
+    },
+    "omim": {
+      "status": "success",
+      "source": "OMIM",
+      "data": {
+        "query": "EGFR",
+        "associations": [
+          {
+            "gene": "EGFR",
+            "gene_name": "Epidermal growth factor receptor",
+            "gene_mim_number": 131550,
+            "ensembl_ids": "ENSG00000146648,ENST00000275493;;;ENST00000275493",
+            "phenotype": "{Nonsmall cell lung cancer, susceptibility to}",
+            "phenotype_mim_number": 211980,
+            "inheritance": "Autosomal dominant; Somatic mutation",
+            "mapping_key": 3
+          },
+          {
+            "gene": "EGFR",
+            "gene_name": "Epidermal growth factor receptor",
+            "gene_mim_number": 131550,
+            "ensembl_ids": "ENSG00000146648,ENST00000275493;;;ENST00000275493",
+            "phenotype": "Adenocarcinoma of lung, response to tyrosine kinase inhibitor in",
+            "phenotype_mim_number": 211980,
+            "inheritance": "Autosomal dominant; Somatic mutation",
+            "mapping_key": 3
+          },
+          {
+            "gene": "EGFR",
+            "gene_name": "Epidermal growth factor receptor",
+            "gene_mim_number": 131550,
+            "ensembl_ids": "ENSG00000146648,ENST00000275493;;;ENST00000275493",
+            "phenotype": "Neonatal nephrocutaneous inflammatory syndrome",
+            "phenotype_mim_number": 616069,
+            "inheritance": "Autosomal recessive",
+            "mapping_key": 3
+          },
+          {
+            "gene": "EGFR",
+            "gene_name": "Epidermal growth factor receptor",
+            "gene_mim_number": 131550,
+            "ensembl_ids": "ENSG00000146648,ENST00000275493;;;ENST00000275493",
+            "phenotype": "Nonsmall cell lung cancer, response to tyrosine kinase inhibitor in",
+            "phenotype_mim_number": 211980,
+            "inheritance": "Autosomal dominant; Somatic mutation",
+            "mapping_key": 3
+          }
+        ],
+        "count": 4
+      },
+      "error": null
+    }
+  },
+  "analysis": {
+    "evidence_availability": "broad",
+    "score": {
+      "score": 9,
+      "maximum": 10,
+      "percentage": 90.0
+    },
+    "tissue_assessment": {
+      "status": "concordant_available",
+      "flag": false,
+      "message": "Both RNA-level and protein-level tissue evidence are available."
+    },
+    "tissue_comparison": {
+      "status": "gtex_only",
+      "mismatch_flag": true,
+      "gtex_tissues": [
+        "Adipose_Subcutaneous",
+        "Adipose_Visceral_Omentum",
+        "Adrenal_Gland",
+        "Artery_Aorta",
+        "Artery_Coronary",
+        "Artery_Tibial",
+        "Bladder",
+        "Brain_Amygdala",
+        "Brain_Anterior_cingulate_cortex_BA24",
+        "Brain_Caudate_basal_ganglia",
+        "Brain_Cerebellar_Hemisphere",
+        "Brain_Cerebellum",
+        "Brain_Cortex",
+        "Brain_Frontal_Cortex_BA9",
+        "Brain_Hippocampus",
+        "Brain_Hypothalamus",
+        "Brain_Nucleus_accumbens_basal_ganglia",
+        "Brain_Putamen_basal_ganglia",
+        "Brain_Spinal_cord_cervical_c-1",
+        "Brain_Substantia_nigra",
+        "Breast_Mammary_Tissue",
+        "Cells_Cultured_fibroblasts",
+        "Cells_EBV-transformed_lymphocytes",
+        "Cervix_Ectocervix",
+        "Cervix_Endocervix",
+        "Colon_Sigmoid",
+        "Colon_Transverse",
+        "Esophagus_Gastroesophageal_Junction",
+        "Esophagus_Mucosa",
+        "Esophagus_Muscularis",
+        "Fallopian_Tube",
+        "Heart_Atrial_Appendage",
+        "Heart_Left_Ventricle",
+        "Kidney_Cortex",
+        "Kidney_Medulla",
+        "Liver",
+        "Lung",
+        "Minor_Salivary_Gland",
+        "Muscle_Skeletal",
+        "Nerve_Tibial",
+        "Ovary",
+        "Pancreas",
+        "Pituitary",
+        "Prostate",
+        "Skin_Not_Sun_Exposed_Suprapubic",
+        "Skin_Sun_Exposed_Lower_leg",
+        "Small_Intestine_Terminal_Ileum",
+        "Spleen",
+        "Stomach",
+        "Testis",
+        "Thyroid",
+        "Uterus",
+        "Vagina",
+        "Whole_Blood"
+      ],
+      "hpa_tissues": [],
+      "shared_tissues": [],
+      "gtex_only": [
+        "Adipose_Subcutaneous",
+        "Adipose_Visceral_Omentum",
+        "Adrenal_Gland",
+        "Artery_Aorta",
+        "Artery_Coronary",
+        "Artery_Tibial",
+        "Bladder",
+        "Brain_Amygdala",
+        "Brain_Anterior_cingulate_cortex_BA24",
+        "Brain_Caudate_basal_ganglia",
+        "Brain_Cerebellar_Hemisphere",
+        "Brain_Cerebellum",
+        "Brain_Cortex",
+        "Brain_Frontal_Cortex_BA9",
+        "Brain_Hippocampus",
+        "Brain_Hypothalamus",
+        "Brain_Nucleus_accumbens_basal_ganglia",
+        "Brain_Putamen_basal_ganglia",
+        "Brain_Spinal_cord_cervical_c-1",
+        "Brain_Substantia_nigra",
+        "Breast_Mammary_Tissue",
+        "Cells_Cultured_fibroblasts",
+        "Cells_EBV-transformed_lymphocytes",
+        "Cervix_Ectocervix",
+        "Cervix_Endocervix",
+        "Colon_Sigmoid",
+        "Colon_Transverse",
+        "Esophagus_Gastroesophageal_Junction",
+        "Esophagus_Mucosa",
+        "Esophagus_Muscularis",
+        "Fallopian_Tube",
+        "Heart_Atrial_Appendage",
+        "Heart_Left_Ventricle",
+        "Kidney_Cortex",
+        "Kidney_Medulla",
+        "Liver",
+        "Lung",
+        "Minor_Salivary_Gland",
+        "Muscle_Skeletal",
+        "Nerve_Tibial",
+        "Ovary",
+        "Pancreas",
+        "Pituitary",
+        "Prostate",
+        "Skin_Not_Sun_Exposed_Suprapubic",
+        "Skin_Sun_Exposed_Lower_leg",
+        "Small_Intestine_Terminal_Ileum",
+        "Spleen",
+        "Stomach",
+        "Testis",
+        "Thyroid",
+        "Uterus",
+        "Vagina",
+        "Whole_Blood"
+      ],
+      "hpa_only": [],
+      "interpretation": "GTEx returned tissue information, but HPA did not expose comparable tissue information."
+    },
+    "genetic_assessment": {
+      "status": "available",
+      "sources": [
+        "ClinVar",
+        "OMIM"
+      ],
+      "message": "Genetic evidence is available from: ClinVar, OMIM"
+    },
+    "rare_disease_assessment": {
+      "status": "evidence_available",
+      "sources": [
+        "OMIM",
+        "ClinVar"
+      ],
+      "message": "Disease/genetic evidence relevant to rare-disease assessment is available."
+    },
+    "evidence_gaps": [
+      {
+        "source": "disgenet",
+        "category": "disease-gene aggregation",
+        "status": "error"
+      }
+    ],
+    "caution": "This assessment describes evidence availability and does not establish clinical efficacy, causality, or therapeutic suitability."
+  },
+  "gemini": {
+    "status": "success",
+    "model": "gemini-3.6-flash",
+    "summary": "### 1. Target Summary\n\n* **Gene Symbol:** EGFR (Epidermal Growth Factor Receptor)\n* **Ensembl Identifier:** `ENSG00000146648`\n* **Biological Function:** Receptor tyrosine kinase of the ErbB family involved in extracellular signal transduction, controlling cellular proliferation, survival, differentiation, and migration via downstream signaling pathways (e.g., RAS-RAF-MEK-ERK, PI3K-AKT).\n\n---\n\n### 2. Disease Summary & Ontology Normalization\n\n* **Queried Disease:** Non-small cell lung cancer (NSCLC)\n* **Canonical Identifier:** `MONDO:0005233` (non-small cell lung carcinoma)\n* **Cross-References:** `NCIT:C2926`, `SNOMED:254637007`\n* **Clinical Context:** NSCLC encompasses the majority of lung malignancies (primarily adenocarcinoma and squamous cell carcinoma). A significant subset of NSCLC tumors are driven by somatic activating mutations in the kinase domain of *EGFR*.\n\n---\n\n### 3. Drug Summary\n\n* **Drug Name:** Gefitinib\n* **ChEMBL Identifier:** `CHEMBL939`\n* **Molecular Class:** Small molecule, selective EGFR tyrosine kinase inhibitor (TKI)\n* **Development Status:** Max Phase 4.0 (Approved; initial approval 2003)\n* **ATC Classification:** `L01EB01` (Antineoplastic agents, EGFR protein kinase inhibitors)\n* **Trade Names:** Iressa, Gefitinib Mylan\n\n---\n\n### 4. Tissue Evidence\n\n* **GTEx RNA Expression (`ENSG00000146648.17`):**\n  * **Lung Expression:** Moderate median expression in normal lung tissue (**22.1 TPM**).\n  * **Highest Expressing Tissues:** Sun-exposed skin (**78.3 TPM**), non-sun-exposed skin (**75.9 TPM**), cultured fibroblasts (**60.6 TPM**), tibial nerve (**43.1 TPM**), vagina (**40.6 TPM**), and subcutaneous adipose tissue (**39.7 TPM**).\n  * **Lowest Expressing Tissues:** Whole blood (**0.045 TPM**) and EBV-transformed lymphocytes (**0.15 TPM**).\n* **Human Protein Atlas (HPA) Evidence:**\n  * **Protein Tissue Distribution:** Classed as *\"Detected in all\"*.\n  * **Tissue Specificity:** Classified as *\"Low tissue specificity\"*.\n* **Tissue Context & Mismatch Interpretation:**\n  * *Observation:* *EGFR* exhibits ubiquitous baseline expression across normal tissues rather than lung-exclusive expression.\n  * *Biological Significance:* Efficacy in NSCLC does not depend on baseline organ-restricted expression, but rather on oncogenic kinase activation (e.g., somatic mutations or gene amplification) in tumor cells.\n  * *Toxicity Rationale:* High baseline expression in skin and gastrointestinal mucosa correlates directly with observed on-target clinical toxicities (cutaneous rash, mucosal diarrhea).\n\n---\n\n### 5. Genetic Evidence\n\n* **ClinVar Analysis:**\n  * Multiple ClinVar variant records exist for *EGFR* (e.g., variant IDs `4883967`, `4881378`, `4881265`, `4881261`, `4881248`).\n* **Genomic Relevance:**\n  * **Somatic Driver Mutations:** In-frame exon 19 deletions and exon 21 point mutations (e.g., L858R) structurally alter the ATP-binding pocket of EGFR, causing constitutive kinase activation and conferring sensitivity to first-generation TKIs like gefitinib.\n  * **Resistance Mutations:** Secondary mutations (e.g., T790M) emerge during therapy, altering drug binding affinity and mediating clinical resistance.\n\n---\n\n### 6. Disease Association Evidence\n\n* **Open Targets Platform:**\n  * **Non-small cell lung carcinoma (`MONDO_0005233`):** High overall association score of **0.853**.\n  * **Lung adenocarcinoma (`MONDO_0005061`):** Association score of **0.774**.\n  * **General lung cancer (`MONDO_0008903`):** Association score of **0.717**.\n  * **Head and neck squamous cell carcinoma (`MONDO_0010150`):** Association score of **0.725**.\n\n---\n\n### 7. Safety Evidence & Post-Market Signals\n\n* **openFDA FAERS Safety Signals (Gefitinib):**\n  * **Primary On-Target Toxicities:** Diarrhea (175 reports), Rash (144 reports), Nausea (94 reports).\n  * **Oncology Outcome / Resistance Signals:** Malignant neoplasm progression (611 reports), Drug resistance (488 reports), Acquired gene mutation (219 reports), Disease progression (150 reports), Central nervous system metastases (112 reports), EGFR gene mutation (110 reports), Death (109 reports).\n* **Pharmacovigilance Interpretation:**\n  * FAERS adverse event reports reflect post-market spontaneous reporting and do not independently establish causality.\n  * Dermatologic and gastrointestinal events align directly with GTEx and HPA findings of broad baseline EGFR expression in skin and mucosal tissues.\n  * Signals related to acquired mutations and disease progression reflect standard clinical resistance patterns encountered in advanced NSCLC management.\n\n---\n\n### 8. Evidence Gaps & Data Availability\n\n* **OMIM & DisGeNET:** Not directly queried via available tools; however, ClinVar and Open Targets provide strong somatic and germline variant association data.\n* **Variant-Level Response Stratification:** High-level database records confirm variant presence, but specific clinical trial response rates per individual variant require specialized trial data synthesis.\n\n---\n\n### 9. Categorized Scientific Synthesis\n\n| Evidence Category | Evidence Level | Summary Findings | Sources |\n| :--- | :--- | :--- | :--- |\n| **Direct Clinical Evidence** | **Established / Approved** | Gefitinib is an approved Phase 4 oral drug for *EGFR*-mutated non-small cell lung cancer (ATC L01EB01). | ChEMBL |\n| **Database Associations** | **Strong** | High target-disease association score (0.853) for non-small cell lung carcinoma. | Open Targets |\n| **Genetic Evidence** | **Strong / Mechanistic** | Somatic driver variants in *EGFR* dictate tumor dependence and TKI sensitivity/resistance. | ClinVar |\n| **Tissue Evidence** | **Ubiquitous Baseline** | GTEx (22.1 TPM in lung; high in skin/GI) and HPA (\"Detected in all\") confirm broad epithelial expression. | GTEx, HPA |\n| **Safety Signals** | **On-Target & Resistance** | FAERS events highlight expected cutaneous/mucosal toxicities alongside cancer progression/resistance signals. | openFDA FAERS |\n\n---\n\n### 10. Overall Evidence Assessment\n\nThe evidence supporting the triad of **EGFR**, **gefitinib**, and **non-small cell lung cancer** is definitive and represents an established clinical paradigm rather than an unvalidated repurposing candidate. \n\n1. **Mechanism & Target Validity:** Efficacy is driven by somatic oncogenic alterations in *EGFR* rather than tissue-restricted baseline expression.\n2. **Clinical Utility:** Gefitinib functions as a direct inhibitor of the active EGFR kinase domain.\n3. **Safety & Expression Alignment:** GTEx and HPA data showing ubiquitous epithelial expression (particularly skin and GI tract) provide a rational baseline explanation for the primary clinical toxicities (rash and diarrhea) observed in FAERS pharmacovigilance data."
+  }
+}

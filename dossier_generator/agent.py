@@ -45,50 +45,6 @@ def collect_evidence(
         "sources": {},
     }
 
-    print("\nAnalyzing evidence...\n")
-
-    analysis = analyze_evidence(
-        evidence
-    )
-
-    evidence["analysis"] = analysis
-
-    print("\nRunning Gemini evidence synthesis...\n")
-
-    gemini_result = run_agent(
-        target,
-        drug,
-        disease,
-    )
-
-    evidence["gemini"] = gemini_result
-
-    if gemini_result["status"] == "success":
-
-        print(
-            "Gemini synthesis completed successfully."
-        )
-
-    elif gemini_result["status"] == "quota_exceeded":
-
-        print(
-            "Gemini quota exceeded."
-        )
-
-        print(
-            "Continuing without AI synthesis."
-        )
-
-    else:
-
-        print(
-            "Gemini synthesis failed."
-        )
-
-        print(
-            "Continuing without AI synthesis."
-        )
-
     # --------------------------------------------------
     # 1. Ensembl gene lookup
     # --------------------------------------------------
@@ -192,6 +148,58 @@ def collect_evidence(
     evidence["sources"]["omim"] = omim
 
 
+    # --------------------------------------------------
+    # Evidence analysis
+    # --------------------------------------------------
+
+    print("\nAnalyzing evidence...\n")
+
+    analysis = analyze_evidence(
+        evidence
+    )
+
+    evidence["analysis"] = analysis
+
+    # --------------------------------------------------
+    # Gemini synthesis
+    # --------------------------------------------------
+
+    print("\nRunning Gemini evidence synthesis...\n")
+
+    gemini_result = run_agent(
+        target,
+        drug,
+        disease,
+    )
+
+    evidence["gemini"] = gemini_result
+
+    if gemini_result["status"] == "success":
+
+        print(
+            "Gemini synthesis completed successfully."
+        )
+
+    elif gemini_result["status"] == "quota_exceeded":
+
+        print(
+            "Gemini quota exceeded."
+        )
+
+        print(
+            "Continuing without AI synthesis."
+        )
+
+    else:
+
+        print(
+            "Gemini synthesis failed."
+        )
+
+        print(
+            "Continuing without AI synthesis."
+        )
+
     return evidence
 
 
@@ -231,7 +239,7 @@ def summarize_sources(evidence):
 def main():
 
     parser = argparse.ArgumentParser(
-        description="OpenRepurpose evidence dossier generator"
+        description="OpenRepurpose: AI-assisted biomedical evidence dossier generator"
     )
 
     parser.add_argument(
@@ -252,12 +260,37 @@ def main():
         help="Disease name",
     )
 
+    parser.add_argument(
+        "--output",
+        default="dossier_generator/cards",
+        help="Directory where evidence cards are saved",
+    )
+
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Print detailed evidence collection information",
+    )
+
     args = parser.parse_args()
 
+    target = args.target.strip()
+    drug = args.drug.strip()
+    disease = args.disease.strip()
+
+    if not target:
+        parser.error("Target cannot be empty.")
+
+    if not drug:
+        parser.error("Drug cannot be empty.")
+
+    if not disease:
+        parser.error("Disease cannot be empty.")
+
     evidence = collect_evidence(
-        target=args.target,
-        drug=args.drug,
-        disease=args.disease,
+        target=target,
+        drug=drug,
+        disease=disease,
     )
 
     source_summary = summarize_sources(
@@ -272,7 +305,7 @@ def main():
         )
 
     output_directory = Path(
-        "dossier_generator/cards"
+        args.output
     )
 
     output_directory.mkdir(
@@ -283,7 +316,7 @@ def main():
 
     output_path = (
         output_directory
-        / f"{args.target}_{args.drug}_evidence.json"
+        / f"{target}_{drug}_evidence.json"
     )
 
 
@@ -298,9 +331,9 @@ def main():
 
     markdown_path = (
         output_directory
-        / f"{args.target}_{args.drug}_evidence_card.md"
-    )
-
+        / f"{target}_{drug}_evidence_card.md"
+        )
+    
     with open(
         markdown_path,
         "w",
