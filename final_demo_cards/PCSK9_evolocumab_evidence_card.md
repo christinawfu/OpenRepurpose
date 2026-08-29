@@ -99,9 +99,109 @@ This is an evidence-availability assessment rather than a prediction of clinical
 
 ## Gemini Evidence Synthesis
 
-**Gemini synthesis unavailable:** the Gemini API quota was exceeded during this run.
+### 1. Target Summary
 
-The database evidence and evidence-analysis sections were still generated successfully.
+* **Gene Symbol:** *PCSK9* (Proprotein Convertase Subtilisin/Kexin Type 9)
+* **Ensembl ID:** `ENSG00000169174`
+* **Biological Function:** *PCSK9* encodes a secreted serine protease that binds to low-density lipoprotein receptors (LDLR) on cell surfaces, directing them to lysosomal degradation. By reducing hepatic LDLR recycling, PCSK9 raises circulating low-density lipoprotein cholesterol (LDL-C) levels.
+
+---
+
+### 2. Disease Summary
+
+* **Disease Name:** Hypercholesterolemia
+* **Canonical Identifiers:** 
+  * `HP:0003124` (Hypercholesterolemia)
+  * `MONDO:0005439` (Familial Hypercholesterolemia)
+  * `MONDO:0011369` (Hypercholesterolemia, Autosomal Dominant, 3)
+  * `SNOMED:13644009` / `MeSH:D006937`
+* **Clinical Definition:** Elevated concentrations of total cholesterol and LDL-C in the blood, leading to accelerated atherogenesis and heightened risk for premature coronary artery disease and cardiovascular events.
+
+---
+
+### 3. Drug Summary
+
+* **Drug Name:** Evolocumab
+* **Trade Name:** Repatha / Repatha SureClick
+* **ChEMBL ID:** `CHEMBL2364655`
+* **ATC Classification:** `C10AX13` (Other lipid modifying agents)
+* **Drug Modality & Mechanism:** Fully human IgG2 monoclonal antibody targeting extracellular PCSK9. By preventing PCSK9 from binding to LDLR, evolocumab increases LDLR recycling to the cell surface, facilitating increased clearance of circulating LDL-C.
+* **Development & Approval Status:** Approved for clinical use (First approval: 2015; Max Clinical Phase: Phase 4). Administered parenterally.
+
+---
+
+### 4. Tissue Evidence & Alignment Analysis
+
+* **RNA Expression (GTEx v8):**
+  * **Highest Expression:** Liver (median `25.55 TPM`), aligning directly with the primary physiological site of LDLR synthesis, cholesterol metabolism, and systemic LDL clearance.
+  * **Other Tissues:** High transcript levels observed in central nervous system structures (Cerebellar Hemisphere: `23.50 TPM`, Cerebellum: `22.15 TPM`), with modest expression in lung (`6.74 TPM`), esophagus mucosa (`4.94 TPM`), terminal ileum (`2.89 TPM`), and pancreas (`2.68 TPM`).
+* **Protein Evidence (Human Protein Atlas):**
+  * *PCSK9* protein evidence indicates a "Group enriched" tissue specificity profile. High protein detection intensities are reported in tissues such as lung and kidney.
+* **Tissue Alignment Assessment:**
+  * **Hepatic Alignment:** Strong expression of *PCSK9* RNA in liver tissue directly supports the biological mechanism of hepatic LDLR protection.
+  * **Central Nervous System & Peripheral Expression:** The high transcript levels observed in brain tissues represent a potential tissue-level nuance. However, because evolocumab is a large monoclonal antibody administered peripherally, it does not readily cross the intact blood-brain barrier. Thus, central nervous system transcript expression does not undermine the peripheral mechanism of action, though peripheral tissue distribution (e.g., lung) underscores the importance of monitoring systemically broad target engagement.
+
+---
+
+### 5. Genetic & Mendelian Evidence
+
+* **Open Targets Genetic Scores:**
+  * **Familial Hypercholesterolemia (`MONDO_0005439`):** `0.852`
+  * **Hypercholesterolemia (`HP_0003124`):** `0.820`
+  * **Autosomal Dominant Hypercholesterolemia 3 (`MONDO_0011369`):** `0.816`
+* **ClinVar Evidence:**
+  * ClinVar contains validated pathogenic genetic variants (e.g., variant IDs `4881694`, `4875483`, `4874269`, `4861692`, `4861691`).
+  * **Mechanistic Insights:** Gain-of-function mutations in *PCSK9* cause autosomal dominant hypercholesterolemia by excessively degrading LDLR, whereas naturally occurring loss-of-function variants lead to low LDL-C levels and significant lifelong protection against coronary artery disease without major adverse phenotype trade-offs.
+
+---
+
+### 6. Disease Association Evidence
+
+* **Direct Associations (Open Targets):**
+  * Strong associations are documented across lipid phenotypes and secondary cardiovascular endpoints:
+    * Cardiovascular disorder (`MONDO_0004995`): score `0.724`
+    * Coronary artery disorder (`MONDO_0005010`): score `0.718`
+* **Interpretation:** The genetic, biomarker, and epidemiological database associations consistently link *PCSK9* variation to serum cholesterol regulation and downstream atherosclerotic cardiovascular disease.
+
+---
+
+### 7. Safety Evidence (FAERS Signals)
+
+Analysis of post-marketing adverse event reports from openFDA FAERS for evolocumab identifies the following top reported adverse event terms:
+
+1. **Dyspnoea** ($n=120$)
+2. **Atrial Fibrillation** ($n=101$)
+3. **Coronary Artery Disease** ($n=100$)
+4. **Drug Ineffective** ($n=99$)
+5. **Muscle Spasms** ($n=96$)
+6. **Cough** ($n=93$)
+7. **Nasopharyngitis** ($n=89$)
+8. **Cardiac Disorder** ($n=86$)
+9. **Dysphonia** ($n=85$)
+10. **Chest Discomfort** ($n=83$)
+
+* **Safety Signal Interpretation:** FAERS data reflect voluntary post-market passive reporting. Cardiovascular terms (e.g., coronary artery disease, atrial fibrillation) and respiratory symptoms reflect background comorbidities in high-risk hypercholesterolemic patient cohorts receiving lipid-lowering therapy. Spontaneous reporting does **not** establish direct pharmacological causation.
+
+---
+
+### 8. Evidence Gaps & Limitations
+
+* **Specific Variant-Level Annotation:** Detailed functional characterization of individual novel loss-of-function versus gain-of-function mutations was limited to aggregated ClinVar variant identifiers.
+* **Database Terminology Differences:** Tissue naming conventions between GTEx and Human Protein Atlas vary, presenting a nominal nomenclature mismatch rather than a definitive biological conflict.
+
+---
+
+### 9. Overall Evidence Assessment & Synthesis
+
+| Evidence Category | Level of Support | Summary Findings |
+| :--- | :--- | :--- |
+| **Direct Therapeutic Evidence** | **Strong** | Evolocumab is an approved monoclonal antibody targeting PCSK9 with documented therapeutic efficacy in lowering LDL-C. |
+| **Mechanistic Evidence** | **Strong** | High expression of *PCSK9* transcript in human liver (GTEx `25.55 TPM`) directly supports the hepatic LDLR recycling hypothesis. |
+| **Genetic Evidence** | **Strong** | Mendelian disorders (Autosomal Dominant Hypercholesterolemia 3) and ClinVar variants validate *PCSK9* as a causal driver of hypercholesterolemia. |
+| **Safety Signals** | **Moderate / Context-dependent** | FAERS events (e.g., nasopharyngitis, muscle spasms, cardiovascular events) reflect baseline patient risk and post-market reporting trends rather than proven toxicity. |
+
+**Scientific Verdict:**  
+The collected evidence strongly supports targeting PCSK9 with evolocumab for hypercholesterolemia. Human genetic data, transcriptomic localization in the liver, and validated clinical efficacy collectively confirm the validity of this target-drug-disease triplet.
 
 ## Evidence Provenance
 
