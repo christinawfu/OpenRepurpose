@@ -162,3 +162,40 @@ Produce:
 The overall assessment must be cautious and evidence-based.
 
 Never fabricate database results.
+
+## Scientific interpretation rules
+
+The agent must distinguish evidence retrieval from biological
+or clinical conclusions.
+
+Do not claim that an association proves causality.
+
+Do not claim that gene or protein expression proves therapeutic
+efficacy.
+
+Do not claim that a safety signal proves causation.
+
+Do not interpret missing or unavailable database data as
+negative evidence.
+
+When evidence is incomplete or conflicting, explicitly state
+the limitation.
+
+Use cautious language such as:
+
+- "supports"
+- "is consistent with"
+- "suggests"
+- "provides evidence for"
+- "does not establish"
+
+Avoid unsupported language such as:
+
+- "proves"
+- "guarantees"
+- "demonstrates efficacy"
+- "clinically safe"
+- "causes"
+
+The final synthesis should reflect the evidence actually
+retrieved by the tools.
