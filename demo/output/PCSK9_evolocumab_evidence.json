@@ -1,0 +1,1062 @@
+{
+  "target": "PCSK9",
+  "drug": "evolocumab",
+  "disease": "hypercholesterolemia",
+  "sources": {
+    "ensembl": {
+      "status": "success",
+      "source": "Ensembl",
+      "data": {
+        "query": "PCSK9",
+        "ensembl_id": "ENSG00000169174"
+      },
+      "error": null
+    },
+    "opentargets": {
+      "status": "success",
+      "source": "Open Targets",
+      "data": {
+        "query": "PCSK9",
+        "ensembl_id": "ENSG00000169174",
+        "results": [
+          {
+            "disease_id": "MONDO_0005439",
+            "disease_name": "familial hypercholesterolemia",
+            "association_score": 0.8519327132421599
+          },
+          {
+            "disease_id": "HP_0003124",
+            "disease_name": "Hypercholesterolemia",
+            "association_score": 0.8196715001915875
+          },
+          {
+            "disease_id": "MONDO_0011369",
+            "disease_name": "hypercholesterolemia, autosomal dominant, 3",
+            "association_score": 0.8157301072336982
+          },
+          {
+            "disease_id": "MONDO_0004995",
+            "disease_name": "cardiovascular disorder",
+            "association_score": 0.7237578733374027
+          },
+          {
+            "disease_id": "MONDO_0005010",
+            "disease_name": "coronary artery disorder",
+            "association_score": 0.7178053170353629
+          }
+        ],
+        "count": 5
+      },
+      "error": null
+    },
+    "gtex": {
+      "status": "success",
+      "source": "GTEx",
+      "data": {
+        "gene": "PCSK9",
+        "gencode_id": "ENSG00000169174.10",
+        "dataset": "gtex_v8",
+        "tissue_count": 54,
+        "tissues": [
+          {
+            "tissue": "Adipose_Subcutaneous",
+            "median_tpm": 0.070863,
+            "ontology_id": "UBERON:0002190",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adipose_Visceral_Omentum",
+            "median_tpm": 0.267342,
+            "ontology_id": "UBERON:0010414",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Adrenal_Gland",
+            "median_tpm": 0.13387000000000002,
+            "ontology_id": "UBERON:0002369",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Aorta",
+            "median_tpm": 0.196964,
+            "ontology_id": "UBERON:0001496",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Coronary",
+            "median_tpm": 0.08357869999999999,
+            "ontology_id": "UBERON:0001621",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Artery_Tibial",
+            "median_tpm": 0.101842,
+            "ontology_id": "UBERON:0007610",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Bladder",
+            "median_tpm": 0.149421,
+            "ontology_id": "UBERON:0001255",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Amygdala",
+            "median_tpm": 0.03456,
+            "ontology_id": "UBERON:0001876",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Anterior_cingulate_cortex_BA24",
+            "median_tpm": 0.0677279,
+            "ontology_id": "UBERON:0009835",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Caudate_basal_ganglia",
+            "median_tpm": 0.027266000000000002,
+            "ontology_id": "UBERON:0001873",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellar_Hemisphere",
+            "median_tpm": 23.4952,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cerebellum",
+            "median_tpm": 22.1456,
+            "ontology_id": "UBERON:0002037",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Cortex",
+            "median_tpm": 0.12987200000000002,
+            "ontology_id": "UBERON:0001870",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Frontal_Cortex_BA9",
+            "median_tpm": 0.11809000000000001,
+            "ontology_id": "UBERON:0009834",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hippocampus",
+            "median_tpm": 0.037313400000000004,
+            "ontology_id": "UBERON:0001954",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Hypothalamus",
+            "median_tpm": 0.129429,
+            "ontology_id": "UBERON:0001898",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Nucleus_accumbens_basal_ganglia",
+            "median_tpm": 0.224843,
+            "ontology_id": "UBERON:0001882",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Putamen_basal_ganglia",
+            "median_tpm": 0.0213276,
+            "ontology_id": "UBERON:0001874",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Spinal_cord_cervical_c-1",
+            "median_tpm": 0.117227,
+            "ontology_id": "UBERON:0006469",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Brain_Substantia_nigra",
+            "median_tpm": 0.0550501,
+            "ontology_id": "UBERON:0002038",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Breast_Mammary_Tissue",
+            "median_tpm": 0.0964767,
+            "ontology_id": "UBERON:0008367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_Cultured_fibroblasts",
+            "median_tpm": 0.539459,
+            "ontology_id": "EFO:0002009",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cells_EBV-transformed_lymphocytes",
+            "median_tpm": 0.01256,
+            "ontology_id": "EFO:0000572",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Ectocervix",
+            "median_tpm": 0.151602,
+            "ontology_id": "UBERON:0012249",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Cervix_Endocervix",
+            "median_tpm": 0.12753499999999998,
+            "ontology_id": "UBERON:0000458",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Sigmoid",
+            "median_tpm": 0.0695319,
+            "ontology_id": "UBERON:0001159",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Colon_Transverse",
+            "median_tpm": 1.62535,
+            "ontology_id": "UBERON:0001157",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Gastroesophageal_Junction",
+            "median_tpm": 0.124368,
+            "ontology_id": "UBERON:0004550",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Mucosa",
+            "median_tpm": 4.9358,
+            "ontology_id": "UBERON:0006920",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Esophagus_Muscularis",
+            "median_tpm": 0.155779,
+            "ontology_id": "UBERON:0004648",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Fallopian_Tube",
+            "median_tpm": 0.190678,
+            "ontology_id": "UBERON:0003889",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Atrial_Appendage",
+            "median_tpm": 0.0238418,
+            "ontology_id": "UBERON:0006631",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Heart_Left_Ventricle",
+            "median_tpm": 0.011451600000000001,
+            "ontology_id": "UBERON:0006566",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Cortex",
+            "median_tpm": 0.13067,
+            "ontology_id": "UBERON:0001225",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Kidney_Medulla",
+            "median_tpm": 0.27828600000000003,
+            "ontology_id": "UBERON:0001293",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Liver",
+            "median_tpm": 25.5472,
+            "ontology_id": "UBERON:0001114",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Lung",
+            "median_tpm": 6.73579,
+            "ontology_id": "UBERON:0008952",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Minor_Salivary_Gland",
+            "median_tpm": 0.10387300000000001,
+            "ontology_id": "UBERON:0006330",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Muscle_Skeletal",
+            "median_tpm": 0.0113906,
+            "ontology_id": "UBERON:0011907",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Nerve_Tibial",
+            "median_tpm": 1.8183799999999999,
+            "ontology_id": "UBERON:0001323",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Ovary",
+            "median_tpm": 0.0733842,
+            "ontology_id": "UBERON:0000992",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pancreas",
+            "median_tpm": 2.67837,
+            "ontology_id": "UBERON:0001150",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Pituitary",
+            "median_tpm": 0.0886118,
+            "ontology_id": "UBERON:0000007",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Prostate",
+            "median_tpm": 0.0963211,
+            "ontology_id": "UBERON:0002367",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Not_Sun_Exposed_Suprapubic",
+            "median_tpm": 1.19056,
+            "ontology_id": "UBERON:0036149",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Skin_Sun_Exposed_Lower_leg",
+            "median_tpm": 1.4908299999999999,
+            "ontology_id": "UBERON:0004264",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Small_Intestine_Terminal_Ileum",
+            "median_tpm": 2.89367,
+            "ontology_id": "UBERON:0001211",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Spleen",
+            "median_tpm": 0.202812,
+            "ontology_id": "UBERON:0002106",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Stomach",
+            "median_tpm": 0.327288,
+            "ontology_id": "UBERON:0000945",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Testis",
+            "median_tpm": 1.10381,
+            "ontology_id": "UBERON:0000473",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Thyroid",
+            "median_tpm": 0.029624099999999997,
+            "ontology_id": "UBERON:0002046",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Uterus",
+            "median_tpm": 0.0674579,
+            "ontology_id": "UBERON:0000995",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Vagina",
+            "median_tpm": 1.2107299999999999,
+            "ontology_id": "UBERON:0000996",
+            "unit": "TPM"
+          },
+          {
+            "tissue": "Whole_Blood",
+            "median_tpm": 0.245957,
+            "ontology_id": "UBERON:0013756",
+            "unit": "TPM"
+          }
+        ],
+        "highest_expression_tissue": {
+          "tissue": "Liver",
+          "median_tpm": 25.5472,
+          "ontology_id": "UBERON:0001114",
+          "unit": "TPM"
+        }
+      },
+      "error": null
+    },
+    "hpa": {
+      "status": "success",
+      "source": "Human Protein Atlas",
+      "data": {
+        "gene": "PCSK9",
+        "results": [
+          {
+            "Gene": "PCSK9",
+            "Ensembl": "ENSG00000169174",
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": "83",
+            "Protein tissue specific Intensity": {
+              "kidney": "5642.2",
+              "lung": "10905.9"
+            }
+          },
+          {
+            "Gene": "ANXA2",
+            "Ensembl": "ENSG00000182718",
+            "Protein tissue specificity": "Low tissue specificity",
+            "Protein tissue distribution": "Detected in all",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": null
+          },
+          {
+            "Gene": "LDLR",
+            "Ensembl": "ENSG00000130164",
+            "Protein tissue specificity": "Group enriched",
+            "Protein tissue distribution": "Detected in some",
+            "Protein tissue specificity score": null,
+            "Protein tissue specific Intensity": {
+              "intestine": "2193197.9",
+              "lung": "1952312.4",
+              "ovary": "2187919.5"
+            }
+          }
+        ]
+      },
+      "error": null
+    },
+    "clinvar": {
+      "status": "success",
+      "source": "ClinVar",
+      "data": {
+        "query": "PCSK9",
+        "variant_ids": [
+          "4881694",
+          "4875483",
+          "4874269",
+          "4861692",
+          "4861691"
+        ],
+        "count": 5
+      },
+      "error": null
+    },
+    "chembl": {
+      "status": "success",
+      "source": "ChEMBL",
+      "data": {
+        "query": "evolocumab",
+        "count": 1,
+        "results": [
+          {
+            "atc_classifications": [
+              "C10AX13"
+            ],
+            "availability_type": 1,
+            "biotherapeutic": {
+              "biocomponents": [
+                {
+                  "component_id": 29666,
+                  "component_type": "Protein",
+                  "description": "Heavy chain",
+                  "organism": null,
+                  "sequence": "EVQLVQSGAEVKKPGASVKVSCKASGYTLTSYGISWVRQAPGQGLEWMGWVSFYNGNTNYAQKLQGRGTMTTDPSTSTAYMELRSLRSDDTAVYYCARGYGMDVWGQGTTVTVSSASTKGPSVFPLAPCSRSTSESTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSNFGTQTYTCNVDHKPSNTKVDKTVERKCCVECPPCPAPPVAGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVQFNWYVDGVEVHNAKTKPREEQFNSTFRVVSVLTVVHQDWLNGKEYKCKVSNKGLPAPIEKTISKTKGQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPMLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK",
+                  "tax_id": null
+                },
+                {
+                  "component_id": 29730,
+                  "component_type": "Protein",
+                  "description": "Light chain",
+                  "organism": null,
+                  "sequence": "ESALTQPASVSGSPGQSITISCTGTSSDVGGYNSVSWYQQHPGKAPKLMIYEVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCNSYTSTSMVFGGGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPTECS",
+                  "tax_id": null
+                }
+              ],
+              "description": "Evolocumab (human mab)",
+              "helm_notation": null,
+              "molecule_chembl_id": "CHEMBL2364655"
+            },
+            "black_box_warning": 0,
+            "chemical_probe": 0,
+            "chirality": 1,
+            "cross_references": [
+              {
+                "xref_id": "evolocumab",
+                "xref_name": "evolocumab",
+                "xref_src": "DailyMed"
+              },
+              {
+                "xref_id": "human/EPAR/repatha",
+                "xref_name": "repatha",
+                "xref_src": "EMA"
+              }
+            ],
+            "dosed_ingredient": true,
+            "first_approval": 2015,
+            "first_in_class": 0,
+            "helm_notation": null,
+            "inorganic_flag": 0,
+            "max_phase": "4.0",
+            "molecule_chembl_id": "CHEMBL2364655",
+            "molecule_hierarchy": {
+              "active_chembl_id": "CHEMBL2364655",
+              "molecule_chembl_id": "CHEMBL2364655",
+              "parent_chembl_id": "CHEMBL2364655"
+            },
+            "molecule_properties": null,
+            "molecule_structures": null,
+            "molecule_synonyms": [
+              {
+                "molecule_synonym": "AMG-145",
+                "syn_type": "RESEARCH_CODE",
+                "synonyms": "AMG-145"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "ATC",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "BNF",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "EMA",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "FDA",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "INN",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "MERCK_INDEX",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "OTHER",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Evolocumab",
+                "syn_type": "USAN",
+                "synonyms": "EVOLOCUMAB"
+              },
+              {
+                "molecule_synonym": "Repatha",
+                "syn_type": "TRADE_NAME",
+                "synonyms": "REPATHA"
+              },
+              {
+                "molecule_synonym": "Repatha sureclick",
+                "syn_type": "TRADE_NAME",
+                "synonyms": "REPATHA SURECLICK"
+              }
+            ],
+            "molecule_type": "Antibody",
+            "natural_product": 0,
+            "oral": false,
+            "orphan": 0,
+            "parenteral": true,
+            "polymer_flag": 0,
+            "pref_name": "EVOLOCUMAB",
+            "prodrug": 0,
+            "score": 41.0,
+            "structure_type": "SEQ",
+            "therapeutic_flag": true,
+            "topical": false,
+            "usan_stem": "-mab",
+            "usan_stem_definition": "monoclonal antibodies: fully human",
+            "usan_substem": "-mab (-umab)",
+            "usan_year": 2013,
+            "veterinary": 0,
+            "withdrawn_flag": false
+          }
+        ]
+      },
+      "error": null
+    },
+    "faers": {
+      "status": "success",
+      "source": "openFDA FAERS",
+      "data": {
+        "drug": "evolocumab",
+        "events": [
+          {
+            "term": "DYSPNOEA",
+            "count": 120
+          },
+          {
+            "term": "ATRIAL FIBRILLATION",
+            "count": 101
+          },
+          {
+            "term": "CORONARY ARTERY DISEASE",
+            "count": 100
+          },
+          {
+            "term": "DRUG INEFFECTIVE",
+            "count": 99
+          },
+          {
+            "term": "MUSCLE SPASMS",
+            "count": 96
+          },
+          {
+            "term": "COUGH",
+            "count": 93
+          },
+          {
+            "term": "NASOPHARYNGITIS",
+            "count": 89
+          },
+          {
+            "term": "CARDIAC DISORDER",
+            "count": 86
+          },
+          {
+            "term": "DYSPHONIA",
+            "count": 85
+          },
+          {
+            "term": "CHEST DISCOMFORT",
+            "count": 83
+          }
+        ],
+        "count": 10
+      },
+      "error": null
+    },
+    "ontology": {
+      "status": "success",
+      "source": "OLS",
+      "data": {
+        "query": "hypercholesterolemia",
+        "canonical_name": "Hypercholesterolemia (disorder)",
+        "ontology_id": "SNOMED:13644009",
+        "matches": [
+          {
+            "iri": "http://snomed.info/id/13644009",
+            "ontology_name": "snomed",
+            "ontology_prefix": "SNOMED",
+            "short_form": "SNOMED_13644009",
+            "description": [],
+            "label": "Hypercholesterolemia (disorder)",
+            "obo_id": "SNOMED:13644009",
+            "type": "class"
+          },
+          {
+            "iri": "http://id.nlm.nih.gov/mesh/D006937",
+            "ontology_name": "mesh",
+            "related_synonyms": [
+              "Cholesterol Level, High",
+              "Cholesterol Levels, High",
+              "Cholesterol, Elevated",
+              "Cholesterols, Elevated",
+              "Elevated Cholesterol",
+              "Elevated Cholesterols",
+              "High Cholesterol Level",
+              "High Cholesterol Levels",
+              "Hypercholesteremia",
+              "Hypercholesteremias",
+              "Hypercholesterolemias",
+              "Level, High Cholesterol",
+              "Levels, High Cholesterol"
+            ],
+            "ontology_prefix": "mesh",
+            "short_form": "mesh_D006937",
+            "description": [
+              "A condition with abnormally high levels of CHOLESTEROL in the blood. It is defined as a cholesterol value exceeding the 95th percentile for the population."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "mesh:D006937",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C37967",
+            "ontology_name": "ncit",
+            "ontology_prefix": "NCIT",
+            "short_form": "NCIT_C37967",
+            "description": [
+              "A laboratory test result indicating an increased amount of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "NCIT:C37967",
+            "type": "class",
+            "exact_synonyms": [
+              "Cholesterol high",
+              "High Cholesterol",
+              "Hypercholesterolemia"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "hp",
+            "ontology_prefix": "HP",
+            "short_form": "HP_0003124",
+            "broad_synonyms": [
+              "High cholesterol"
+            ],
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
+            "type": "class",
+            "exact_synonyms": [
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/OMIT_0008071",
+            "ontology_name": "omit",
+            "ontology_prefix": "OMIT",
+            "short_form": "OMIT_0008071",
+            "description": [],
+            "label": "Hypercholesterolemia",
+            "obo_id": "OMIT:0008071",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/MEDGENCUI_C0020443",
+            "ontology_name": "medgen",
+            "related_synonyms": [
+              "Cholesterol Level, High",
+              "Cholesterol Levels, High",
+              "Cholesterol, Elevated",
+              "Cholesterols, Elevated",
+              "Elevated Cholesterol",
+              "Elevated Cholesterols",
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "High Cholesterol Level",
+              "High Cholesterol Levels",
+              "High cholesterol",
+              "Hypercholesteremia",
+              "Hypercholesteremias",
+              "Hypercholesterolaemia",
+              "Hypercholesterolemia",
+              "Hypercholesterolemias",
+              "Increased total cholesterol",
+              "Level, High Cholesterol",
+              "Levels, High Cholesterol",
+              "Primary hypercholesterolemia"
+            ],
+            "short_form": "MEDGENCUI_C0020443",
+            "description": [],
+            "label": "Hypercholesterolemia",
+            "obo_id": "MEDGENCUI_C0020443",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/UMLS_C0020443",
+            "ontology_name": "medgen",
+            "related_synonyms": [
+              "Cholesterol Level, High",
+              "Cholesterol Levels, High",
+              "Cholesterol, Elevated",
+              "Cholesterols, Elevated",
+              "Elevated Cholesterol",
+              "Elevated Cholesterols",
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "High Cholesterol Level",
+              "High Cholesterol Levels",
+              "High cholesterol",
+              "Hypercholesteremia",
+              "Hypercholesteremias",
+              "Hypercholesterolaemia",
+              "Hypercholesterolemia",
+              "Hypercholesterolemias",
+              "Increased total cholesterol",
+              "Level, High Cholesterol",
+              "Levels, High Cholesterol",
+              "Primary hypercholesterolemia"
+            ],
+            "short_form": "UMLS_C0020443",
+            "description": [],
+            "label": "Hypercholesterolemia",
+            "obo_id": "UMLS_C0020443",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "cido",
+            "ontology_prefix": "CIDO",
+            "short_form": "HP_0003124",
+            "broad_synonyms": [
+              "High cholesterol"
+            ],
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
+            "type": "class",
+            "exact_synonyms": [
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "cpont",
+            "ontology_prefix": "CPONT",
+            "short_form": "HP_0003124",
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
+            "type": "class",
+            "exact_synonyms": [
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/HP_0003124",
+            "ontology_name": "efo",
+            "ontology_prefix": "EFO",
+            "short_form": "HP_0003124",
+            "broad_synonyms": [
+              "High cholesterol"
+            ],
+            "description": [
+              "An increased concentration of cholesterol in the blood."
+            ],
+            "label": "Hypercholesterolemia",
+            "obo_id": "HP:0003124",
+            "type": "class",
+            "exact_synonyms": [
+              "Elevated serum cholesterol",
+              "Elevated total cholesterol",
+              "Increased total cholesterol"
+            ]
+          }
+        ]
+      },
+      "error": null
+    },
+    "disgenet": {
+      "status": "error",
+      "source": "DisGeNET",
+      "data": null,
+      "error": "429 Client Error:  for url: https://api.disgenet.com/api/v1/gda/gene/PCSK9?limit=5"
+    },
+    "omim": {
+      "status": "success",
+      "source": "OMIM",
+      "data": {
+        "query": "PCSK9",
+        "associations": [
+          {
+            "gene": "PCSK9",
+            "gene_name": "Proprotein convertase, subtilisin/kexin-type, 9",
+            "gene_mim_number": 607786,
+            "ensembl_ids": "ENSG00000169174,ENST00000302118;;;ENST00000302118",
+            "phenotype": "{Low density lipoprotein cholesterol level QTL 1}",
+            "phenotype_mim_number": 603776,
+            "inheritance": "Autosomal dominant",
+            "mapping_key": 3
+          },
+          {
+            "gene": "PCSK9",
+            "gene_name": "Proprotein convertase, subtilisin/kexin-type, 9",
+            "gene_mim_number": 607786,
+            "ensembl_ids": "ENSG00000169174,ENST00000302118;;;ENST00000302118",
+            "phenotype": "Hypercholesterolemia, familial, 3",
+            "phenotype_mim_number": 603776,
+            "inheritance": "Autosomal dominant",
+            "mapping_key": 3
+          }
+        ],
+        "count": 2
+      },
+      "error": null
+    }
+  },
+  "analysis": {
+    "evidence_availability": "broad",
+    "score": {
+      "score": 9,
+      "maximum": 10,
+      "percentage": 90.0
+    },
+    "tissue_assessment": {
+      "status": "concordant_available",
+      "flag": false,
+      "message": "Both RNA-level and protein-level tissue evidence are available."
+    },
+    "tissue_comparison": {
+      "status": "gtex_only",
+      "mismatch_flag": true,
+      "gtex_tissues": [
+        "Adipose_Subcutaneous",
+        "Adipose_Visceral_Omentum",
+        "Adrenal_Gland",
+        "Artery_Aorta",
+        "Artery_Coronary",
+        "Artery_Tibial",
+        "Bladder",
+        "Brain_Amygdala",
+        "Brain_Anterior_cingulate_cortex_BA24",
+        "Brain_Caudate_basal_ganglia",
+        "Brain_Cerebellar_Hemisphere",
+        "Brain_Cerebellum",
+        "Brain_Cortex",
+        "Brain_Frontal_Cortex_BA9",
+        "Brain_Hippocampus",
+        "Brain_Hypothalamus",
+        "Brain_Nucleus_accumbens_basal_ganglia",
+        "Brain_Putamen_basal_ganglia",
+        "Brain_Spinal_cord_cervical_c-1",
+        "Brain_Substantia_nigra",
+        "Breast_Mammary_Tissue",
+        "Cells_Cultured_fibroblasts",
+        "Cells_EBV-transformed_lymphocytes",
+        "Cervix_Ectocervix",
+        "Cervix_Endocervix",
+        "Colon_Sigmoid",
+        "Colon_Transverse",
+        "Esophagus_Gastroesophageal_Junction",
+        "Esophagus_Mucosa",
+        "Esophagus_Muscularis",
+        "Fallopian_Tube",
+        "Heart_Atrial_Appendage",
+        "Heart_Left_Ventricle",
+        "Kidney_Cortex",
+        "Kidney_Medulla",
+        "Liver",
+        "Lung",
+        "Minor_Salivary_Gland",
+        "Muscle_Skeletal",
+        "Nerve_Tibial",
+        "Ovary",
+        "Pancreas",
+        "Pituitary",
+        "Prostate",
+        "Skin_Not_Sun_Exposed_Suprapubic",
+        "Skin_Sun_Exposed_Lower_leg",
+        "Small_Intestine_Terminal_Ileum",
+        "Spleen",
+        "Stomach",
+        "Testis",
+        "Thyroid",
+        "Uterus",
+        "Vagina",
+        "Whole_Blood"
+      ],
+      "hpa_tissues": [],
+      "shared_tissues": [],
+      "gtex_only": [
+        "Adipose_Subcutaneous",
+        "Adipose_Visceral_Omentum",
+        "Adrenal_Gland",
+        "Artery_Aorta",
+        "Artery_Coronary",
+        "Artery_Tibial",
+        "Bladder",
+        "Brain_Amygdala",
+        "Brain_Anterior_cingulate_cortex_BA24",
+        "Brain_Caudate_basal_ganglia",
+        "Brain_Cerebellar_Hemisphere",
+        "Brain_Cerebellum",
+        "Brain_Cortex",
+        "Brain_Frontal_Cortex_BA9",
+        "Brain_Hippocampus",
+        "Brain_Hypothalamus",
+        "Brain_Nucleus_accumbens_basal_ganglia",
+        "Brain_Putamen_basal_ganglia",
+        "Brain_Spinal_cord_cervical_c-1",
+        "Brain_Substantia_nigra",
+        "Breast_Mammary_Tissue",
+        "Cells_Cultured_fibroblasts",
+        "Cells_EBV-transformed_lymphocytes",
+        "Cervix_Ectocervix",
+        "Cervix_Endocervix",
+        "Colon_Sigmoid",
+        "Colon_Transverse",
+        "Esophagus_Gastroesophageal_Junction",
+        "Esophagus_Mucosa",
+        "Esophagus_Muscularis",
+        "Fallopian_Tube",
+        "Heart_Atrial_Appendage",
+        "Heart_Left_Ventricle",
+        "Kidney_Cortex",
+        "Kidney_Medulla",
+        "Liver",
+        "Lung",
+        "Minor_Salivary_Gland",
+        "Muscle_Skeletal",
+        "Nerve_Tibial",
+        "Ovary",
+        "Pancreas",
+        "Pituitary",
+        "Prostate",
+        "Skin_Not_Sun_Exposed_Suprapubic",
+        "Skin_Sun_Exposed_Lower_leg",
+        "Small_Intestine_Terminal_Ileum",
+        "Spleen",
+        "Stomach",
+        "Testis",
+        "Thyroid",
+        "Uterus",
+        "Vagina",
+        "Whole_Blood"
+      ],
+      "hpa_only": [],
+      "interpretation": "GTEx returned tissue information, but HPA did not expose comparable tissue information."
+    },
+    "genetic_assessment": {
+      "status": "available",
+      "sources": [
+        "ClinVar",
+        "OMIM"
+      ],
+      "message": "Genetic evidence is available from: ClinVar, OMIM"
+    },
+    "rare_disease_assessment": {
+      "status": "evidence_available",
+      "sources": [
+        "OMIM",
+        "ClinVar"
+      ],
+      "message": "Disease/genetic evidence relevant to rare-disease assessment is available."
+    },
+    "evidence_gaps": [
+      {
+        "source": "disgenet",
+        "category": "disease-gene aggregation",
+        "status": "error"
+      }
+    ],
+    "caution": "This assessment describes evidence availability and does not establish clinical efficacy, causality, or therapeutic suitability."
+  },
+  "gemini": {
+    "status": "success",
+    "model": "gemini-3.6-flash",
+    "summary": "### Biomedical Investigation Synthesis: PCSK9 \u2014 Evolocumab \u2014 Hypercholesterolemia\n\n---\n\n### 1. Target Summary\n* **Gene Symbol:** `PCSK9` (Proprotein Convertase Subtilisin/Kexin Type 9)\n* **Ensembl Identifier:** `ENSG00000169174`\n* **Biological Function:** PCSK9 encodes a secreted serine protease that binds to low-density lipoprotein receptors (LDLR) on the surface of hepatocytes, promoting their intracellular degradation and thereby reducing hepatic clearance of circulating LDL cholesterol.\n\n---\n\n### 2. Disease Summary\n* **Disease Name:** Hypercholesterolemia\n* **Canonical Identifiers:** \n  * `HP:0003124` (Hypercholesterolemia)\n  * `MONDO:0005439` (Familial Hypercholesterolemia)\n  * `MONDO:0011369` (Hypercholesterolemia, Autosomal Dominant, 3)\n  * `SNOMED:13644009` (Hypercholesterolemia disorder)\n* **Clinical Context:** Characterized by abnormally elevated concentrations of circulating total and LDL cholesterol, leading to accelerated atherosclerosis and increased risk of cardiovascular and coronary artery disease.\n\n---\n\n### 3. Drug Summary\n* **Drug Name:** Evolocumab (Trade Name: Repatha)\n* **ChEMBL Identifier:** `CHEMBL2364655`\n* **Molecule Type:** Fully human monoclonal antibody (`-umab`)\n* **Mechanism of Action:** Direct binding and neutralization of extracellular PCSK9, preventing PCSK9-mediated LDLR degradation and restoring LDLR recycling to the hepatocyte surface.\n* **Development Status:** Approved (Max Phase 4; initial approval 2015)\n* **ATC Classification:** `C10AX13` (Other lipid modifying agents)\n* **Administration Route:** Parenteral (subcutaneous injection)\n\n---\n\n### 4. Tissue Evidence\n* **GTEx (RNA Expression):**\n  * **Highest Tissue:** Liver (median expression: **25.55 TPM**), followed by Cerebellar Hemisphere (**23.50 TPM**) and Cerebellum (**22.15 TPM**). Moderate expression is present in Lung (**6.74 TPM**) and Esophagus Mucosa (**4.94 TPM**).\n  * **Relevance:** The predominant expression in the liver is highly aligned with the known physiology of hepatic lipoprotein receptor regulation and systemic lipid clearance.\n* **Human Protein Atlas (HPA):**\n  * Protein tissue distribution is categorized as **\"Group enriched\"** (specificity score 83).\n  * Protein intensity values recorded include Lung (**10,905.9**) and Kidney (**5,642.2**).\n* **Tissue Comparison & Limitations:**\n  * GTEx confirms robust hepatic transcription. \n  * Because PCSK9 is a secreted circulating proprotein synthesized heavily in the liver, tissue tissue-level protein quantification in HPA may capture local tissue binding or matrix retention (e.g., in lung or kidney vascular beds) rather than intracellular synthesis alone. Differing tissue nomenclature and detection methods across GTEx and HPA reflect distinct assays (RNA-seq vs. antibody/mass spectrometry intensities) and should not be interpreted as a biological contradiction.\n\n---\n\n### 5. Genetic Evidence\n* **ClinVar:** \n  * Identified 5 cataloged clinical variant records for `PCSK9` (e.g., variant IDs `4881694`, `4875483`, `4874269`, `4861692`, `4861691`).\n* **Mendelian & Population Genetics:**\n  * Open Targets links `PCSK9` to **Autosomal Dominant Hypercholesterolemia 3 (HCHOLA3; `MONDO:0011369`)**.\n  * Gain-of-function mutations in `PCSK9` lead to hypercholesterolemia via hyper-degradation of LDLR, whereas loss-of-function mutations are known to produce low plasma LDL cholesterol levels and confer protection against coronary heart disease.\n\n---\n\n### 6. Disease Association Evidence\n* **Open Targets Database Scores:**\n  * Familial hypercholesterolemia (`MONDO:0005439`): **0.852**\n  * Hypercholesterolemia (`HP:0003124`): **0.820**\n  * Autosomal dominant hypercholesterolemia 3 (`MONDO:0011369`): **0.816**\n  * Cardiovascular disorder (`MONDO:0004995`): **0.724**\n  * Coronary artery disorder (`MONDO:0005010`): **0.718**\n* **Evidence Level:** Strong multi-layered database support spanning genetic associations, functional genomics, and clinical phenotypic links.\n\n---\n\n### 7. Safety Evidence (Post-Market Signals)\n* **Source:** openFDA FAERS (Spontaneous Adverse Event Reporting System)\n* **Top Reported Adverse Events for Evolocumab:**\n  1. Dyspnoea ($n = 120$)\n  2. Atrial fibrillation ($n = 101$)\n  3. Coronary artery disease ($n = 100$)\n  4. Drug ineffective ($n = 99$)\n  5. Muscle spasms ($n = 96$)\n  6. Cough ($n = 93$)\n  7. Nasopharyngitis ($n = 89$)\n  8. Cardiac disorder ($n = 86$)\n  9. Dysphonia ($n = 85$)\n  10. Chest discomfort ($n = 83$)\n* **Safety Interpretation:** \n  * Spontaneous FAERS reporting counts reflect post-marketing surveillance submissions and **do not establish clinical causality** or estimate true incidence rates.\n  * Reported cardiovascular events (e.g., coronary artery disease, atrial fibrillation) likely reflect underlying baseline risk in the patient population receiving lipid-lowering therapy.\n  * Nasopharyngitis and upper respiratory symptoms are recognized potential adverse reactions listed in clinical labeling.\n\n---\n\n### 8. Evidence Gaps\n* **OMIM / DisGeNET Specific Breakdown:** Detailed locus-specific penetrance data were not directly queried in this pipeline run.\n* **Tissue Protein Kinetics:** Direct quantification of circulating extracellular PCSK9 protein clearance vs. tissue-bound hepatic LDLR degradation rates requires specialized functional assay integration beyond standard static database queries.\n\n---\n\n### 9. Potential Mismatches\n* **Tissue Labeling Mismatch:** GTEx identifies the liver as the top RNA-expressing organ, whereas HPA highlights protein intensity in lung and kidney tissues. This difference highlights operational variations in sample preparation and assay types (transcriptional output vs. tissue protein detection) rather than a biological discrepancy, particularly given PCSK9's nature as a secreted protein.\n\n---\n\n### 10. Overall Evidence Assessment\n\n| Evidence Category | Supporting Findings | Assessment / Confidence |\n| :--- | :--- | :--- |\n| **Direct Clinical Evidence** | FDA approval (2015), Phase 4 status for evolocumab targeting PCSK9 in hypercholesterolemia. | Strong direct clinical validation |\n| **Mechanistic Evidence** | Monoclonal antibody binding of circulating PCSK9 prevents LDLR degradation. | Strong direct functional mechanism |\n| **Genetic Evidence** | `PCSK9` variants linked to autosomal dominant hypercholesterolemia and ClinVar entries. | Strong Mendelian & human genetic evidence |\n| **Tissue Evidence** | GTEx demonstrates high liver RNA expression (**25.55 TPM**), matching hepatic LDLR biology. | Strongly supporting physiological localization |\n| **Safety Signals** | FAERS signals note respiratory and cardiovascular reports typical of the target population. | Surveillance signals present; causality unestablished |\n\n**Conclusion:** \nThe collected evidence **strongly supports** the therapeutic intervention of evolocumab against PCSK9 for hypercholesterolemia. High hepatic transcript expression, human genetic validation (gain- and loss-of-function phenotypes), and high Open Targets disease association scores consistently align with established clinical efficacy."
+  }
+}
